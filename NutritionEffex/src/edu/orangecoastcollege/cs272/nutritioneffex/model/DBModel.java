@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 /**
  * 
- * @author our names...
+ * @author our names....
  *
  */
 public class DBModel implements AutoCloseable 

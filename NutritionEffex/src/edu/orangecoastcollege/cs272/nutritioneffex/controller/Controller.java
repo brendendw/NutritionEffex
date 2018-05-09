@@ -39,7 +39,6 @@ public class Controller implements AutoCloseable
 	private static final String[] FAVORITES_FIELD_NAMES = { "_id", "name", "portion_display_name", "solid_fats", "added_sugars", "alcohol", "calories", "saturated_fats"};
 	private static final String[] FAVORITES_FIELD_TYPES = { "INTEGER PRIMARY KEY", "TEXT", "TEXT", "REAL", "REAL", "REAL", "REAL", "REAL", "REAL" };
 
-
 	/* ~~~~~~~~~~~~~~~~~~~~~ END OF DIETARY RESTRICTIONS PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
 	
