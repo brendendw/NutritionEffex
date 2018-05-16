@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.media.*?>
 <?import javafx.scene.text.*?>
@@ -8,30 +9,64 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.sdowdle.capstone.view.FoodScene">
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="332.0" prefWidth="700.0" spacing="5.0">
+            <VBox prefHeight="225.0" prefWidth="700.0" spacing="5.0">
                <children>
                   <Label text="Available Foods">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <ListView prefHeight="200.0" prefWidth="200.0" />
-                  <CheckBox mnemonicParsing="false" text="Show Unfiltered Results" />
-                  <CheckBox mnemonicParsing="false" text="Show Only Excluded Items From Diet" />
+                  <ListView fx:id="availableFoodsLV" onMouseClicked="#selectFood" prefHeight="200.0" prefWidth="200.0" />
                </children>
                <padding>
                   <Insets left="50.0" right="50.0" />
                </padding>
             </VBox>
+            <GridPane alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="238.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="412.0" minWidth="10.0" prefWidth="412.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="excludedItemsCB" mnemonicParsing="false" onAction="#filterExcludedItems" text="Show Only Excluded Items From Diet" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="ulfilteredResultsCB" mnemonicParsing="false" onAction="#unfilter" text="Show Unfiltered Results" />
+                  <Button fx:id="addToFavoritesButton" alignment="CENTER" mnemonicParsing="false" onAction="#addToFavoriteFoods" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: #0080ff; -fx-background-radius: 5;" text="Add To Favorite Foods" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="195.7" elevation="53.37" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </GridPane>
          </children>
       </VBox>
    </center>
    <bottom>
-      <Button mnemonicParsing="false" onAction="#loadDRMainMenu" prefHeight="30.0" prefWidth="60.0" text="Back" BorderPane.alignment="BOTTOM_LEFT">
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#loadDRMainMenu" prefHeight="30.0" prefWidth="60.0" text="Back" BorderPane.alignment="BOTTOM_LEFT">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

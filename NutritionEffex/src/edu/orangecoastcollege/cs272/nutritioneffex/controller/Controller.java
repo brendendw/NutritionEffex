@@ -11,6 +11,16 @@ public class Controller implements AutoCloseable
 	private static Controller theOne;
 	private DBModel mDB;
 	private Controller() {}
+	
+	public static Controller getInstance() 
+	{
+		if (theOne == null)
+		{
+			theOne = new Controller();
+		}
+		return theOne;
+		// This was temporary to test the ViewNavigator, will need to be fully implemented
+	}
 
 	/* ~~~~~~~~~~~~~~~~~~~~~ DIETARY RESTRICTIONS PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 
