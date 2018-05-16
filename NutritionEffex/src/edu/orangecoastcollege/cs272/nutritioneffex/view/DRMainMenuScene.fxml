@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <VBox alignment="TOP_CENTER" prefHeight="89.0" prefWidth="700.0" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
@@ -32,25 +31,34 @@
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#loadUpdatePreferences" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Preferences" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#loadUpdatePreferences" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #0080FF; -fx-background-radius: 10;" text="Update Preferences" textFill="WHITE">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
+               <effect>
+                  <DropShadow color="#0000005e" />
+               </effect>
             </Button>
-            <Button mnemonicParsing="false" onAction="#loadFoods" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Foods" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#loadFoods" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #0080FF; -fx-background-radius: 10;" text="Foods" textFill="WHITE">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
+               <effect>
+                  <DropShadow color="#0000005e" />
+               </effect>
             </Button>
             <Button mnemonicParsing="false" onAction="#loadBeverages" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Beverages" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#loadFavoriteFoods" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Favorite Foods" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#loadFavoriteFoods" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #0080FF; -fx-background-radius: 10;" text="Favorite Foods" textFill="WHITE">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
+               <effect>
+                  <DropShadow color="#0000005e" />
+               </effect>
             </Button>
          </children>
       </VBox>
