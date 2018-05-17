@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -9,9 +14,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.sdowdle.capstone.view.FoodDetailsScene">
    <bottom>
-      <Button mnemonicParsing="false" onAction="#loadDRMainMenu" prefHeight="30.0" prefWidth="60.0" text="Back" BorderPane.alignment="BOTTOM_LEFT">
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#loadFavoriteFoodsScene" prefHeight="30.0" prefWidth="60.0" text="Back" BorderPane.alignment="BOTTOM_LEFT">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
