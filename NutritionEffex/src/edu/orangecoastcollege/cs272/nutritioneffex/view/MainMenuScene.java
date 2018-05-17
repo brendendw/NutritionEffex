@@ -1,5 +1,9 @@
 package edu.orangecoastcollege.cs272.nutritioneffex.view;
 
-public class MainMenuScene {
+import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
 
+public class MainMenuScene {
+	//private static Controller controller = Controller.getInstance();
+
+	
 }
