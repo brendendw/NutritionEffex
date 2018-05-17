@@ -27,10 +27,10 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <Button mnemonicParsing="false" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="Daily Water Intake Calculator" textFill="#fcf9f9" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="245.0" style="-fx-background-color: BLACK; -fx-background-radius: 15;" text="BMI Calculator" textFill="#fff9f9" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="262.0" style="-fx-background-color: RED; -fx-background-radius: 15;" text="Calories Burned" textFill="#fff7f7" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-      <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="247.0" style="-fx-background-color: GREEN; -fx-background-radius: 15;" text="Calorie Calculator" textFill="#f8f3f3" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="81.0" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="back " textFill="#fcf8f8" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Button fx:id="DailyWaterIntakeButton" mnemonicParsing="false" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="Daily Water Intake Calculator" textFill="#fcf9f9" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="BMICalculatorButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="245.0" style="-fx-background-color: BLACK; -fx-background-radius: 15;" text="BMI Calculator" textFill="#fff9f9" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="caloriesBurnedButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="262.0" style="-fx-background-color: RED; -fx-background-radius: 15;" text="Calories Burned" textFill="#fff7f7" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="CalorieCalculatorButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="247.0" style="-fx-background-color: GREEN; -fx-background-radius: 15;" text="Calorie Calculator" textFill="#f8f3f3" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="backtoMainMenuButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="81.0" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="back " textFill="#fcf8f8" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
    </children>
 </GridPane>

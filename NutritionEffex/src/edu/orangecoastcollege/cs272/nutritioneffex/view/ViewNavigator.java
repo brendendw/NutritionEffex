@@ -14,9 +14,15 @@ public class ViewNavigator
 	public static final String FOOD_SCENE = "FoodScene.fxml";
 	public static final String PREFERENCES_SCENE = "PreferencesScene.fxml";
 	
-	/*~~~~~~~~~~~~~~~~~~~~~~~~ [ Brenden or Sydney's Scenes ] ~~~~~~~~~~~~~~~~~~~~~~~~*/
-	
-	/*~~~~~~~~~~~~~~~~~~~~~~~~ [ Brenden or Sydney's Scenes] ~~~~~~~~~~~~~~~~~~~~~~~~*/
+	/*~~~~~~~~~~~~~~~~~~~~~~~~ [  Sydney's Scenes ] ~~~~~~~~~~~~~~~~~~~~~~~~*/
+	public static final String MAIN_MENU_SCENE = "MainMenuScene.fxml";
+	public static final String CALCULATORS_SCENE = "CalculatorsScene.fxml";
+	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedCalculatorScene.fxml";
+	public static final String BMI_CALCULATOR_SCENE = "BMICalculatorScene.fxml";
+	public static final String DAILY_WATER_INTAKE_SCENE = "WaterIntakeCalculatorScene.fxml";
+
+
+	/*~~~~~~~~~~~~~~~~~~~~~~~~ [ Brenden's Scenes] ~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ END OF CONSTANTS ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	
