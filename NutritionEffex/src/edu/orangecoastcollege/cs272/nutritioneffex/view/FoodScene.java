@@ -1,4 +1,4 @@
-package edu.orangecoastcollege.cs272.sdowdle.capstone.view;
+package edu.orangecoastcollege.cs272.nutritioneffex.view;
 
 import javafx.fxml.FXML;
 import edu.orangecoastcollege.cs272.sdowdle.capstone.controller.Controller;
