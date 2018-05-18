@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="73.0" layoutY="41.0" prefHeight="47.0" prefWidth="275.0" style="-fx-font-weight: bold; -fx-background-radius: 100; -fx-background-color: blue;" text="Calorie Calculator" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="139.0" text="Weight:" />
+      <Label layoutX="84.0" layoutY="188.0" text="Height:" />
+      <Label layoutX="93.0" layoutY="234.0" text="Age:" />
+      <Label layoutX="91.0" layoutY="282.0" text="Goal:" />
+      <TextField layoutX="158.0" layoutY="134.0" />
+      <TextField layoutX="158.0" layoutY="183.0" />
+      <TextField layoutX="158.0" layoutY="229.0" />
+      <ComboBox layoutX="160.0" layoutY="277.0" prefHeight="27.0" prefWidth="167.0" />
+      <Label alignment="CENTER" layoutX="311.0" layoutY="337.0" prefHeight="27.0" prefWidth="28.0" style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: blue;" text="?" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="93.0" layoutY="337.0" prefHeight="27.0" prefWidth="148.0" style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: blue;" text="Calculate" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
