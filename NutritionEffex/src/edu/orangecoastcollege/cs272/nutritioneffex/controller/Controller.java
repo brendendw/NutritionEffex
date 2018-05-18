@@ -5,6 +5,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.function.Predicate;
+
 import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -101,7 +103,53 @@ public class Controller implements AutoCloseable
 		private DBModel mOlympiansDB;
 		
 		private ObservableList<Olympian> mAllOlympiansList;
+		private ObservableList<Olympian> mFilteredOlympiansList;
+
 		
+		private static final String OLYMPIANS_DB_NAME = "olympians.db";
+
+		// Olympians Database
+		private static final String OLYMPIANS_TABLE_NAME = "olympians";
+		private static final String[] OLYMPIANS_FIELD_NAMES = { "_id", "age","sport","height","weight","gender"};
+		private static final String[] OLYMPIANS_FIELD_TYPES = { "INTEGER PRIMARY KEY", "TEXT","TEXT", "REAL", "REAL", "INTEGER"};
+		private static final String OLYMPIANS_DATA_FILE = "athletes.csv";
+
+		
+		private int initializeOlympianDBFromFile() throws SQLException 
+		{
+			int recordsCreated = 0;
+			if (theOne.mFoodsDB.getRecordCount() > 0)
+				return recordsCreated;
+
+			try 
+			{
+				Scanner fileScanner = new Scanner(new File(OLYMPIANS_DATA_FILE));
+				// First read is for headings:
+				fileScanner.nextLine();
+				// All subsequent reads are for olympian data
+				while (fileScanner.hasNextLine())
+				{
+					String[] data = fileScanner.nextLine().split(",");
+					String[] values = new String[OLYMPIANS_FIELD_NAMES.length - 1];
+					values[0] = data[1]; // name
+					values[1] = data[4]; // age
+					values[2] = data[7]; // sport
+					values[3] = data[5]; // height
+					values[4] = data[6]; // weight
+					values[5] = data[3]; // gender
+					
+					theOne.mOlympiansDB.createRecord(Arrays.copyOfRange(OLYMPIANS_FIELD_NAMES, 1, OLYMPIANS_FIELD_NAMES.length), values);
+					recordsCreated++;
+				}
+				// All done with the CSV file, close the connection
+				fileScanner.close();
+			} 
+			catch (FileNotFoundException e) 
+			{
+				e.printStackTrace();
+			}
+			return recordsCreated;
+		}
 		
 	
 	
@@ -122,6 +170,9 @@ public class Controller implements AutoCloseable
 			theOne.mAllFavoriteFoodsList = FXCollections.observableArrayList();
 			theOne.mAllPreferencesList = FXCollections.observableArrayList();
 
+			theOne.mAllOlympiansList = FXCollections.observableArrayList();
+			//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
+			theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
 			try 
 			{
 				/* ~~~~~~~~~~~~~~~~~~ Dietary Restrictions Databases ~~~~~~~~~~~~~~~~~~~~*/
@@ -189,10 +240,32 @@ public class Controller implements AutoCloseable
 				
 				/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
 				//  Add your set up and initialization of the databases and observable lists
+				// Create the olympians database
+				theOne.mOlympiansDB = new DBModel(OLYMPIANS_DB_NAME, OLYMPIANS_TABLE_NAME, OLYMPIANS_FIELD_NAMES, OLYMPIANS_FIELD_TYPES);
+				theOne.initializeFoodDBFromFile();
+				ResultSet olympianRS = theOne.mOlympiansDB.getAllRecords();
+				if(olympianRS != null)
+				{
+					while(olympianRS.next())
+					{
+						int id = olympianRS.getInt(OLYMPIANS_FIELD_NAMES[0]);
+					    String name = olympianRS.getString(OLYMPIANS_FIELD_NAMES[1]);
+					    String age = olympianRS.getString(OLYMPIANS_FIELD_NAMES[2]);
+					    String sport = olympianRS.getString(OLYMPIANS_FIELD_NAMES[3]);
+					    double height = olympianRS.getDouble(OLYMPIANS_FIELD_NAMES[4]);
+					    double weight = olympianRS.getDouble(OLYMPIANS_FIELD_NAMES[5]);
+					    boolean gender = olympianRS.getBoolean(OLYMPIANS_FIELD_NAMES[6]);
+					    
+						theOne.mAllOlympiansList.add(new Olympian(id,name,age,sport,height,weight,gender));
+					}
+					theOne.mFilteredOlympiansList = 
+		                    FXCollections.observableArrayList(theOne.mAllOlympiansList);
+				}
 				
+	
 				/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
 				
-			} 
+			}
 			catch (SQLException e) 
 			{
 				e.printStackTrace();
@@ -202,12 +275,31 @@ public class Controller implements AutoCloseable
 	}
 
 	/* ~~~~~~~~~~~~~~~~~~~~~ DIETARY RESTRICTIONS PORTION ~~~~~~~~~~~~~~~~~~~~~ */
-	
+	public ObservableList<Olympian> getAllOlympiansList()
+				{
+				    return mAllOlympiansList;
+				}
+				public ObservableList<Olympian> getFilteredOlympiansList()
+				{
+				    return mFilteredOlympiansList;
+				}
+				//Filter method
+				public ObservableList<Olympian> filter(Predicate<Olympian> criteria){
+				    //clear filtered list.
+				    mFilteredOlympiansList.clear();
+				    for(Olympian o : mAllOlympiansList)
+				        if(criteria.test(o))
+				            mFilteredOlympiansList.add(o);
+				    
+				    return mFilteredOlympiansList;
+				}
 	@Override
 	public void close() throws Exception 
 	{
 		mFoodsDB.close();
 		mFavoriteFoodsDB.close();
 		mPreferencesDB.close();
+		
+		mOlympiansDB.close();
 	}
 }
