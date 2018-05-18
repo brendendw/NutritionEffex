@@ -22,10 +22,12 @@ public class Controller implements AutoCloseable
 	private DBModel mFoodsDB;
 	private DBModel mPreferencesDB;
 	private DBModel mFavoriteFoodsDB;
+
 	
 	private ObservableList<Food> mAllFoodsList;
 	private ObservableList<Food> mAllFavoriteFoodsList;
 	private ObservableList<Preference> mAllPreferencesList;
+	
 	
 	private static final String PREFERENCES_DB_NAME = "dietary_preferences.db";
 	private static final String FOODS_DB_NAME = "foods.db";
@@ -95,7 +97,12 @@ public class Controller implements AutoCloseable
 	
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
-	
+	// Constants for the 3 databases
+		private DBModel mOlympiansDB;
+		
+		private ObservableList<Olympian> mAllOlympiansList;
+		
+		
 	
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ END OF [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */

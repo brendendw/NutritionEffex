@@ -20,6 +20,7 @@ public class ViewNavigator
 	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedCalculatorScene.fxml";
 	public static final String BMI_CALCULATOR_SCENE = "BMICalculatorScene.fxml";
 	public static final String DAILY_WATER_INTAKE_SCENE = "WaterIntakeCalculatorScene.fxml";
+	public static final String OLYMPIC_POTENTIAL_SCENE = "OlympicAthleticPotentialScene.fxml";
 
 
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ [ Brenden's Scenes] ~~~~~~~~~~~~~~~~~~~~~~~~*/
