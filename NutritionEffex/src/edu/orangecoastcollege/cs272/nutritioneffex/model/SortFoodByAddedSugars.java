@@ -17,6 +17,8 @@ public class SortFoodByAddedSugars implements Comparator<Food>
 	@Override
 	public int compare(Food food1, Food food2) 
 	{
-		return (int)(food1.getAddedSugars() - food2.getAddedSugars());
+		if(food1.getAddedSugars() < food2.getAddedSugars()) return -1;
+		if(food1.getAddedSugars() > food2.getAddedSugars()) return 1;
+		return 0;
 	}
 }

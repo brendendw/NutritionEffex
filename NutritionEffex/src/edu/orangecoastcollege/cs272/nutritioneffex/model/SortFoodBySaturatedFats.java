@@ -17,6 +17,8 @@ public class SortFoodBySaturatedFats implements Comparator<Food>
 	@Override
 	public int compare(Food food1, Food food2) 
 	{
-		return (int)(food1.getSaturatedFats() - food2.getSaturatedFats());
+		if(food1.getSaturatedFats() < food2.getSaturatedFats()) return -1;
+		if(food1.getSaturatedFats() > food2.getSaturatedFats()) return 1;
+		return 0;
 	}
 }
