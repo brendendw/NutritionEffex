@@ -1,16 +1,20 @@
 package edu.orangecoastcollege.cs272.nutritioneffex.view;
-
-import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
+import java.net.URL;
+import java.text.DecimalFormat;
+import java.util.ResourceBundle;
+import edu.orangecoastcollege.cs272.nutritioneffex.view.FavoriteFoodsScene;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.event.ActionEvent;
-
 import javafx.scene.control.Label;
-
-public class FoodDetailsScene 
+/**
+ * This scene provides a breakdown of the selected
+ * Food data from the FavoriteFoods scene.
+ * @author Sean Dowdle
+ *
+ */
+public class FoodDetailsScene implements Initializable
 {
-	private static Controller controller = Controller.getInstance();
-	
 	@FXML
 	private Button backButton;
 	@FXML
@@ -24,19 +28,36 @@ public class FoodDetailsScene
 	@FXML
 	private Label saturatedFats;
 	@FXML
-	private Label solidFats;
-	@FXML
 	private Label alcohol;
-
-	// Event Listener on Button[#backButton].onAction
 	@FXML
-	public void loadFavoriteFoodsScene(ActionEvent event) 
+	private Label dairy;
+	@FXML
+	private Label meat;
+
+	/**
+	 * Calls ViewNavigator to load and go back to
+	 * the FavoriteFoods scene.
+	 */
+	@FXML
+	public void loadFavoriteFoodsScene() 
 	{
-		ViewNavigator.loadScene("Dietary Restictions", ViewNavigator.FAVORITE_FOODS_SCENE);
+		ViewNavigator.loadScene("Favorite Foods", ViewNavigator.FAVORITE_FOODS_SCENE);
 	}
 	
-	public void populateTextFieldData()
+	/**
+	 * Initializes the scene's ListView when the scene is loaded.
+	 */
+	@Override
+	public void initialize(URL location, ResourceBundle resources)
 	{
-		// TODO Populate the text field data from the database
+		DecimalFormat twoDP = new DecimalFormat();
+		name.setText(FavoriteFoodsScene.getSelectedFood().getDisplayName());
+		portion.setText(FavoriteFoodsScene.getSelectedFood().getPortionDisplay());
+		calories.setText(String.valueOf(twoDP.format(FavoriteFoodsScene.getSelectedFood().getCalories())));
+		addedSugars.setText(twoDP.format(FavoriteFoodsScene.getSelectedFood().getAddedSugars()) + "g");
+		saturatedFats.setText(twoDP.format(FavoriteFoodsScene.getSelectedFood().getSaturatedFats()) + "g");
+		alcohol.setText( (FavoriteFoodsScene.getSelectedFood().getAlcohol() > 0.0000000) ? "Yes" : "No");
+		dairy.setText( (FavoriteFoodsScene.getSelectedFood().getMilk() > 0.0000000) ? "Yes" : "No");
+		meat.setText( (FavoriteFoodsScene.getSelectedFood().getMeats() > 0.0000000) ? "Yes" : "No");
 	}
 }

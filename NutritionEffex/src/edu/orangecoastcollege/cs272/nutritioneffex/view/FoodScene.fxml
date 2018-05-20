@@ -26,7 +26,7 @@
                   <Insets left="50.0" right="50.0" />
                </padding>
             </VBox>
-            <GridPane alignment="CENTER">
+            <GridPane alignment="CENTER" prefHeight="117.0" prefWidth="700.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="238.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="412.0" minWidth="10.0" prefWidth="412.0" />
@@ -35,11 +35,14 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <CheckBox fx:id="excludedItemsCB" mnemonicParsing="false" onAction="#filterExcludedItems" text="Show Only Excluded Items From Diet" GridPane.rowIndex="1" />
                   <CheckBox fx:id="ulfilteredResultsCB" mnemonicParsing="false" onAction="#unfilter" text="Show Unfiltered Results" />
-                  <Button fx:id="addToFavoritesButton" alignment="CENTER" mnemonicParsing="false" onAction="#addToFavoriteFoods" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: #0080ff; -fx-background-radius: 5;" text="Add To Favorite Foods" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                  <Button fx:id="addToFavoritesButton" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#addToFavoriteFoods" prefHeight="33.0" prefWidth="155.0" style="-fx-background-color: #0080ff; -fx-background-radius: 5;" text="Add To Favorite Foods" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -57,6 +60,10 @@
                         <Insets />
                      </opaqueInsets>
                   </Button>
+                  <CheckBox fx:id="filterNameCB" mnemonicParsing="false" onAction="#filterFoodsByName" text="Filter By Name" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="filterCaloriesCB" mnemonicParsing="false" onAction="#filterFoodsByCalories" text="Filter By Calories" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="filterSatFatsCB" mnemonicParsing="false" onAction="#filterFoodsBySatFats" text="Filter By Saturated Fats" GridPane.rowIndex="4" />
+                  <CheckBox fx:id="filterAddedSugarsCB" mnemonicParsing="false" onAction="#filterFoodsByAddedSugars" text="Filter By Added Sugars" GridPane.rowIndex="5" />
                </children>
                <padding>
                   <Insets left="50.0" />
