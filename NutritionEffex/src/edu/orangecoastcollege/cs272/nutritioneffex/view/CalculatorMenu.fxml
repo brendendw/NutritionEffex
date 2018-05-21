@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="392.0" prefWidth="419.0"
+	xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label alignment="CENTER" layoutX="59.0" layoutY="55.0"
+			prefHeight="133.0" prefWidth="134.0"
+			style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: orange;"
+			text="Water Intake" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Helvetica Neue Bold" size="15.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="222.0" layoutY="55.0"
+			prefHeight="133.0" prefWidth="134.0"
+			style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: indigo;"
+			text="Calorie" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Helvetica Neue Bold" size="15.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="222.0" layoutY="213.0"
+			prefHeight="133.0" prefWidth="134.0"
+			style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: green;"
+			text="BMI" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Helvetica Neue Bold" size="15.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="57.0" layoutY="212.0"
+			prefHeight="133.0" prefWidth="134.0"
+			style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: purple;"
+			text="Main Menu" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Helvetica Neue Bold" size="15.0" />
+			</font>
+		</Label>
+		<ImageView blendMode="SOFT_LIGHT" fitHeight="423.0"
+			fitWidth="444.0" layoutX="-2.0" layoutY="-23.0" opacity="0.7"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../../../imgsrc/welcome_background.jpeg" />
+			</image>
+		</ImageView>
+	</children>
+</Pane>

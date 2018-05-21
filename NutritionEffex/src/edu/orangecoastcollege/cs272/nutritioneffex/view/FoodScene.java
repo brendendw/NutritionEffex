@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import java.net.URL;
 import java.util.Collections;
 import java.util.ResourceBundle;
-import edu.orangecoastcollege.cs272.nutritioneffex.controller;.Controller;
+import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ListView;

@@ -561,7 +561,6 @@ public class Controller implements AutoCloseable
 				    
 				    return mFilteredOlympiansList;
 				}
-	@Override
 	public void close() throws Exception 
 	{
 		mFoodsDB.close();

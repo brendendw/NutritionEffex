@@ -5,10 +5,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
-import edu.orangecoastcollege.cs272.nutritioneffex.controller;.Controller;
+import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.scene.control.ListView;
 /**
+ * 
  * This scene shows the user their favorite
  * foods that they have added from the foods
  * browser. The user can delete their favorite

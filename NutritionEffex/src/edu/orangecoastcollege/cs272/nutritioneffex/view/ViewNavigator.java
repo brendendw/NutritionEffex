@@ -24,6 +24,13 @@ public class ViewNavigator
 
 
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ [ Brenden's Scenes] ~~~~~~~~~~~~~~~~~~~~~~~~*/
+	public static final String LAUNCH_SCREEN_SCENE = "LaunchScene.fxml";
+	public static final String CALCULATOR_MENU_SCENE = "CalculatorMenu.fxml"; // Sydney did this one as well
+	public static final String ACCOUNT_SETTINGS_SCENE = "AccountSettings.fxml";
+	public static final String CALORIE_CALCULATOR_SCENE = "CalorieCalculator.fxml";
+	public static final String CALORIE_CALCULATOR_RESULTS_SCENE = "CalorieResults.fxml";
+	public static final String SIGN_UP_SCENE = "SignUpScene.fxml";
+	public static final String SIGN_IN_SCENE = "SignInScene.fxml";
 
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ END OF CONSTANTS ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	

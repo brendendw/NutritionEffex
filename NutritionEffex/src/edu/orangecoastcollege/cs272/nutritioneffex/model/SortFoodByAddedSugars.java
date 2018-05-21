@@ -14,7 +14,6 @@ public class SortFoodByAddedSugars implements Comparator<Food>
 	 * Compares the names of Food objects to sort
 	 * in increasing order of added sugars
 	 */
-	@Override
 	public int compare(Food food1, Food food2) 
 	{
 		if(food1.getAddedSugars() < food2.getAddedSugars()) return -1;

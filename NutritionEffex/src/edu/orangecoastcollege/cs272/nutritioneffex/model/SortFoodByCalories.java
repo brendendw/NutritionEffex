@@ -14,7 +14,6 @@ public class SortFoodByCalories implements Comparator<Food>
 	 * Compares the names of Food objects to sort
 	 * in increasing order of calories
 	 */
-	@Override
 	public int compare(Food food1, Food food2) 
 	{
 		if(food1.getCalories() < food2.getCalories()) return -1;

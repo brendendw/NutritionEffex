@@ -1,4 +1,4 @@
-package edu.orangecoastcollege.cs272.sdowdle.capstone.view;
+package edu.orangecoastcollege.cs272.nutritioneffex.view;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -11,11 +11,16 @@ public class ViewFX extends Application
 	{		
 		// Set stage only needs to be called once for the view navigator
 		ViewNavigator.setStage(primaryStage);
-		ViewNavigator.loadScene("Dietary Restrictions", ViewNavigator.DR_MAIN_MENU_SCENE);
+		ViewNavigator.loadScene("Welcome to NutritionEffex", ViewNavigator.LAUNCH_SCREEN_SCENE);
+		// Cannot get screen to show image; will be blank for now
+		// LaunchSceneController launch = new LaunchSceneController();
+		// launch.showImage();
 	}
 	
 	public static void main(String[] args) 
 	{
 		launch(args);
 	}
+	
+	
 }

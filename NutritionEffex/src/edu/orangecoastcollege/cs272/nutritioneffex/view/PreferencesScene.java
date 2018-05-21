@@ -4,7 +4,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
-import edu.orangecoastcollege.cs272.nutritioneffex.controller;.Controller;
+
+import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ComboBox;
