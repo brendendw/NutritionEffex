@@ -14,10 +14,10 @@
             <Image url="@../../../../../welcome_background.jpeg" />
          </image>
       </ImageView>
-      <Label id="signUp" fx:id="signUpButton" alignment="CENTER" layoutX="122.0" layoutY="321.0" onMouseClicked="#signUp" prefHeight="39.0" prefWidth="178.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="sign-up" />
+      <Label id="signUp" fx:id="signUpButton" alignment="CENTER" layoutX="120.0" layoutY="321.0" onMouseClicked="#signUp" prefHeight="39.0" prefWidth="178.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="sign-up" />
       <TextField id="nameTF" fx:id="nameTF" alignment="CENTER" layoutX="122.0" layoutY="45.0" prefHeight="39.0" prefWidth="178.0" promptText="name" />
       <TextField id="emailTF" fx:id="emailTF" alignment="CENTER" layoutX="122.0" layoutY="107.0" prefHeight="39.0" prefWidth="178.0" promptText="e-mail" />
-      <Label id="incorrectLoginLabel" fx:id="incorrectInfoLabel" layoutX="142.0" layoutY="287.0" style="-fx-background-color: black;" text="please fill-out all fields" textFill="WHITE" visible="false" />
+      <Label id="incorrectLoginLabel" fx:id="incorrectInfoLabel" alignment="CENTER" layoutX="122.0" layoutY="285.0" prefHeight="20.0" prefWidth="178.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="please fill-out all fields" textFill="WHITE" visible="false" />
       <ImageView fx:id="backButton" fitHeight="31.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backToMainMenu" opacity="0.79" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../back.png" />

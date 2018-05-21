@@ -114,7 +114,7 @@ public class Controller implements AutoCloseable
 					ArrayList<ArrayList<String>> usersRS = theOne.mUserDB.getAllRecordsArrayList();
 					for (ArrayList<String> values : usersRS)
 					{
-						int userID = Integer.parseInt(USER_FIELD_NAMES[0]);
+						int userID = Integer.parseInt(values.get(0));
 						String name = values.get(1);
 						String email = values.get(2);
 						int age = Integer.parseInt(values.get(3));
@@ -665,11 +665,11 @@ public class Controller implements AutoCloseable
 	public String signUpUser(String name, String email, String password, int age, String gender)
 	{
 		if (!isValidEmail(email))
-			return "Email address not valid. Please try a different e-mail";
+			return "invalid e-mail address";
 		if (theOne.mAllUsersList != null) {
 			for (User u : theOne.mAllUsersList)
 				if (email.equalsIgnoreCase(u.getEmail()))
-					return "E-mail address not available. Please try another. ";
+					return "please try a different e-mail ";
 		}
 		//String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
 
@@ -686,10 +686,10 @@ public class Controller implements AutoCloseable
 			theOne.mAllUsersList.add(theOne.mCurrentUser);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			return "Error creating user. Please try again! ";
+			return "ERROR! please try again. ";
 		}
 		
-		return "Welcome, " + name + "!";
+		return "Success";
 		
 	}
 	

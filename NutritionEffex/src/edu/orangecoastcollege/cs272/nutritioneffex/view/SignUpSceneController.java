@@ -58,7 +58,7 @@ public class SignUpSceneController implements Initializable {
 
 	// Event Listener on Label[#signUpButton].onMouseClicked
 	@FXML
-	public void signUp(MouseEvent event) {
+	public boolean signUp(MouseEvent event) {
 		if (emailTF.getText().isEmpty() || passwordTF.getText().isEmpty() || ageCB.getChildrenUnmodifiable().isEmpty()
 				|| genderCB.getChildrenUnmodifiable().isEmpty() || nameTF.getText().isEmpty()) 
 			incorrectInfoLabel.setVisible(true);
@@ -70,6 +70,17 @@ public class SignUpSceneController implements Initializable {
 		int age = ageCB.getSelectionModel().getSelectedIndex() + 13;
 		
 		String result = controller.signUpUser(name, email, password, 24, "male");
+		
+		if  (result.equalsIgnoreCase("Success")) {
+			System.out.println(result);
+			incorrectInfoLabel.setVisible(false);
+			ViewNavigator.loadScene("Main Menu", ViewNavigator.MAIN_MENU_SCENE);
+			incorrectInfoLabel.setVisible(false);
+			return true;
+		}
+		incorrectInfoLabel.setText(result);
+		incorrectInfoLabel.setVisible(true);
+		return false;
 	}
 	// Event Listener on ImageView[#backButton].onMouseClicked
 	@FXML
@@ -82,6 +93,7 @@ public class SignUpSceneController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		try {
+			incorrectInfoLabel.setVisible(false);
 			backButton.setStyle(IDLE_BACK_BUTTON_STYLE);
 			backButton.setOnMouseEntered(e -> backButton.setStyle(HOVERED_BACK_BUTTON_STYLE));
 			backButton.setOnMouseExited(e -> backButton.setStyle(IDLE_BACK_BUTTON_STYLE));
