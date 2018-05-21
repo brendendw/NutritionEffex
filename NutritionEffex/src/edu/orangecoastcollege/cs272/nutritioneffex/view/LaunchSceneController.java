@@ -9,14 +9,9 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderStroke;
-import javafx.scene.layout.BorderStrokeStyle;
-import javafx.scene.layout.BorderWidths;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.paint.Color;
 
-public class LaunchSceneController implements Initializable {
+
+public class LaunchSceneController extends SeamlessViewFX implements Initializable {
 	@FXML
 	private Label signInButton;
 	@FXML
@@ -24,32 +19,18 @@ public class LaunchSceneController implements Initializable {
 	@FXML
 	private ImageView backgroundImage;
 
-	private static final String HOVERED_BUTTON_STYLE = 
-    		"-fx-background-color: white; -fx-border-color: black; "
-    		+ "-fx-background-radius: 100, 100, 100, 100; -fx-border-radius: 100 100 100 100;"
-    		+ "-fx-scale-x: 1.05; -fx-scale-y: 1.05; -fx-scale-z: 1.05;";
-	
-	private static final String IDLE_BUTTON_STYLE = 
-    		"-fx-background-color: white; -fx-background-radius: 30, 30, 30, 30; -fx-border-radius: 10 10 0 0;"
-    		+ "-fx-scale-x: 1.0; -fx-scale-y: 1.0; -fx-scale-z: 1.0;";
-	
-    private static final String CLICKED_BUTTON_STYLE = 
-    		"-fx-background-color: transparent; color: white; -fx-border-color: black; "
-    		+ "-fx-background-radius: 100, 100, 100, 100; -fx-border-radius: 100 100 100 100;"
-    		+ "-fx-scale-x: 1.0; -fx-scale-y: 1.0; -fx-scale-z: 1.0;";
-    
 
 	// Event Listener on Label[#signInButton].onMouseClicked
 	@FXML
 	public void signIn(MouseEvent event) {
-		signInButton.setOnMousePressed(e -> signInButton.setStyle(CLICKED_BUTTON_STYLE));
+		signInButton.setOnMousePressed(e -> signInButton.setStyle(SCALE_UP));
 		signInButton.setOnMouseReleased(e -> signInButton.setStyle(HOVERED_BUTTON_STYLE));
 		ViewNavigator.loadScene("Sign In", ViewNavigator.SIGN_IN_SCENE);
 	}
 	// Event Listener on Label[#signUpButton].onMouseClicked
 	@FXML
 	public void signUp(MouseEvent event) {
-		signUpButton.setOnMousePressed(e -> signUpButton.setStyle(CLICKED_BUTTON_STYLE));
+		signUpButton.setOnMousePressed(e -> signUpButton.setStyle(SCALE_UP));
 		signUpButton.setOnMouseReleased(e -> signUpButton.setStyle(HOVERED_BUTTON_STYLE));
 		ViewNavigator.loadScene("Sign Up", ViewNavigator.SIGN_UP_SCENE);
 	}

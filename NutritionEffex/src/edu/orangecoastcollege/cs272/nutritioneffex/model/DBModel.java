@@ -2,6 +2,7 @@ package edu.orangecoastcollege.cs272.nutritioneffex.model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -94,6 +95,38 @@ public class DBModel implements AutoCloseable
 	{
 		String singleRecord = "SELECT * FROM " + mTableName + " WHERE " + mFieldNames[0] + "=" + key;
 		return mStmt.executeQuery(singleRecord);
+	}
+	
+	/**
+	 * Gets a single record from the database matching a specific primary key.
+	 * 
+	 * @param key
+	 *            The primary key value for the record to return.
+	 * @return A <code>ResultSet</code> containing a single record matching the
+	 *         key.
+	 * @throws SQLException
+	 *             If a database access error occurs, this method is called on a
+	 *             closed Statement, or the given SQL statement produces
+	 *             anything other than a single ResultSet object.
+	 */
+	public ArrayList<ArrayList<String>> getRecordFromArrayList(String key) throws SQLException {
+		try (Connection connection = connectToDB();
+				Statement stmt = connection.createStatement();
+					ResultSet rs = stmt.executeQuery("SELECT * FROM " + mTableName + " WHERE " + mFieldNames[0] + " = " + key);)
+			{		
+				ResultSetMetaData rsData = rs.getMetaData();
+				ArrayList<ArrayList<String>> resultsList = new ArrayList<>();
+				
+				int cols = rsData.getColumnCount();
+				while (rs.next())
+				{
+					ArrayList<String> values = new ArrayList<>(cols);
+					for (int i = 1; i <= cols; i++)
+						values.add(rs.getString(i));
+					resultsList.add(values);
+				}
+				return resultsList;
+			}
 	}
 	/**
      * Gets the count of all records in the database.

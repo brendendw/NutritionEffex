@@ -31,6 +31,7 @@ public class ViewNavigator
 	public static final String CALORIE_CALCULATOR_RESULTS_SCENE = "CalorieResults.fxml";
 	public static final String SIGN_UP_SCENE = "SignUpScene.fxml";
 	public static final String SIGN_IN_SCENE = "SignInScene.fxml";
+	public static final String ALTERNATE_MAIN_MENU_SCENE = "AlternateMainMenu.fxml";
 
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ END OF CONSTANTS ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	

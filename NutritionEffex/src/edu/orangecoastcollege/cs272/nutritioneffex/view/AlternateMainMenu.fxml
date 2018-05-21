@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.nutritioneffex.view.AlternateMainMenuController">
+   <children>
+      <Label fx:id="DietaryRestrictionsButton" alignment="CENTER" layoutX="13.0" layoutY="18.0" onMouseClicked="#loadDietaryRestrictionsMenu" prefHeight="78.0" prefWidth="394.0" style="-fx-background-radius: 30; -fx-background-color: green;" text="Dietary Restrictions Menu" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="NutritionCalculatorButton" alignment="CENTER" layoutX="13.0" layoutY="111.0" onMouseClicked="#loadNutritionCalculatorMenu" opacity="0.97" prefHeight="78.0" prefWidth="394.0" style="-fx-background-radius: 30; -fx-background-color: teal;" text="Nutrition Calculators" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="FindYourOlympicAthleteButton" alignment="CENTER" layoutX="13.0" layoutY="205.0" onMouseClicked="#loadOlympicAthletesMenu" prefHeight="78.0" prefWidth="394.0" style="-fx-background-radius: 30; -fx-background-color: pink;" text="Find Your Olympic Athlete" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LogOffButton" alignment="CENTER" layoutX="313.0" layoutY="301.0" onMouseClicked="#logOff" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" prefHeight="78.0" prefWidth="95.0" style="-fx-background-radius: 30; -fx-background-color: red;" text="Log Off" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="UpdateAccountInfoButton" alignment="CENTER" layoutX="14.0" layoutY="300.0" onMouseClicked="#loadUpdateAccountInfoScene" prefHeight="78.0" prefWidth="283.0" style="-fx-background-radius: 30; -fx-background-color: indigo;" text="Update Account Information" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backgroundImage" blendMode="SOFT_LIGHT" fitHeight="423.0" fitWidth="444.0" layoutX="-2.0" layoutY="-23.0" onMouseClicked="#loadDietaryRestrictionsMenu" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../imgsrc/welcome_background.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

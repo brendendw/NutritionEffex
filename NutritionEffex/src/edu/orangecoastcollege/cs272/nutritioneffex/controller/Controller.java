@@ -10,6 +10,7 @@ import java.util.function.Predicate;
 
 import edu.orangecoastcollege.cs272.nutritioneffex.model.DBModel;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.User;
+import edu.orangecoastcollege.cs272.nutritioneffex.view.ViewNavigator;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -702,13 +703,15 @@ public class Controller implements AutoCloseable
 				// Check the database and retrieve the password 
 				try {
 					// Why is this not returning an array list of strings instead of a result set?
-					ArrayList<ArrayList<String>> userResults = (ArrayList<ArrayList<String>>) theOne.mUserDB.getRecord(String.valueOf(user.getID()));
+					ArrayList<ArrayList<String>> userResults = theOne.mUserDB.getRecordFromArrayList(String.valueOf(user.getID()));
+					
 					String storedPassword = userResults.get(0).get(5);
 					
 					// Check if the password is correct
 					if (password.equals(storedPassword))
 					{
 						theOne.mCurrentUser = user;
+						ViewNavigator.loadScene("Main Menu", ViewNavigator.ALTERNATE_MAIN_MENU_SCENE);
 						return "Success!";
 					}
 					else 
@@ -718,7 +721,7 @@ public class Controller implements AutoCloseable
 				}
 			}
 		}
-		return "Incorrect e-mail or password. Please try again. ";
+		return "incorrect e-mail/password";
 	}
 	
 	public void close() throws Exception 

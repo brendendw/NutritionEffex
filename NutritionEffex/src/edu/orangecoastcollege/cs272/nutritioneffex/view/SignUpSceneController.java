@@ -16,24 +16,9 @@ import javafx.scene.image.ImageView;
 
 import javafx.scene.input.MouseEvent;
 
-public class SignUpSceneController implements Initializable {
+public class SignUpSceneController extends SeamlessViewFX implements Initializable {
 	
 	private static Controller controller = Controller.getInstance();
-	
-	private static final String HOVERED_BACK_BUTTON_STYLE = 
-			"-fx-scale-x: 1.1; -fx-scale-y: 1.1; -fx-scale-z: 1.1;";
-	private static final String IDLE_BACK_BUTTON_STYLE = 
-			"-fx-scale-x: 1.0; -fx-scale-y: 1.0; -fx-scale-z: 1.0;";
-	
-	
-	private static final String HOVERED_BUTTON_STYLE = 
-    		"-fx-background-color: white; -fx-border-color: black; "
-    		+ "-fx-background-radius: 100, 100, 100, 100; -fx-border-radius: 100 100 100 100;"
-    		+ "-fx-scale-x: 1.05; -fx-scale-y: 1.05; -fx-scale-z: 1.05;";
-	
-	private static final String IDLE_BUTTON_STYLE = 
-    		"-fx-background-color: white; -fx-background-radius: 30, 30, 30, 30; -fx-border-radius: 10 10 0 0;"
-    		+ "-fx-scale-x: 1.0; -fx-scale-y: 1.0; -fx-scale-z: 1.0;";
 	
 	@FXML
 	private ImageView backgroundImage;
@@ -94,9 +79,9 @@ public class SignUpSceneController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		try {
 			incorrectInfoLabel.setVisible(false);
-			backButton.setStyle(IDLE_BACK_BUTTON_STYLE);
-			backButton.setOnMouseEntered(e -> backButton.setStyle(HOVERED_BACK_BUTTON_STYLE));
-			backButton.setOnMouseExited(e -> backButton.setStyle(IDLE_BACK_BUTTON_STYLE));
+			backButton.setStyle(NORMAL_SCALE);
+			backButton.setOnMouseEntered(e -> backButton.setStyle(SCALE_UP));
+			backButton.setOnMouseExited(e -> backButton.setStyle(NORMAL_SCALE));
 			
 			signUpButton.setStyle(IDLE_BUTTON_STYLE);
 			signUpButton.setOnMouseEntered(e -> signUpButton.setStyle(HOVERED_BUTTON_STYLE));
