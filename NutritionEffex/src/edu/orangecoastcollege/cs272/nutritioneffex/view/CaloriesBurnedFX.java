@@ -55,13 +55,19 @@ final ComboBox workoutTypesCB = new ComboBox(options);
 
 	    }
 	    public void start(Stage primaryStage) throws Exception{
+	    	
+	    	mTotalCalsTF.setEditable(false);
+	    	
 	    	mDurationSlider.setShowTickLabels(true);
 		    mDurationSlider.setShowTickMarks(true);
+		    
 		    //change the increments of the tick marks
 		    mDurationSlider.setBlockIncrement(5);
 		    mDurationSlider.setMajorTickUnit(10);
+		    
 		//moves slider directly to individual ticks
 		    mDurationSlider.setSnapToTicks(true);
+		    
 	        //Fill the GridPane with all the nodes.
 	        mGridPane.add(new Label("Workout Type:"), 0, 0);
 	        mGridPane.add(workoutTypesCB, 1, 0);

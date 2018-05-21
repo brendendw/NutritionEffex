@@ -42,9 +42,9 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <Button fx:id="backButton" mnemonicParsing="false" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="back" textFill="#f8f3f3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <Button fx:id="CalculateButton" mnemonicParsing="false" style="-fx-background-color: GREEN; -fx-background-radius: 15;" text="Calculate" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-      <Button fx:id="clearButton" mnemonicParsing="false" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="clear" textFill="#f5efef" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#back" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="back" textFill="#f8f3f3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button fx:id="CalculateButton" mnemonicParsing="false" onAction="#calculate" style="-fx-background-color: GREEN; -fx-background-radius: 15;" text="Calculate" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clear" style="-fx-background-color: BLUE; -fx-background-radius: 15;" text="clear" textFill="#f5efef" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
       <TextField fx:id="weightTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextField fx:id="heightTF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <TextField fx:id="BMITF" GridPane.columnIndex="1" GridPane.rowIndex="3" />

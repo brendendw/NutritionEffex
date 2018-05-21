@@ -15,12 +15,12 @@ public class ViewNavigator
 	public static final String PREFERENCES_SCENE = "PreferencesScene.fxml";
 	
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ [  Sydney's Scenes ] ~~~~~~~~~~~~~~~~~~~~~~~~*/
-	public static final String MAIN_MENU_SCENE = "MainMenuScene.fxml";
-	public static final String CALCULATORS_SCENE = "CalculatorsScene.fxml";
-	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedCalculatorScene.fxml";
+	//public static final String MAIN_MENU_SCENE = "MainMenuScene.fxml";
+	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedFX.java";
 	public static final String BMI_CALCULATOR_SCENE = "BMICalculatorScene.fxml";
-	public static final String DAILY_WATER_INTAKE_SCENE = "WaterIntakeCalculatorScene.fxml";
-	public static final String OLYMPIC_POTENTIAL_SCENE = "OlympicAthleticPotentialScene.fxml";
+	public static final String DAILY_WATER_INTAKE_SCENE = "WaterIntakeFX.java";
+	public static final String OLYMPIC_POTENTIAL_SCENE = "OlympicAthleteFX.fxml";
+	public static final String WORKOUT_LOG_SCENE = "WorkoutLogFX.java";
 
 
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ [ Brenden's Scenes] ~~~~~~~~~~~~~~~~~~~~~~~~*/
