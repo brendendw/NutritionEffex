@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.nutritioneffex.view.SignUpSceneController">
+   <children>
+      <ImageView id="backgroundImage" fx:id="backgroundImage" fitHeight="439.0" fitWidth="453.0" layoutX="-19.0" layoutY="-34.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../welcome_background.jpeg" />
+         </image>
+      </ImageView>
+      <Label id="signUp" fx:id="signUpButton" alignment="CENTER" layoutX="122.0" layoutY="321.0" onMouseClicked="#signUp" prefHeight="39.0" prefWidth="178.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="sign-up" />
+      <TextField id="nameTF" fx:id="nameTF" alignment="CENTER" layoutX="122.0" layoutY="45.0" prefHeight="39.0" prefWidth="178.0" promptText="name" />
+      <TextField id="emailTF" fx:id="emailTF" alignment="CENTER" layoutX="122.0" layoutY="107.0" prefHeight="39.0" prefWidth="178.0" promptText="e-mail" />
+      <Label id="incorrectLoginLabel" fx:id="incorrectInfoLabel" layoutX="142.0" layoutY="287.0" style="-fx-background-color: black;" text="please fill-out all fields" textFill="WHITE" visible="false" />
+      <ImageView fx:id="backButton" fitHeight="31.0" fitWidth="41.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backToMainMenu" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../back.png" />
+         </image>
+      </ImageView>
+      <TextField id="passwordTF" fx:id="passwordTF" alignment="CENTER" layoutX="121.0" layoutY="168.0" prefHeight="39.0" prefWidth="178.0" promptText="password" />
+      <ComboBox id="ageCB" fx:id="ageCB" layoutX="120.0" layoutY="231.0" prefHeight="39.0" prefWidth="74.0" promptText="age" />
+      <ComboBox id="genderCB" fx:id="genderCB" layoutX="209.0" layoutY="231.0" prefHeight="39.0" prefWidth="92.0" promptText="gender" />
+   </children>
+</Pane>

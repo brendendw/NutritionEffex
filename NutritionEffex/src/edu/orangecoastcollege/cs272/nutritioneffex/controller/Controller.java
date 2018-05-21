@@ -3,9 +3,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.Predicate;
+
+import edu.orangecoastcollege.cs272.nutritioneffex.model.DBModel;
+import edu.orangecoastcollege.cs272.nutritioneffex.model.User;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,13 +21,14 @@ import javafx.collections.ObservableList;
 public class Controller implements AutoCloseable
 {
 	private static Controller theOne;
-	private Controller() {}
+	//private Controller() {}
 
-	// Constants for the 3 databases
+		// Constants for the 3 databases
 		private DBModel mFoodsDB;
 		private DBModel mPreferencesDB;
 		private DBModel mFavoriteFoodsDB;
 		
+	
 		private ObservableList<Food> mAllFoodsList;
 		private ObservableList<Food> mAllFavoriteFoodsList;
 		private ObservableList<Preference> mAllPreferencesList;
@@ -53,6 +58,173 @@ public class Controller implements AutoCloseable
 																"solid_fats", "added_sugars", "alcohol", "calories", "saturated_fats" };
 		private static final String[] FAVORITES_FIELD_TYPES = { "INTEGER PRIMARY KEY", "TEXT", "TEXT", "REAL", "REAL", "REAL", "REAL", "REAL", "REAL",
 																"REAL", "REAL", "REAL", "REAL" };
+		
+		
+		// ------ BRENDEN ------- \\
+		private ObservableList<String> mAllGendersList;
+		private ObservableList<Integer> mAllAgesList;
+		private ObservableList<User> mAllUsersList;
+
+		// DB Model for users
+		private DBModel mUserDB;
+		private User mCurrentUser;
+
+		private static final String USER_DB = "user_names.db";
+		private static final String USER_TABLE_NAME = "users";
+		private static final String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
+		private static final String[] USER_FIELD_TYPES = {"INTEGER PRIMARY KEY", "TEXT", "TEXT", "INTEGER", "TEXT", "TEXT"};
+				
+		// Age and gender options for ComboBoxes
+		private static final String[] GENDER_TYPES = {"male", "female"};
+		// decided not to add age array for the CB & will just fill with a loop
+		
+		public static Controller getInstance() 
+		{
+			if (theOne == null)
+			{
+				theOne = new Controller();
+				theOne.mAllFoodsList = FXCollections.observableArrayList();
+				theOne.mAllFavoriteFoodsList = FXCollections.observableArrayList();
+				theOne.mAllPreferencesList = FXCollections.observableArrayList();
+				theOne.mAllUsersList = FXCollections.observableArrayList();
+				theOne.mAllOlympiansList = FXCollections.observableArrayList();
+				//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
+				theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
+				try 
+				{
+					
+					// -------------- Create the user table database ------------ \\
+					/*theOne.mUserDB = new DBModel(USER_DB, USER_TABLE_NAME, USER_FIELD_NAMES, USER_FIELD_TYPES);
+					ResultSet usersRS = theOne.mUserDB.getAllRecords();
+					if (usersRS != null)
+					{
+						// USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
+
+						while (usersRS.next())
+						{
+							int userID = Integer.parseInt(USER_FIELD_NAMES[0]);
+							String name = usersRS.getString(USER_FIELD_NAMES[1]);
+							String email = usersRS.getString(USER_FIELD_NAMES[2]);
+							String age = usersRS.getString(USER_FIELD_NAMES[3]);
+							String gender = usersRS.getString(USER_FIELD_NAMES[4]);						
+							theOne.mAllUsersList.add(new User(userID, name, gender, email));
+						}
+						*/
+					theOne.mUserDB = new DBModel(USER_DB, USER_TABLE_NAME, USER_FIELD_NAMES, USER_FIELD_TYPES);
+					ArrayList<ArrayList<String>> usersRS = theOne.mUserDB.getAllRecordsArrayList();
+					for (ArrayList<String> values : usersRS)
+					{
+						int userID = Integer.parseInt(USER_FIELD_NAMES[0]);
+						String name = values.get(1);
+						String email = values.get(2);
+						int age = Integer.parseInt(values.get(3));
+						String gender = values.get(4);					
+						theOne.mAllUsersList.add(new User(userID, name, gender, age, email));
+					}
+					
+					
+					
+					// Create a relationship table between users and their preferences (sean's database)
+					
+						
+					/* ~~~~~~~~~~~~~~~~~~ Dietary Restrictions Databases ~~~~~~~~~~~~~~~~~~~~*/
+						// Create the foods database
+					theOne.mFoodsDB = new DBModel(FOODS_DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
+					theOne.initializeFoodDBFromFile();
+					ResultSet foodRS = theOne.mFoodsDB.getAllRecords();
+					if(foodRS != null)
+					{
+						while(foodRS.next())
+						{
+							int id = foodRS.getInt(FOODS_FIELD_NAMES[0]);
+						    String displayName = foodRS.getString(FOODS_FIELD_NAMES[1]);
+						    String portionDisplay = foodRS.getString(FOODS_FIELD_NAMES[2]);
+						    double vegetables = foodRS.getDouble(FOODS_FIELD_NAMES[3]);
+						    double fruits = foodRS.getDouble(FOODS_FIELD_NAMES[4]);
+						    double milk = foodRS.getDouble(FOODS_FIELD_NAMES[5]);
+						    double meats = foodRS.getDouble(FOODS_FIELD_NAMES[6]);
+						    double soy = foodRS.getDouble(FOODS_FIELD_NAMES[7]);
+						    double solidFats = foodRS.getDouble(FOODS_FIELD_NAMES[8]);
+						    double addedSugars = foodRS.getDouble(FOODS_FIELD_NAMES[9]);
+						    double alcohol = foodRS.getDouble(FOODS_FIELD_NAMES[10]);
+						    double calories = foodRS.getDouble(FOODS_FIELD_NAMES[11]);
+						    double saturatedFats = foodRS.getDouble(FOODS_FIELD_NAMES[12]);
+							theOne.mAllFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
+																meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
+						}
+					}
+						// Create the favorite foods database
+					theOne.mFavoriteFoodsDB = new DBModel(FAVORITES_DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
+					ResultSet favoritesRS = theOne.mFavoriteFoodsDB.getAllRecords();
+					if(favoritesRS != null)
+					{
+						while(favoritesRS.next())
+						{
+							int id = favoritesRS.getInt(FAVORITES_FIELD_NAMES[0]);
+						    String displayName = favoritesRS.getString(FAVORITES_FIELD_NAMES[1]);
+						    String portionDisplay = favoritesRS.getString(FAVORITES_FIELD_NAMES[2]);
+						    double vegetables = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[3]); // no such column 'vegetables'
+						    double fruits = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[4]);
+						    double milk = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[5]);
+						    double meats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[6]);
+						    double soy = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[7]);
+						    double solidFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[8]);
+						    double addedSugars = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[9]);
+						    double alcohol = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[10]);
+						    double calories = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[11]);
+						    double saturatedFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[12]);
+							theOne.mAllFavoriteFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
+																meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
+						}
+					}
+						// Create the user preferences database	
+					theOne.mPreferencesDB = new DBModel(PREFERENCES_DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
+					ResultSet preferencesRS = theOne.mPreferencesDB.getAllRecords();
+					if(preferencesRS != null)
+					{
+						while(preferencesRS.next())
+						{
+							int id = preferencesRS.getInt(PREFERENCES_FIELD_NAMES[0]);
+						    String preference = preferencesRS.getString(PREFERENCES_FIELD_NAMES[1]);
+							theOne.mAllPreferencesList.add(new Preference(id, preference));
+						}
+					}
+					
+					/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
+					//  Add your set up and initialization of the databases and observable lists
+					// Create the olympians database
+					theOne.mOlympiansDB = new DBModel(OLYMPIANS_DB_NAME, OLYMPIANS_TABLE_NAME, OLYMPIANS_FIELD_NAMES, OLYMPIANS_FIELD_TYPES);
+					theOne.initializeFoodDBFromFile();
+					ResultSet olympianRS = theOne.mOlympiansDB.getAllRecords();
+					if(olympianRS != null)
+					{
+						while(olympianRS.next())
+						{
+							int id = olympianRS.getInt(OLYMPIANS_FIELD_NAMES[0]);
+						    String name = olympianRS.getString(OLYMPIANS_FIELD_NAMES[1]);
+						    String age = olympianRS.getString(OLYMPIANS_FIELD_NAMES[2]);
+						    String sport = olympianRS.getString(OLYMPIANS_FIELD_NAMES[3]);
+						    double height = olympianRS.getDouble(OLYMPIANS_FIELD_NAMES[4]);
+						    double weight = olympianRS.getDouble(OLYMPIANS_FIELD_NAMES[5]);
+						    boolean gender = olympianRS.getBoolean(OLYMPIANS_FIELD_NAMES[6]);
+						    
+							theOne.mAllOlympiansList.add(new Olympian(id,name,age,sport,height,weight,gender));
+						}
+						theOne.mFilteredOlympiansList = 
+			                    FXCollections.observableArrayList(theOne.mAllOlympiansList);
+					}
+					
+		
+					/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
+					
+				}
+				catch (SQLException e) 
+				{
+					e.printStackTrace();
+				}
+			}
+			return theOne;
+		}
 
 		// Functions
 		private int initializeFoodDBFromFile() throws SQLException 
@@ -95,6 +267,8 @@ public class Controller implements AutoCloseable
 			}
 			return recordsCreated;
 		}
+		
+		
 		/**
 		 * Returns an ObservableList containing all of the Foods in the foods database.
 		 * @return an ObservableList containing all of the Foods in the foods database
@@ -132,6 +306,30 @@ public class Controller implements AutoCloseable
 												"No Fruits", "No Alcohol");	
 			}
 			return mAllPreferencesCBList;
+		}
+		
+		public ObservableList<String> getAllGenders()
+		{
+			if (mAllGendersList == null)
+			{
+				mAllGendersList = FXCollections.observableArrayList();
+				mAllGendersList.addAll(GENDER_TYPES);
+			}
+			
+			return mAllGendersList;
+		}
+		
+		public ObservableList<Integer> getAllowableAges()
+		{
+			if (mAllAgesList == null)
+			{
+				mAllAgesList = FXCollections.observableArrayList();
+				for (Integer min = 13; min < 60; min++)
+					mAllAgesList.add(min);
+			}
+			return mAllAgesList;
+			
+			
 		}
 		/**
 		 * Adds the chosen preference to the preferences database.
@@ -429,138 +627,100 @@ public class Controller implements AutoCloseable
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ END OF [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
-	public static Controller getInstance() 
-	{
-		if (theOne == null)
-		{
-			theOne = new Controller();
-			theOne.mAllFoodsList = FXCollections.observableArrayList();
-			theOne.mAllFavoriteFoodsList = FXCollections.observableArrayList();
-			theOne.mAllPreferencesList = FXCollections.observableArrayList();
-
-			theOne.mAllOlympiansList = FXCollections.observableArrayList();
-			//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
-			theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
-			try 
-			{
-				/* ~~~~~~~~~~~~~~~~~~ Dietary Restrictions Databases ~~~~~~~~~~~~~~~~~~~~*/
-					// Create the foods database
-				theOne.mFoodsDB = new DBModel(FOODS_DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
-				theOne.initializeFoodDBFromFile();
-				ResultSet foodRS = theOne.mFoodsDB.getAllRecords();
-				if(foodRS != null)
-				{
-					while(foodRS.next())
-					{
-						int id = foodRS.getInt(FOODS_FIELD_NAMES[0]);
-					    String displayName = foodRS.getString(FOODS_FIELD_NAMES[1]);
-					    String portionDisplay = foodRS.getString(FOODS_FIELD_NAMES[2]);
-					    double vegetables = foodRS.getDouble(FOODS_FIELD_NAMES[3]);
-					    double fruits = foodRS.getDouble(FOODS_FIELD_NAMES[4]);
-					    double milk = foodRS.getDouble(FOODS_FIELD_NAMES[5]);
-					    double meats = foodRS.getDouble(FOODS_FIELD_NAMES[6]);
-					    double soy = foodRS.getDouble(FOODS_FIELD_NAMES[7]);
-					    double solidFats = foodRS.getDouble(FOODS_FIELD_NAMES[8]);
-					    double addedSugars = foodRS.getDouble(FOODS_FIELD_NAMES[9]);
-					    double alcohol = foodRS.getDouble(FOODS_FIELD_NAMES[10]);
-					    double calories = foodRS.getDouble(FOODS_FIELD_NAMES[11]);
-					    double saturatedFats = foodRS.getDouble(FOODS_FIELD_NAMES[12]);
-						theOne.mAllFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
-															meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
-					}
-				}
-					// Create the favorite foods database
-				theOne.mFavoriteFoodsDB = new DBModel(FAVORITES_DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
-				ResultSet favoritesRS = theOne.mFavoriteFoodsDB.getAllRecords();
-				if(favoritesRS != null)
-				{
-					while(favoritesRS.next())
-					{
-						int id = favoritesRS.getInt(FAVORITES_FIELD_NAMES[0]);
-					    String displayName = favoritesRS.getString(FAVORITES_FIELD_NAMES[1]);
-					    String portionDisplay = favoritesRS.getString(FAVORITES_FIELD_NAMES[2]);
-					    double vegetables = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[3]); // no such column 'vegetables'
-					    double fruits = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[4]);
-					    double milk = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[5]);
-					    double meats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[6]);
-					    double soy = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[7]);
-					    double solidFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[8]);
-					    double addedSugars = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[9]);
-					    double alcohol = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[10]);
-					    double calories = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[11]);
-					    double saturatedFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[12]);
-						theOne.mAllFavoriteFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
-															meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
-					}
-				}
-					// Create the user preferences database	
-				theOne.mPreferencesDB = new DBModel(PREFERENCES_DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
-				ResultSet preferencesRS = theOne.mPreferencesDB.getAllRecords();
-				if(preferencesRS != null)
-				{
-					while(preferencesRS.next())
-					{
-						int id = preferencesRS.getInt(PREFERENCES_FIELD_NAMES[0]);
-					    String preference = preferencesRS.getString(PREFERENCES_FIELD_NAMES[1]);
-						theOne.mAllPreferencesList.add(new Preference(id, preference));
-					}
-				}
-				
-				/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
-				//  Add your set up and initialization of the databases and observable lists
-				// Create the olympians database
-				theOne.mOlympiansDB = new DBModel(OLYMPIANS_DB_NAME, OLYMPIANS_TABLE_NAME, OLYMPIANS_FIELD_NAMES, OLYMPIANS_FIELD_TYPES);
-				theOne.initializeFoodDBFromFile();
-				ResultSet olympianRS = theOne.mOlympiansDB.getAllRecords();
-				if(olympianRS != null)
-				{
-					while(olympianRS.next())
-					{
-						int id = olympianRS.getInt(OLYMPIANS_FIELD_NAMES[0]);
-					    String name = olympianRS.getString(OLYMPIANS_FIELD_NAMES[1]);
-					    String age = olympianRS.getString(OLYMPIANS_FIELD_NAMES[2]);
-					    String sport = olympianRS.getString(OLYMPIANS_FIELD_NAMES[3]);
-					    double height = olympianRS.getDouble(OLYMPIANS_FIELD_NAMES[4]);
-					    double weight = olympianRS.getDouble(OLYMPIANS_FIELD_NAMES[5]);
-					    boolean gender = olympianRS.getBoolean(OLYMPIANS_FIELD_NAMES[6]);
-					    
-						theOne.mAllOlympiansList.add(new Olympian(id,name,age,sport,height,weight,gender));
-					}
-					theOne.mFilteredOlympiansList = 
-		                    FXCollections.observableArrayList(theOne.mAllOlympiansList);
-				}
-				
 	
-				/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
-				
-			}
-			catch (SQLException e) 
-			{
-				e.printStackTrace();
-			}
-		}
-		return theOne;
-	}
-
 	/* ~~~~~~~~~~~~~~~~~~~~~ DIETARY RESTRICTIONS PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	public ObservableList<Olympian> getAllOlympiansList()
-				{
-				    return mAllOlympiansList;
+	{
+		return mAllOlympiansList;
+	
+	}
+	
+	public ObservableList<Olympian> getFilteredOlympiansList()
+	{
+		return mFilteredOlympiansList;
+	}
+				
+	//Filter method
+	public ObservableList<Olympian> filter(Predicate<Olympian> criteria){
+	//clear filtered list.
+	mFilteredOlympiansList.clear();
+	for(Olympian o : mAllOlympiansList)
+		if(criteria.test(o))
+			mFilteredOlympiansList.add(o);
+	return mFilteredOlympiansList;
+	}
+
+				
+				
+				
+				
+	/* ---------------- SIGNING UP NEW MEMBERS PORTION ------------- */
+	public boolean isValidEmail(String email)
+	{
+		return email.matches(
+				"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+				+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+	}	
+	
+	public String signUpUser(String name, String email, String password, int age, String gender)
+	{
+		if (!isValidEmail(email))
+			return "Email address not valid. Please try a different e-mail";
+		if (theOne.mAllUsersList != null) {
+			for (User u : theOne.mAllUsersList)
+				if (email.equalsIgnoreCase(u.getEmail()))
+					return "E-mail address not available. Please try another. ";
+		}
+		//String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
+
+		String[] values = {name, email, String.valueOf(age), gender, password};
+		
+		try {
+			// mUserDB is null, and stays null--even with this addition of code
+			if (theOne.mUserDB == null) theOne.getInstance();
+			// Store the ID in the database
+			int id = theOne.mUserDB.createRecord(Arrays.copyOfRange(USER_FIELD_NAMES, 1, USER_FIELD_NAMES.length), values);
+			// Set the new user as the current user
+			theOne.mCurrentUser = new User(id, name, gender, age, email);
+			// Add the user to the database
+			theOne.mAllUsersList.add(theOne.mCurrentUser);
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return "Error creating user. Please try again! ";
+		}
+		
+		return "Welcome, " + name + "!";
+		
+	}
+	
+	public String signInUser(String email, String password) {
+		
+		for (User user : theOne.mAllUsersList)
+		{
+			if (user.getEmail().equalsIgnoreCase(email))
+			{
+				// Check the database and retrieve the password 
+				try {
+					// Why is this not returning an array list of strings instead of a result set?
+					ArrayList<ArrayList<String>> userResults = (ArrayList<ArrayList<String>>) theOne.mUserDB.getRecord(String.valueOf(user.getID()));
+					String storedPassword = userResults.get(0).get(5);
+					
+					// Check if the password is correct
+					if (password.equals(storedPassword))
+					{
+						theOne.mCurrentUser = user;
+						return "Success!";
+					}
+					else 
+						break;
+				} catch (SQLException e) {
+					e.printStackTrace();
 				}
-				public ObservableList<Olympian> getFilteredOlympiansList()
-				{
-				    return mFilteredOlympiansList;
-				}
-				//Filter method
-				public ObservableList<Olympian> filter(Predicate<Olympian> criteria){
-				    //clear filtered list.
-				    mFilteredOlympiansList.clear();
-				    for(Olympian o : mAllOlympiansList)
-				        if(criteria.test(o))
-				            mFilteredOlympiansList.add(o);
-				    
-				    return mFilteredOlympiansList;
-				}
+			}
+		}
+		return "Incorrect e-mail or password. Please try again. ";
+	}
+	
 	public void close() throws Exception 
 	{
 		mFoodsDB.close();
@@ -569,4 +729,7 @@ public class Controller implements AutoCloseable
 		
 		mOlympiansDB.close();
 	}
+	
+	
+	
 }

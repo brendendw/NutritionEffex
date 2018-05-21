@@ -4,6 +4,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 /**
  * 
  * @author our names....
@@ -63,6 +64,24 @@ public class DBModel implements AutoCloseable
 		String selectSQL = "SELECT * FROM " + mTableName;
 		return mStmt.executeQuery(selectSQL);
 	}
+	
+	public ArrayList<ArrayList<String>> getAllRecordsArrayList() throws SQLException {
+		try (Connection connection = connectToDB();
+				Statement stmt = connection.createStatement();
+				ResultSet rs = stmt.executeQuery("SELECT * FROM " + mTableName);)
+		{
+			ArrayList<ArrayList<String>> resultsList = new ArrayList<>();
+			while (rs.next())
+			{
+				ArrayList<String> values = new ArrayList<>(mFieldNames.length);
+				for (String field : mFieldNames)
+					values.add(rs.getString(field));
+				resultsList.add(values);
+			}
+			return resultsList;
+		}
+	}
+
 	/**
      * Gets a single record from the database matching a specific primary key.
      *

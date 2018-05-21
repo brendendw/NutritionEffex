@@ -51,6 +51,7 @@ public class LaunchSceneController implements Initializable {
 	public void signUp(MouseEvent event) {
 		signUpButton.setOnMousePressed(e -> signUpButton.setStyle(CLICKED_BUTTON_STYLE));
 		signUpButton.setOnMouseReleased(e -> signUpButton.setStyle(HOVERED_BUTTON_STYLE));
+		ViewNavigator.loadScene("Sign Up", ViewNavigator.SIGN_UP_SCENE);
 	}
 	
 	// Attempting to show background image at start up
