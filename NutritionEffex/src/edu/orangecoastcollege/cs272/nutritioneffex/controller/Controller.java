@@ -678,7 +678,7 @@ public class Controller implements AutoCloseable
 		
 		try {
 			// mUserDB is null, and stays null--even with this addition of code
-			if (theOne.mUserDB == null) theOne.getInstance();
+			// if (theOne.mUserDB == null) theOne.getInstance();
 			// Store the ID in the database
 			int id = theOne.mUserDB.createRecord(Arrays.copyOfRange(USER_FIELD_NAMES, 1, USER_FIELD_NAMES.length), values);
 			// Set the new user as the current user
@@ -721,7 +721,7 @@ public class Controller implements AutoCloseable
 				}
 			}
 		}
-		return "incorrect e-mail/password";
+		return "incorrect login info";
 	}
 	
 	public void logOffUser() {
@@ -729,6 +729,35 @@ public class Controller implements AutoCloseable
 		mCurrentUser = null;
 		ViewNavigator.loadScene("Welcome to NutritionEffex", ViewNavigator.LAUNCH_SCREEN_SCENE);
 		
+	}
+	
+	public boolean updateUserInformation(String name, String email, String password, String gender, int age) {
+		
+		boolean updated = false;
+
+		String[] values = {name, email, String.valueOf(age), gender, password};
+		try {
+			// mUserDB is null, and stays null--even with this addition of code
+			// if (theOne.mUserDB == null) theOne.getInstance();
+			// 
+			updated = theOne.mUserDB.updateRecord(String.valueOf(mCurrentUser.getID()), 
+					Arrays.copyOfRange(USER_FIELD_NAMES, 1, USER_FIELD_NAMES.length), values);
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		if (updated) {
+			mCurrentUser.setEmail(email);
+			mCurrentUser.setAge(age);
+			mCurrentUser.setName(name);
+			mCurrentUser.setGender(gender);
+		}
+		return updated;
+		
+	}
+	
+	public User getCurrentUser() {
+		return mCurrentUser;
 	}
 	
 	public void close() throws Exception 
@@ -739,6 +768,8 @@ public class Controller implements AutoCloseable
 		
 		mOlympiansDB.close();
 	}
+
+	
 	
 	
 	

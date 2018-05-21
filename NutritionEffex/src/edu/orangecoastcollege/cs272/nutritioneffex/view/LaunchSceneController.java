@@ -59,6 +59,7 @@ public class LaunchSceneController extends SeamlessViewFX implements Initializab
 		signUpButton.setStyle(IDLE_BUTTON_STYLE);
 		signUpButton.setOnMouseEntered(e -> signUpButton.setStyle(HOVERED_BUTTON_STYLE));
 		signUpButton.setOnMouseExited(e -> signUpButton.setStyle(IDLE_BUTTON_STYLE));
+		
 		}
 		catch (NullPointerException e) {
 			System.out.println("Transferring scenes");

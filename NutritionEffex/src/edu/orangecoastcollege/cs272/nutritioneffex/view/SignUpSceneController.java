@@ -54,7 +54,7 @@ public class SignUpSceneController extends SeamlessViewFX implements Initializab
 		String gender = (String) genderCB.getSelectionModel().getSelectedItem();
 		int age = ageCB.getSelectionModel().getSelectedIndex() + 13;
 		
-		String result = controller.signUpUser(name, email, password, 24, "male");
+		String result = controller.signUpUser(name, email, password, age, gender);
 		
 		if  (result.equalsIgnoreCase("Success")) {
 			System.out.println(result);

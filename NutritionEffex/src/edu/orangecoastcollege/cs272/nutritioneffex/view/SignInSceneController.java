@@ -4,8 +4,10 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
+import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.TextField;
 
 import javafx.scene.control.Label;
@@ -14,10 +16,13 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.TextAlignment;
+import javafx.util.Duration;
 
 public class SignInSceneController extends SeamlessViewFX implements Initializable {
 	
 	private static Controller controller = Controller.getInstance();
+	public FadeTransition fadeOut = new FadeTransition(Duration.millis(4000));
 
 	@FXML
 	private ImageView backgroundImage;
@@ -38,29 +43,37 @@ public class SignInSceneController extends SeamlessViewFX implements Initializab
 	@FXML
 	public void signIn() {
 		
-		if (emailTF.getText().isEmpty() || passwordPF.getText().isEmpty()) 
-			incorrectInfoLabel.setVisible(true);
+		if (emailTF.getText().isEmpty() || passwordPF.getText().isEmpty()) {
+			
+			fadeOutLabelWithText("incorrect log-in info");
+	    	return;
 		
+		}
 		// Read information from the user
 		String email = emailTF.getText();
 		String password = passwordPF.getText();
 		
-		// If e-mail or password is empty, failed to log in; show error
-		incorrectInfoLabel.setVisible(email.isEmpty() || password.isEmpty());
-		if (incorrectInfoLabel.isVisible()) return;
-		
 		// Attempt to log user in with email & password
 		String result = controller.signInUser(email, password);
 		if (result.equalsIgnoreCase("success"))
-		{
-			// Controller transfers scene
 			return;
-		}
-		incorrectInfoLabel.setVisible(true);
-		incorrectInfoLabel.setText(result);
+		
+		// must be a way so that this doesn't have to be repeated
+		fadeOutLabelWithText(result);
 		
 	}
 	
+	public void fadeOutLabelWithText(String string)
+	{
+		incorrectInfoLabel.setVisible(true);
+		incorrectInfoLabel.setText(string);
+		fadeOut.setNode(incorrectInfoLabel);
+		fadeOut.setFromValue(1.0);
+		fadeOut.setToValue(0.0);
+    	fadeOut.setCycleCount(1);
+    	fadeOut.setAutoReverse(false);
+    	fadeOut.playFromStart();
+	}
 	
 	@FXML
 	public void backToMainMenu()
@@ -95,7 +108,8 @@ public class SignInSceneController extends SeamlessViewFX implements Initializab
 			signInButton.setOnMouseEntered(e -> signInButton.setStyle(HOVERED_BUTTON_STYLE));
 			signInButton.setOnMouseExited(e -> signInButton.setStyle(IDLE_BUTTON_STYLE));
 			incorrectInfoLabel.setVisible(false);
-			
+			incorrectInfoLabel.setAlignment(Pos.CENTER);
+			incorrectInfoLabel.setTextAlignment(TextAlignment.CENTER);
 			emailTF.setOnKeyPressed(e -> deleteBack(e));
 			passwordPF.setOnKeyPressed(e -> enterSignIn(e));
 
