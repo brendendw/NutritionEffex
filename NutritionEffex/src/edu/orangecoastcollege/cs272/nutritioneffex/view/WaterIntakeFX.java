@@ -90,8 +90,7 @@ public class WaterIntakeFX extends Application{
  * number based on how often you work out, since you are 
  * expelling water when you sweat. You should add 12 ounces of 
  * water to your daily total for every 30 minutes that you work
- *  out. So if you work out for 45 minutes 
- * daily, you would add 18 ounces of water to your daily intake.
+ *  out.
  */
 			double weight= Double.parseDouble(mWeightTF.getText());
 		

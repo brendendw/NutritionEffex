@@ -618,7 +618,25 @@ public class Controller implements AutoCloseable
 			return recordsCreated;
 		}
 		
-	
+		//methods for the olympian's scene. 
+		public ObservableList<Olympian> getAllOlympiansList()
+					{
+					    return mAllOlympiansList;
+					}
+					public ObservableList<Olympian> getFilteredOlympiansList()
+					{
+					    return mFilteredOlympiansList;
+					}
+					//Filter method
+					public ObservableList<Olympian> filter(Predicate<Olympian> criteria){
+					    //clear filtered list.
+					    mFilteredOlympiansList.clear();
+					    for(Olympian o : mAllOlympiansList)
+					        if(criteria.test(o))
+					            mFilteredOlympiansList.add(o);
+					    
+					    return mFilteredOlympiansList;
+					}
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ END OF [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
@@ -628,29 +646,6 @@ public class Controller implements AutoCloseable
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ END OF [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~ DIETARY RESTRICTIONS PORTION ~~~~~~~~~~~~~~~~~~~~~ */
-	public ObservableList<Olympian> getAllOlympiansList()
-	{
-		return mAllOlympiansList;
-	
-	}
-	
-	public ObservableList<Olympian> getFilteredOlympiansList()
-	{
-		return mFilteredOlympiansList;
-	}
-				
-	//Filter method
-	public ObservableList<Olympian> filter(Predicate<Olympian> criteria){
-	//clear filtered list.
-	mFilteredOlympiansList.clear();
-	for(Olympian o : mAllOlympiansList)
-		if(criteria.test(o))
-			mFilteredOlympiansList.add(o);
-	return mFilteredOlympiansList;
-	}
-
 				
 				
 				
@@ -730,6 +725,7 @@ public class Controller implements AutoCloseable
 		ViewNavigator.loadScene("Welcome to NutritionEffex", ViewNavigator.LAUNCH_SCREEN_SCENE);
 		
 	}
+//github.com/brendendw/NutritionEffex
 	
 	public boolean updateUserInformation(String name, String email, String password, String gender, int age) {
 		

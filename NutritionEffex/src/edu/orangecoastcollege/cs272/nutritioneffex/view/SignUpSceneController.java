@@ -59,7 +59,7 @@ public class SignUpSceneController extends SeamlessViewFX implements Initializab
 		if  (result.equalsIgnoreCase("Success")) {
 			System.out.println(result);
 			incorrectInfoLabel.setVisible(false);
-			ViewNavigator.loadScene("Main Menu", ViewNavigator.MAIN_MENU_SCENE);
+			ViewNavigator.loadScene("Main Menu", ViewNavigator.ALTERNATE_MAIN_MENU_SCENE);
 			incorrectInfoLabel.setVisible(false);
 			return true;
 		}
