@@ -36,7 +36,7 @@ public class SignInSceneController extends SeamlessViewFX implements Initializab
 
 	// Event Listener on Label[#signInButton].onMouseClicked
 	@FXML
-	public boolean signIn() {
+	public void signIn() {
 		
 		if (emailTF.getText().isEmpty() || passwordPF.getText().isEmpty()) 
 			incorrectInfoLabel.setVisible(true);
@@ -47,18 +47,18 @@ public class SignInSceneController extends SeamlessViewFX implements Initializab
 		
 		// If e-mail or password is empty, failed to log in; show error
 		incorrectInfoLabel.setVisible(email.isEmpty() || password.isEmpty());
-		if (incorrectInfoLabel.isVisible()) return false;
+		if (incorrectInfoLabel.isVisible()) return;
 		
 		// Attempt to log user in with email & password
 		String result = controller.signInUser(email, password);
 		if (result.equalsIgnoreCase("success"))
 		{
 			// Controller transfers scene
-			return true;
+			return;
 		}
 		incorrectInfoLabel.setVisible(true);
 		incorrectInfoLabel.setText(result);
-		return false;
+		
 	}
 	
 	

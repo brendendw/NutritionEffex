@@ -724,6 +724,13 @@ public class Controller implements AutoCloseable
 		return "incorrect e-mail/password";
 	}
 	
+	public void logOffUser() {
+		
+		mCurrentUser = null;
+		ViewNavigator.loadScene("Welcome to NutritionEffex", ViewNavigator.LAUNCH_SCREEN_SCENE);
+		
+	}
+	
 	public void close() throws Exception 
 	{
 		mFoodsDB.close();
