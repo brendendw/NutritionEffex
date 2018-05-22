@@ -13,22 +13,22 @@
 				<Image url="@../../../../../../imgsrc/welcome_background.jpeg" />
 			</image>
 		</ImageView>
-		<Label fx:id="WaterIntakeButton" alignment="CENTER" layoutX="46.0" layoutY="42.0" onMouseClicked="#loadWaterIntakeScene" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.78" prefHeight="146.0" prefWidth="147.0" style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: orange;" text="Water Intake" textAlignment="CENTER" textFill="WHITE">
+		<Label fx:id="WaterIntakeButton" alignment="CENTER" layoutX="46.0" layoutY="42.0" onMouseClicked="#loadWaterIntakeScene" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.78" prefHeight="146.0" prefWidth="147.0" style="-fx-background-radius: 100; -fx-background-color: orange;" text="Water Intake" textAlignment="CENTER" textFill="WHITE">
 			<font>
 				<Font name="Helvetica Neue Bold" size="15.0" />
 			</font>
 		</Label>
-		<Label fx:id="CalorieCalculatorButton" alignment="CENTER" layoutX="222.0" layoutY="42.0" onMouseClicked="#loadCalorieCalculator" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.76" prefHeight="146.0" prefWidth="147.0" style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: indigo;" text="Calorie" textAlignment="CENTER" textFill="WHITE">
+		<Label fx:id="CalorieCalculatorButton" alignment="CENTER" layoutX="222.0" layoutY="42.0" onMouseClicked="#loadCalorieCalculator" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.76" prefHeight="146.0" prefWidth="147.0" style="-fx-background-radius: 100; -fx-background-color: indigo;" text="Calorie" textAlignment="CENTER" textFill="WHITE">
 			<font>
 				<Font name="Helvetica Neue Bold" size="15.0" />
 			</font>
 		</Label>
-		<Label fx:id="BMIButton" alignment="CENTER" layoutX="222.0" layoutY="213.0" onMouseClicked="#loadBMIScene" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.88" prefHeight="146.0" prefWidth="147.0" style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: green;" text="BMI" textAlignment="CENTER" textFill="WHITE">
+		<Label fx:id="BMIButton" alignment="CENTER" layoutX="222.0" layoutY="213.0" onMouseClicked="#loadBMIScene" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.88" prefHeight="146.0" prefWidth="147.0" style="-fx-background-radius: 100; -fx-background-color: green;" text="BMI" textAlignment="CENTER" textFill="WHITE">
 			<font>
 				<Font name="Helvetica Neue Bold" size="15.0" />
 			</font>
 		</Label>
-		<Label fx:id="FitnessButton" alignment="CENTER" layoutX="44.0" layoutY="212.0" onMouseClicked="#loadFitnessOptions" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.81" prefHeight="146.0" prefWidth="147.0" style="-fx-font-weight: light; -fx-background-radius: 100; -fx-background-color: purple;" text="Fitness" textAlignment="CENTER" textFill="WHITE">
+		<Label fx:id="FitnessButton" alignment="CENTER" layoutX="44.0" layoutY="212.0" onMouseClicked="#loadFitnessOptions" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" opacity="0.81" prefHeight="146.0" prefWidth="147.0" style="-fx-background-radius: 100; -fx-background-color: purple;" text="Fitness" textAlignment="CENTER" textFill="WHITE">
 			<font>
 				<Font name="Helvetica Neue Bold" size="15.0" />
 			</font>
