@@ -124,7 +124,7 @@ public class Controller implements AutoCloseable
 				theOne.mAllPreferencesList = FXCollections.observableArrayList();
 				theOne.mAllUsersList = FXCollections.observableArrayList();
 				theOne.mAllOlympiansList = FXCollections.observableArrayList();
-	theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
+				theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
 
 				try 
 				{

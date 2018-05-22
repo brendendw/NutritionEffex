@@ -65,6 +65,8 @@ public class ViewNavigator
 	{
 		try 
 		{
+			// Prevents the view from being resized but allows the size to increase when necessary
+			mainStage.setResizable(false);
 			mainStage.setTitle(title);
 			Scene scene = new Scene(FXMLLoader.load(ViewNavigator.class.getResource(sceneFXML)));
 			mainStage.setScene(scene);
