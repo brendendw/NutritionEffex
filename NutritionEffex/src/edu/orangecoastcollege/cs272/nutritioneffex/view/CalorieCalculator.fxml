@@ -7,6 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?scenebuilder-classpath-element /NutritionEffex/target/classes/edu/orangecoastcollege/cs272/nutritioneffex/view/CalorieCalculatorController.class?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.nutritioneffex.view.CalorieCalculatorController">
    <children>
@@ -15,9 +16,9 @@
             <Image url="@../../../../../welcome_background.jpeg" />
          </image>
       </ImageView>
-      <Label id="signUp" fx:id="calculateButton" alignment="CENTER" layoutX="120.0" layoutY="278.0" onMouseClicked="#calculate" prefHeight="39.0" prefWidth="178.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="calculate" />
-      <TextField id="emailTF" fx:id="weightTF" alignment="CENTER" layoutX="121.0" layoutY="70.0" prefHeight="39.0" prefWidth="178.0" promptText="weight (kg)" />
-      <Label id="incorrectLoginLabel" fx:id="incorrectInfoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="248.0" prefHeight="20.0" prefWidth="178.0" style="-fx-background-color: red; -fx-background-radius: 5;" text="please fill-out all fields" textFill="WHITE" visible="false" />
+      <Label id="signUp" fx:id="calculateButton" alignment="CENTER" layoutX="120.0" layoutY="258.0" onMouseClicked="#calculate" prefHeight="39.0" prefWidth="178.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="calculate" />
+      <TextField id="emailTF" fx:id="weightTF" alignment="CENTER" layoutX="121.0" layoutY="70.0" prefHeight="39.0" prefWidth="178.0" promptText="weight (kg)" text="weight (kg)" />
+      <Label id="incorrectLoginLabel" fx:id="incorrectInfoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="122.0" layoutY="323.0" prefHeight="36.0" prefWidth="178.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="please fill-out all fields" textFill="WHITE" visible="false" />
       <ImageView fx:id="backButton" fitHeight="39.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backToCalculatorMenu" opacity="0.4" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../back.png" />
@@ -25,7 +26,7 @@
       </ImageView>
       <TextField id="passwordTF" fx:id="heightTF" alignment="CENTER" layoutX="120.0" layoutY="131.0" prefHeight="39.0" prefWidth="178.0" promptText="height (cm)" />
       <ComboBox id="genderCB" fx:id="goalWeightCB" layoutX="122.0" layoutY="194.0" prefHeight="39.0" prefWidth="178.0" promptText="your goal weight" />
-      <TextField fx:id="recommendedIntake" alignment="CENTER" editable="false" layoutX="122.0" layoutY="330.0" prefHeight="39.0" prefWidth="178.0" promptText="recommended caloric intake" visible="false">
+      <TextField fx:id="recommendedIntake" alignment="CENTER" editable="false" layoutX="122.0" layoutY="321.0" prefHeight="39.0" prefWidth="178.0" promptText="recommended caloric intake" visible="false">
          <font>
             <Font size="11.0" />
          </font>

@@ -122,6 +122,8 @@ public class CalculatorMenuController extends SeamlessViewFX implements Initiali
 			backButton.setStyle(NORMAL_SCALE);
 			backButton.setOnMouseEntered(e -> backButton.setStyle(SCALE_UP));
 			backButton.setOnMouseExited(e -> backButton.setStyle(NORMAL_SCALE));
+			backButton.setOnMousePressed(e -> backButton.setStyle(NORMAL_SCALE));
+
 			
 		}
 		catch (NullPointerException e) {

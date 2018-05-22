@@ -14,7 +14,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ComboBox;
 
 import javafx.scene.image.ImageView;
-
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
@@ -51,9 +52,9 @@ public class CalorieCalculatorController extends SeamlessViewFX implements Initi
 
 	// Event Listener on Label[#calculateButton].onMouseClicked
 	@FXML
-	public void calculate(MouseEvent event) 
+	public void calculate() 
 	{
-		if (heightTF.getText().isEmpty() || weightTF.getText().isEmpty()) 
+		if (heightTF.getText().isEmpty() || weightTF.getText().isEmpty() || goalWeightCB.getSelectionModel().isEmpty()) 
 		{
 			incorrectInfoLabel.setText("missing fields");
 			incorrectInfoLabel.setVisible(true);
@@ -105,14 +106,26 @@ public class CalorieCalculatorController extends SeamlessViewFX implements Initi
 	@SuppressWarnings("unchecked")
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		
+
 		goalWeightCB.setItems(controller.getGoalWeights());
 		incorrectInfoLabel.setVisible(false);
 		
 		try {
 			backButton.setStyle(NORMAL_SCALE);
 			backButton.setOnMouseEntered(e -> backButton.setStyle(SCALE_UP));
+			backButton.setOnMousePressed(e -> backButton.setStyle(NORMAL_SCALE));
 			backButton.setOnMouseExited(e -> backButton.setStyle(NORMAL_SCALE));
+			
+			calculateButton.setStyle(IDLE_BUTTON_STYLE);
+			calculateButton.setOnMouseEntered(e -> calculateButton.setStyle(HOVERED_BUTTON_STYLE));
+			calculateButton.setOnMouseExited(e -> calculateButton.setStyle(IDLE_BUTTON_STYLE));
+			
+			weightTF.setOnKeyPressed(e -> enterKeyHandler(e));
+			heightTF.setOnKeyPressed(e -> enterKeyHandler(e));
+			goalWeightCB.setOnKeyPressed(e -> submissionKeyListener(e));
+			goalWeightCB.setOnKeyReleased(e -> keyExited(e));
+			weightTF.setOnMouseClicked(e -> highlightText());
+			heightTF.setOnMouseClicked(e -> highlightText());
 			
 		}
 		catch (NullPointerException e) {
@@ -122,6 +135,74 @@ public class CalorieCalculatorController extends SeamlessViewFX implements Initi
 
 		
 	}
-	
 
+
+private void keyExited(KeyEvent e) {
+		// TODO Auto-generated method stub
+		calculateButton.setStyle(IDLE_BUTTON_STYLE);
+		calculate();
+	}
+
+
+private void submissionKeyListener(KeyEvent e) {
+	if (e.getCode() == KeyCode.ENTER) {
+		calculateButton.setStyle(HOVERED_BUTTON_STYLE);
+	}
+}
+
+
+
+	private void highlightText() {
+		// TODO Auto-generated method stub
+		if (heightTF.isFocused()) 
+		{
+			if (heightTF.getText().contains("height (cm)") || heightTF.getText().isEmpty()) heightTF.setText("height (cm)");
+			heightTF.selectAll();
+			if (weightTF.getText().contains("weight (kg)")) weightTF.clear();
+		}
+		
+		
+		else if (weightTF.isFocused()) 
+		{
+			if (weightTF.getText().contains("weight (kg)") || weightTF.getText().isEmpty()) weightTF.setText("weight (kg)");
+			weightTF.selectAll();
+			if (heightTF.getText().contains("height (cm)")) heightTF.clear();
+		}
+	}
+
+
+	private void enterKeyHandler(KeyEvent e) {
+	
+		if (e.getCode() == KeyCode.ENTER || e.getCode() == KeyCode.TAB)
+		{
+			
+			if (weightTF.isFocused())
+			{
+				if (weightTF.getText().contains("weight (kg)") || weightTF.getText().isEmpty())
+				{
+					weightTF.clear();
+					heightTF.setText("height (cm)");
+					
+				}
+				heightTF.requestFocus();
+				return;
+				
+			}
+			else if (heightTF.isFocused())
+			{
+				if (heightTF.getText().contains("height (cm)") || heightTF.getText().isEmpty())
+				{
+					heightTF.clear();
+					
+				}
+				goalWeightCB.requestFocus();
+				return;
+				
+			}
+			else
+			{
+				calculate();
+			}
+		}
+	}
 }

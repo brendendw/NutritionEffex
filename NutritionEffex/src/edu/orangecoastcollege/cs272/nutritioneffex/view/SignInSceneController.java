@@ -107,6 +107,7 @@ public class SignInSceneController extends SeamlessViewFX implements Initializab
 		try {
 			backButton.setStyle(NORMAL_SCALE);
 			backButton.setOnMouseEntered(e -> backButton.setStyle(SCALE_UP));
+			backButton.setOnMousePressed(e -> backButton.setStyle(NORMAL_SCALE));
 			backButton.setOnMouseExited(e -> backButton.setStyle(NORMAL_SCALE));
 			
 			signInButton.setStyle(IDLE_BUTTON_STYLE);

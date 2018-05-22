@@ -86,6 +86,7 @@ public class SignUpSceneController extends SeamlessViewFX implements Initializab
 		try {
 			incorrectInfoLabel.setVisible(false);
 			backButton.setStyle(NORMAL_SCALE);
+			backButton.setOnMousePressed(e -> backButton.setStyle(NORMAL_SCALE));
 			backButton.setOnMouseEntered(e -> backButton.setStyle(SCALE_UP));
 			backButton.setOnMouseExited(e -> backButton.setStyle(NORMAL_SCALE));
 			

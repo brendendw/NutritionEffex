@@ -8,6 +8,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
 
@@ -61,16 +63,22 @@ public class LaunchSceneController extends SeamlessViewFX implements Initializab
 		signInButton.setStyle(IDLE_BUTTON_STYLE);
 		signInButton.setOnMouseEntered(e -> signInButton.setStyle(HOVERED_BUTTON_STYLE));
 		signInButton.setOnMouseExited(e -> signInButton.setStyle(IDLE_BUTTON_STYLE));
+		signInButton.setOnMousePressed(e -> signInButton.setStyle(IDLE_BUTTON_STYLE));
+		
 		signUpButton.setStyle(IDLE_BUTTON_STYLE);
 		signUpButton.setOnMouseEntered(e -> signUpButton.setStyle(HOVERED_BUTTON_STYLE));
+		signUpButton.setOnMousePressed(e -> signUpButton.setStyle(IDLE_BUTTON_STYLE));
 		signUpButton.setOnMouseExited(e -> signUpButton.setStyle(IDLE_BUTTON_STYLE));
 		
+
 		}
 		catch (NullPointerException e) {
 			System.out.println("Transferring scenes");
 		}
 		
 	}
+
+
 	
 	
 }

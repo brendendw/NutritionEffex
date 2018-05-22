@@ -145,6 +145,7 @@ public class AccountSettingsController extends SeamlessViewFX implements Initial
 		try {
 			backButton.setStyle(NORMAL_SCALE);
 			backButton.setOnMouseEntered(e -> backButton.setStyle(SCALE_UP));
+			backButton.setOnMousePressed(e -> backButton.setStyle(NORMAL_SCALE));
 			backButton.setOnMouseExited(e -> backButton.setStyle(NORMAL_SCALE));
 			
 			saveButton.setStyle(IDLE_BUTTON_STYLE);
