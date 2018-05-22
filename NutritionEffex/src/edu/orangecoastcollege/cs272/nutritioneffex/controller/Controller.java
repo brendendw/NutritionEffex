@@ -40,6 +40,7 @@ public class Controller implements AutoCloseable
 		private ObservableList<String> mAllPreferencesCBList;
 		
 		
+		
 		private static final String PREFERENCES_DB_NAME = "dietary_preferences.db";
 		private static final String FOODS_DB_NAME = "foods.db";
 		private static final String FAVORITES_DB_NAME = "favorite_foods.db";
@@ -128,9 +129,8 @@ public class Controller implements AutoCloseable
 				theOne.mAllPreferencesList = FXCollections.observableArrayList();
 				theOne.mAllUsersList = FXCollections.observableArrayList();
 				theOne.mAllOlympiansList = FXCollections.observableArrayList();
-				//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
-				// A: Yes otherwise they will throw NullPtrException when trying to add them later in this method
-				theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
+	theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
+
 				try 
 				{
 					
@@ -234,8 +234,10 @@ public class Controller implements AutoCloseable
 					/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
 					//  Add your set up and initialization of the databases and observable lists
 					// Create the olympians database
+					
+					
 					theOne.mOlympiansDB = new DBModel(OLYMPIANS_DB_NAME, OLYMPIANS_TABLE_NAME, OLYMPIANS_FIELD_NAMES, OLYMPIANS_FIELD_TYPES);
-					theOne.initializeFoodDBFromFile();
+					theOne.initializeOlympianDBFromFile();
 					ResultSet olympianRS = theOne.mOlympiansDB.getAllRecords();
 					if(olympianRS != null)
 					{
@@ -257,6 +259,8 @@ public class Controller implements AutoCloseable
 					
 		
 					/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
+					
+					
 					
 				}
 				catch (SQLException e) 
@@ -619,11 +623,17 @@ public class Controller implements AutoCloseable
 	// Constants for the 3 databases
 		private DBModel mOlympiansDB;
 		
+		private DBModel mWorkoutsDB;
+		
 		private ObservableList<Olympian> mAllOlympiansList;
 		private ObservableList<Olympian> mFilteredOlympiansList;
+		
+		private ObservableList<Workout> mWorkoutsList;
 
 		
 		private static final String OLYMPIANS_DB_NAME = "olympians.db";
+		
+		private static final String WORKOUTS_DB_NAME = "workouts.db";
 
 		// Olympians Database
 		private static final String OLYMPIANS_TABLE_NAME = "olympians";
@@ -631,11 +641,17 @@ public class Controller implements AutoCloseable
 		private static final String[] OLYMPIANS_FIELD_TYPES = { "INTEGER PRIMARY KEY", "TEXT","TEXT", "REAL", "REAL", "INTEGER"};
 		private static final String OLYMPIANS_DATA_FILE = "athletes.csv";
 
+		//Workouts Database
+		private static final String WORKOUTS_TABLE_NAME = "workouts";
+		private static final String[] WORKOUTS_FIELD_NAMES = { "_id", "workouttype","duration","date"};
+		private static final String[] WORKOUTS_FIELD_TYPES = { "INTEGER PRIMARY KEY", "TEXT","TEXT", "TEXT"};
+
+		
 		
 		private int initializeOlympianDBFromFile() throws SQLException 
 		{
 			int recordsCreated = 0;
-			if (theOne.mFoodsDB.getRecordCount() > 0)
+			if (theOne.mOlympiansDB.getRecordCount() > 0)
 				return recordsCreated;
 
 			try 
@@ -673,12 +689,12 @@ public class Controller implements AutoCloseable
 					{
 					    return mAllOlympiansList;
 					}
-					public ObservableList<Olympian> getFilteredOlympiansList()
+		public ObservableList<Olympian> getFilteredOlympiansList()
 					{
 					    return mFilteredOlympiansList;
 					}
-					//Filter method
-					public ObservableList<Olympian> filter(Predicate<Olympian> criteria){
+		//Filter method for olympians
+		public ObservableList<Olympian> filterathlete(Predicate<Olympian> criteria){
 					    //clear filtered list.
 					    mFilteredOlympiansList.clear();
 					    for(Olympian o : mAllOlympiansList)
@@ -688,7 +704,7 @@ public class Controller implements AutoCloseable
 					    return mFilteredOlympiansList;
 					}
 	
-	/* ~~~~~~~~~~~~~~~~~~~~~ END OF [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
+	/* ~~~~~~~~~~~~~~~~~~~~~ END OF OLMPIAN Mat PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	

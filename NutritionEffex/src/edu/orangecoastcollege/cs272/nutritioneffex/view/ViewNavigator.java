@@ -22,12 +22,18 @@ public class ViewNavigator
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ [  Sydney's Scenes ] ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	//public static final String MAIN_MENU_SCENE = "MainMenuScene.fxml";
 	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedFX.java";
-	public static final String BMI_CALCULATOR_SCENE = "BMICalculatorScene.fxml";
-	public static final String DAILY_WATER_INTAKE_SCENE = "WaterIntakeFX.java";
-	public static final String OLYMPIC_POTENTIAL_SCENE = "OlympicAthleteFX.fxml";
+	//I also made a .fxml file for Caloriesburned but it is not functioning.
+													//"CaloriesBurnedCalculator.fxml"
+	public static final String BMI_CALCULATOR_SCENE = "BMICalculatorScene.fxml";//done
+	public static final String DAILY_WATER_INTAKE_SCENE = "WaterIntakeCalculatorScene.fxml";//done
+	public static final String OLYMPIC_POTENTIAL_SCENE = "OlympicAthleteFX.java";
+	//I created a .fxml file for the OLYmpic Potential, but it is not functioning.
+												//"OlympicAthleticPotentialScene.fxml"
+	
+	public static final String FITNESS_TRANSITION_SCENE = "FitnessTransitionScene.fxml";
+	
 	public static final String WORKOUT_LOG_SCENE = "WorkoutLogFX.java";
-
-
+	
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ [ Brenden's Scenes] ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	public static final String LAUNCH_SCREEN_SCENE = "LaunchScene.fxml";
 	public static final String CALCULATOR_MENU_SCENE = "CalculatorMenu.fxml"; // Sydney did this one as well
