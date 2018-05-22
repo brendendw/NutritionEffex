@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.ResourceBundle;
 import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
+import edu.orangecoastcollege.cs272.nutritioneffex.view.ViewNavigator;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ListView;
 import javafx.scene.control.CheckBox;
