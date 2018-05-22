@@ -16,7 +16,7 @@
       </ImageView>
       <Label id="signIn" fx:id="signInButton" alignment="CENTER" layoutX="132.0" layoutY="307.0" onMouseClicked="#signIn" prefHeight="39.0" prefWidth="156.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="sign-in" />
       <TextField fx:id="emailTF" alignment="CENTER" layoutX="132.0" layoutY="134.0" prefHeight="39.0" prefWidth="156.0" promptText="e-mail" />
-      <Label id="incorrectLoginLabel" fx:id="incorrectInfoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="263.0" style="-fx-background-color: black;" text="incorrect log-in info. please try again" textFill="WHITE" visible="false" />
+      <Label id="incorrectLoginLabel" fx:id="incorrectInfoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="263.0" prefHeight="19.0" prefWidth="156.0" style="-fx-background-color: red; -fx-background-radius: 5;" text="incorrect log-in info" textAlignment="CENTER" textFill="WHITE" visible="false" />
       <ImageView fx:id="backButton" fitHeight="39.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backToMainMenu" opacity="0.4" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../back.png" />

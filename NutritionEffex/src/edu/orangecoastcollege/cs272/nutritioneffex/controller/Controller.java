@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.Predicate;
+
 import edu.orangecoastcollege.cs272.nutritioneffex.model.DBModel;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.User;
 import edu.orangecoastcollege.cs272.nutritioneffex.view.ViewNavigator;
@@ -17,13 +18,14 @@ import javafx.collections.ObservableList;
  * This class represents the Controller for our application.
  * It is responsible for setting up and initializing most of the
  * lists and databases, as well as provided methods to be used elsewhere.
- * @author Sean Dowdle, . . .
+ * @author Sean Dowdle
+ * @author Brenden Williams
+ * @author Sydney Gentile
  *
  */
 public class Controller implements AutoCloseable
 {
 	private static Controller theOne;
-	//private Controller() {}
 
 		/* ------------------- Sean ------------------*/
 		// Constants for the 3 databases
@@ -31,6 +33,7 @@ public class Controller implements AutoCloseable
 		private DBModel mPreferencesDB;
 		private DBModel mFavoriteFoodsDB;
 		
+	
 		private ObservableList<Food> mAllFoodsList;
 		private ObservableList<Food> mAllFavoriteFoodsList;
 		private ObservableList<Preference> mAllPreferencesList;
@@ -63,23 +66,58 @@ public class Controller implements AutoCloseable
 																"REAL", "REAL", "REAL", "REAL" };
 		
 		
-		// ------ BRENDEN ------- \\
-		private ObservableList<String> mAllGendersList;
-		private ObservableList<Integer> mAllAgesList;
-		private ObservableList<User> mAllUsersList;
+		/**
+		 *  @author brendendrew
+		 *  Three databases:
+		 *  	1) User database to store new users or access existing users
+		 *  	2) Relational caloric database to save recommended calorie intake for particular users
+		 *  	3) Relational user preferences database  to save intake for particular users
+		 */
+		
 
-		// DB Model for users
+		// User database
 		private DBModel mUserDB;
-		private User mCurrentUser;
-
 		private static final String USER_DB = "user_names.db";
 		private static final String USER_TABLE_NAME = "users";
 		private static final String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
 		private static final String[] USER_FIELD_TYPES = {"INTEGER PRIMARY KEY", "TEXT", "TEXT", "INTEGER", "TEXT", "TEXT"};
-				
-		// Age and gender options for ComboBoxes
+		
+		// Relational caloric database
+		private DBModel mCaloricTrackerDB;
+		private static final String CALORIC_DB = "caloric_tracker.db";
+		private static final String CALORIC_TABLE_NAME = "calories";
+		private static final String[] CALORIC_FIELD_NAMES = {"_id", "userID", "rec_calories"};
+		private static final String[] CALORIC_FIELD_TYPES = {"INTEGER PRIMARY KEY", "INTEGER", "REAL" };
+		
+		// Relational user preferences database
+		private DBModel mUserPreferencesDB;
+		private static final String USER_PREF_DB = "user_preferences.db";
+		private static final String USER_PREF_TABLE_NAME = "preferences";
+		private static final String[] USER_PREF_FIELD_NAMES = {"_id", "userID", "preference"};
+		private static final String[] USER_PREF_FIELD_TYPES = {"INTEGER PRIMARY KEY", "INTEGER", "TEXT" };
+		
+		/**
+		 *  @author brendendrew
+		 *  ObservableLists to be used to fill ComboBoxes
+		 *  String arrays to store information that will fill ComboBoxes
+		 *  mCurrentUser to be able to access current users information
+		 */
+		private ObservableList<String> mAllGendersList;
+		private ObservableList<Integer> mAllAgesList;
+		private ObservableList<User> mAllUsersList;
+		private ObservableList<String> mAllGoalWeightsList;
+		
 		private static final String[] GENDER_TYPES = {"male", "female"};
-		// decided not to add age array for the CB & will just fill with a loop
+		private static final String[] GOAL_WEIGHTS = {"lose weight", "gain weight", "maintain"};
+		
+		private User mCurrentUser;
+						
+				
+		/**
+		 * @end of code by
+		 * @author brendendrew
+		 */
+		
 		
 		public static Controller getInstance() 
 		{
@@ -136,67 +174,67 @@ public class Controller implements AutoCloseable
 					
 						
 					/* ~~~~~~~~~~~~~~~~~~ Dietary Restrictions Databases ~~~~~~~~~~~~~~~~~~~~*/
-					// Create the foods database
-				theOne.mFoodsDB = new DBModel(FOODS_DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
-				theOne.initializeFoodDBFromFile();
-				ResultSet foodRS = theOne.mFoodsDB.getAllRecords();
-				if(foodRS != null)
-				{
-					while(foodRS.next())
+						// Create the foods database
+					theOne.mFoodsDB = new DBModel(FOODS_DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
+					theOne.initializeFoodDBFromFile();
+					ResultSet foodRS = theOne.mFoodsDB.getAllRecords();
+					if(foodRS != null)
 					{
-						int id = foodRS.getInt(FOODS_FIELD_NAMES[0]);
-					    String displayName = foodRS.getString(FOODS_FIELD_NAMES[1]);
-					    String portionDisplay = foodRS.getString(FOODS_FIELD_NAMES[2]);
-					    double vegetables = foodRS.getDouble(FOODS_FIELD_NAMES[3]);
-					    double fruits = foodRS.getDouble(FOODS_FIELD_NAMES[4]);
-					    double milk = foodRS.getDouble(FOODS_FIELD_NAMES[5]);
-					    double meats = foodRS.getDouble(FOODS_FIELD_NAMES[6]);
-					    double soy = foodRS.getDouble(FOODS_FIELD_NAMES[7]);
-					    double solidFats = foodRS.getDouble(FOODS_FIELD_NAMES[8]);
-					    double addedSugars = foodRS.getDouble(FOODS_FIELD_NAMES[9]);
-					    double alcohol = foodRS.getDouble(FOODS_FIELD_NAMES[10]);
-					    double calories = foodRS.getDouble(FOODS_FIELD_NAMES[11]);
-					    double saturatedFats = foodRS.getDouble(FOODS_FIELD_NAMES[12]);
-						theOne.mAllFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
-															meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
+						while(foodRS.next())
+						{
+							int id = foodRS.getInt(FOODS_FIELD_NAMES[0]);
+						    String displayName = foodRS.getString(FOODS_FIELD_NAMES[1]);
+						    String portionDisplay = foodRS.getString(FOODS_FIELD_NAMES[2]);
+						    double vegetables = foodRS.getDouble(FOODS_FIELD_NAMES[3]);
+						    double fruits = foodRS.getDouble(FOODS_FIELD_NAMES[4]);
+						    double milk = foodRS.getDouble(FOODS_FIELD_NAMES[5]);
+						    double meats = foodRS.getDouble(FOODS_FIELD_NAMES[6]);
+						    double soy = foodRS.getDouble(FOODS_FIELD_NAMES[7]);
+						    double solidFats = foodRS.getDouble(FOODS_FIELD_NAMES[8]);
+						    double addedSugars = foodRS.getDouble(FOODS_FIELD_NAMES[9]);
+						    double alcohol = foodRS.getDouble(FOODS_FIELD_NAMES[10]);
+						    double calories = foodRS.getDouble(FOODS_FIELD_NAMES[11]);
+						    double saturatedFats = foodRS.getDouble(FOODS_FIELD_NAMES[12]);
+							theOne.mAllFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
+																meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
+						}
 					}
-				}
-					// Create the favorite foods database
-				theOne.mFavoriteFoodsDB = new DBModel(FAVORITES_DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
-				ResultSet favoritesRS = theOne.mFavoriteFoodsDB.getAllRecords();
-				if(favoritesRS != null)
-				{
-					while(favoritesRS.next())
+						// Create the favorite foods database
+					theOne.mFavoriteFoodsDB = new DBModel(FAVORITES_DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
+					ResultSet favoritesRS = theOne.mFavoriteFoodsDB.getAllRecords();
+					if(favoritesRS != null)
 					{
-						int id = favoritesRS.getInt(FAVORITES_FIELD_NAMES[0]);
-					    String displayName = favoritesRS.getString(FAVORITES_FIELD_NAMES[1]);
-					    String portionDisplay = favoritesRS.getString(FAVORITES_FIELD_NAMES[2]);
-					    double vegetables = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[3]);
-					    double fruits = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[4]);
-					    double milk = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[5]);
-					    double meats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[6]);
-					    double soy = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[7]);
-					    double solidFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[8]);
-					    double addedSugars = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[9]);
-					    double alcohol = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[10]);
-					    double calories = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[11]);
-					    double saturatedFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[12]);
-						theOne.mAllFavoriteFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
-															meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
+						while(favoritesRS.next())
+						{
+							int id = favoritesRS.getInt(FAVORITES_FIELD_NAMES[0]);
+						    String displayName = favoritesRS.getString(FAVORITES_FIELD_NAMES[1]);
+						    String portionDisplay = favoritesRS.getString(FAVORITES_FIELD_NAMES[2]);
+						    double vegetables = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[3]); // no such column 'vegetables'
+						    double fruits = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[4]);
+						    double milk = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[5]);
+						    double meats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[6]);
+						    double soy = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[7]);
+						    double solidFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[8]);
+						    double addedSugars = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[9]);
+						    double alcohol = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[10]);
+						    double calories = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[11]);
+						    double saturatedFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[12]);
+							theOne.mAllFavoriteFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
+																meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
+						}
 					}
-				}
-					// Create the user preferences database	
-				theOne.mPreferencesDB = new DBModel(PREFERENCES_DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
-				ResultSet preferencesRS = theOne.mPreferencesDB.getAllRecords();
-				if(preferencesRS != null)
-				{
-					while(preferencesRS.next())
+						// Create the user preferences database	
+					theOne.mPreferencesDB = new DBModel(PREFERENCES_DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
+					ResultSet preferencesRS = theOne.mPreferencesDB.getAllRecords();
+					if(preferencesRS != null)
 					{
-						int id = preferencesRS.getInt(PREFERENCES_FIELD_NAMES[0]);
-					    String preference = preferencesRS.getString(PREFERENCES_FIELD_NAMES[1]);
-						theOne.mAllPreferencesList.add(new Preference(id, preference));
+						while(preferencesRS.next())
+						{
+							int id = preferencesRS.getInt(PREFERENCES_FIELD_NAMES[0]);
+						    String preference = preferencesRS.getString(PREFERENCES_FIELD_NAMES[1]);
+							theOne.mAllPreferencesList.add(new Preference(id, preference));
+						}
 					}
-				}
 					
 					/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
 					//  Add your set up and initialization of the databases and observable lists
@@ -238,7 +276,6 @@ public class Controller implements AutoCloseable
 			return theOne;
 		}
 
-		/* --------------- Sean's Functions ------------------------*/
 		// Functions
 		private int initializeFoodDBFromFile() throws SQLException 
 		{
@@ -256,7 +293,7 @@ public class Controller implements AutoCloseable
 				{
 					String[] data = fileScanner.nextLine().split(",");
 					String[] values = new String[FOODS_FIELD_NAMES.length - 1];
-					values[0] = data[1]; // name 
+					values[0] = data[1]; // name [ Array Index out of bounds 1 ]
 					values[1] = data[4]; // portion 
 					values[2] = data[10]; // vegetables
 					values[3] = data[15]; // fruits
@@ -280,6 +317,8 @@ public class Controller implements AutoCloseable
 			}
 			return recordsCreated;
 		}
+		
+		
 		/**
 		 * Returns an ObservableList containing all of the Foods in the foods database.
 		 * @return an ObservableList containing all of the Foods in the foods database
@@ -317,6 +356,40 @@ public class Controller implements AutoCloseable
 												"No Fruits", "No Alcohol");	
 			}
 			return mAllPreferencesCBList;
+		}
+		
+		public ObservableList<String> getAllGenders()
+		{
+			if (mAllGendersList == null)
+			{
+				mAllGendersList = FXCollections.observableArrayList();
+				mAllGendersList.addAll(GENDER_TYPES);
+			}
+			
+			return mAllGendersList;
+		}
+		
+		public ObservableList<String> getGoalWeights()
+		{
+			if (mAllGoalWeightsList == null)
+			{
+				mAllGoalWeightsList = FXCollections.observableArrayList();
+				mAllGoalWeightsList.addAll(GOAL_WEIGHTS);
+			}
+			return mAllGoalWeightsList;
+		}
+		
+		public ObservableList<Integer> getAllowableAges()
+		{
+			if (mAllAgesList == null)
+			{
+				mAllAgesList = FXCollections.observableArrayList();
+				for (Integer min = 13; min < 60; min++)
+					mAllAgesList.add(min);
+			}
+			return mAllAgesList;
+			
+			
 		}
 		/**
 		 * Adds the chosen preference to the preferences database.
@@ -548,6 +621,8 @@ public class Controller implements AutoCloseable
 			return filteredFoodsList;
 		}
 	
+	/* ~~~~~~~~~~~~~~~~~~~~~ END OF DIETARY RESTRICTIONS PORTION ~~~~~~~~~~~~~~~~~~~~~ */
+	
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	// Constants for the 3 databases
@@ -614,7 +689,7 @@ public class Controller implements AutoCloseable
 			return recordsCreated;
 		}
 		
-		//methods for the olympian's scene. 
+		// methods for the olympian's scene. 
 		public ObservableList<Olympian> getAllOlympiansList()
 					{
 					    return mAllOlympiansList;
@@ -654,6 +729,17 @@ public class Controller implements AutoCloseable
 				+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 	}	
 	
+	/**
+	 * @author brendendrew
+	 * Signs up a new user and stores their information into the user database.
+	 * @param name of user
+	 * @param email of user
+	 * @param password of user
+	 * @param age of user
+	 * @param gender of user
+	 * @return Code to be displayed if there is an error or not.
+	 * 
+	 */
 	public String signUpUser(String name, String email, String password, int age, String gender)
 	{
 		if (!isValidEmail(email))
@@ -663,13 +749,12 @@ public class Controller implements AutoCloseable
 				if (email.equalsIgnoreCase(u.getEmail()))
 					return "please try a different e-mail ";
 		}
-		//String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
+		
 
 		String[] values = {name, email, String.valueOf(age), gender, password};
 		
 		try {
-			// mUserDB is null, and stays null--even with this addition of code
-			if (theOne.mUserDB == null) theOne.getInstance();
+	
 			// Store the ID in the database
 			int id = theOne.mUserDB.createRecord(Arrays.copyOfRange(USER_FIELD_NAMES, 1, USER_FIELD_NAMES.length), values);
 			// Set the new user as the current user
@@ -685,6 +770,13 @@ public class Controller implements AutoCloseable
 		
 	}
 	
+	/**
+	 * @author brendendrew
+	 * Signs in a current user if their information is stored in the database.
+	 * @param email -
+	 * @param password -
+	 * @return Code to be displayed if an error goes wrong or if there is no error
+	 */
 	public String signInUser(String email, String password) {
 		
 		for (User user : theOne.mAllUsersList)
@@ -712,16 +804,113 @@ public class Controller implements AutoCloseable
 				}
 			}
 		}
-		return "incorrect e-mail/password";
+		return "incorrect login info";
 	}
 	
+	/**
+	 * @author brendendrew
+	 * Logs the current user off of the application.
+	 */
 	public void logOffUser() {
 		
 		mCurrentUser = null;
 		ViewNavigator.loadScene("Welcome to NutritionEffex", ViewNavigator.LAUNCH_SCREEN_SCENE);
 		
 	}
-//github.com/brendendw/NutritionEffex
+	
+	/**
+	 * @author brendendrew
+	 * Updates user information in the user database.
+	 * @param name of user
+	 * @param email of user
+	 * @param password of user
+	 * @param gender of user
+	 * @param age of user
+	 * @return true if the information is updated
+	 */
+	public boolean updateUserInformation(String name, String email, String password, String gender, int age) {
+		
+		boolean updated = false;
+
+		String[] values = {name, email, String.valueOf(age), gender, password};
+		try {
+			// mUserDB is null, and stays null--even with this addition of code
+			// if (theOne.mUserDB == null) theOne.getInstance();
+			// 
+			updated = theOne.mUserDB.updateRecord(String.valueOf(mCurrentUser.getID()), 
+					Arrays.copyOfRange(USER_FIELD_NAMES, 1, USER_FIELD_NAMES.length), values);
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		if (updated) {
+			mCurrentUser.setEmail(email);
+			mCurrentUser.setAge(age);
+			mCurrentUser.setName(name);
+			mCurrentUser.setGender(gender);
+		}
+		return updated;
+		
+	}
+	
+	/**
+	 * Adds the recommended intake from the calorie calculator to a relational database so that different
+	 * users are able to keep track of their individual daily calorie goals.
+	 * @author brendendrew
+	 * @param recommendedIntake
+	 */
+	public void addCaloricIntake(double recommendedIntake)
+	{
+		
+		String[] values = { String.valueOf(theOne.mCurrentUser.getID()), String.valueOf(recommendedIntake)};
+
+		try {
+			
+			if (theOne.mCaloricTrackerDB == null) 
+				theOne.mCaloricTrackerDB = new DBModel(CALORIC_DB, CALORIC_TABLE_NAME, CALORIC_FIELD_NAMES, CALORIC_FIELD_TYPES);
+			
+			theOne.mCaloricTrackerDB.createRecord(CALORIC_FIELD_NAMES, values);
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	/**
+	 * 
+	 * Adds user preferences to a relational database so that different users are able to store different
+	 * preferences.
+	 * @author brendendrew
+	 * @param preference the input preference to be added to the relational database
+	 */
+	public void addUserPreferences(String preference)
+	{
+		String[] values = { String.valueOf(theOne.mCurrentUser.getID()), preference};
+
+		try {
+			if (theOne.mUserPreferencesDB == null) 
+				theOne.mUserPreferencesDB = new DBModel(USER_PREF_DB, USER_PREF_TABLE_NAME, USER_PREF_FIELD_NAMES, USER_PREF_FIELD_TYPES);
+			
+			theOne.mCaloricTrackerDB.createRecord(USER_PREF_FIELD_NAMES, values);
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	/**
+	 * @author brendendrew
+	 * @return the current user logged into the application.
+	 */
+	public User getCurrentUser() {
+		return mCurrentUser;
+	}
 	
 	public void close() throws Exception 
 	{
@@ -731,6 +920,8 @@ public class Controller implements AutoCloseable
 		
 		mOlympiansDB.close();
 	}
+
+	
 	
 	
 	

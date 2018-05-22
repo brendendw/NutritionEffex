@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 /**
  * 
- * @author our names....
  *
  */
 public class DBModel implements AutoCloseable 

@@ -11,6 +11,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 
+/**
+ * 
+ * @author brendendrew
+ * Screen that is showed at launch. Allows the user to select between sign-up and sign-in.
+ */
 public class LaunchSceneController extends SeamlessViewFX implements Initializable {
 	@FXML
 	private Label signInButton;
@@ -59,6 +64,7 @@ public class LaunchSceneController extends SeamlessViewFX implements Initializab
 		signUpButton.setStyle(IDLE_BUTTON_STYLE);
 		signUpButton.setOnMouseEntered(e -> signUpButton.setStyle(HOVERED_BUTTON_STYLE));
 		signUpButton.setOnMouseExited(e -> signUpButton.setStyle(IDLE_BUTTON_STYLE));
+		
 		}
 		catch (NullPointerException e) {
 			System.out.println("Transferring scenes");
