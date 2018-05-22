@@ -129,13 +129,8 @@ public class Controller implements AutoCloseable
 				theOne.mAllPreferencesList = FXCollections.observableArrayList();
 				theOne.mAllUsersList = FXCollections.observableArrayList();
 				theOne.mAllOlympiansList = FXCollections.observableArrayList();
-				//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
-<<<<<<< HEAD
-				//theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
-=======
-				// A: Yes otherwise they will throw NullPtrException when trying to add them later in this method
-				theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
->>>>>>> branch 'master' of https://github.com/brendendw/NutritionEffex
+	theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
+
 				try 
 				{
 					
