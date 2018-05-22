@@ -15,8 +15,10 @@ import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 /**
- * 
- * @author our names here...
+ * This class represents the Controller for our application.
+ * It is responsible for setting up and initializing most of the
+ * lists and databases, as well as provided methods to be used elsewhere.
+ * @author Sean Dowdle, . . .
  *
  */
 public class Controller implements AutoCloseable
@@ -24,6 +26,7 @@ public class Controller implements AutoCloseable
 	private static Controller theOne;
 	//private Controller() {}
 
+		/* ------------------- Sean ------------------*/
 		// Constants for the 3 databases
 		private DBModel mFoodsDB;
 		private DBModel mPreferencesDB;
@@ -125,8 +128,8 @@ public class Controller implements AutoCloseable
 				theOne.mAllUsersList = FXCollections.observableArrayList();
 				theOne.mAllOlympiansList = FXCollections.observableArrayList();
 				//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
+				// A: Yes otherwise they will throw NullPtrException when trying to add them later in this method
 				theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
-				
 				try 
 				{
 					
