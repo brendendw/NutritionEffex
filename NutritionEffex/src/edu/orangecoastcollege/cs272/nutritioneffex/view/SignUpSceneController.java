@@ -18,6 +18,7 @@ import javafx.scene.input.MouseEvent;
 
 /**
  * Allows the user to sign up to be a member of NutritionFX.
+ * 
  * @author brendendrew
  *
  */
