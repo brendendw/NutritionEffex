@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.Predicate;
-
 import edu.orangecoastcollege.cs272.nutritioneffex.model.DBModel;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.User;
 import edu.orangecoastcollege.cs272.nutritioneffex.view.ViewNavigator;
@@ -15,8 +14,10 @@ import edu.orangecoastcollege.cs272.nutritioneffex.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 /**
- * 
- * @author our names here...
+ * This class represents the Controller for our application.
+ * It is responsible for setting up and initializing most of the
+ * lists and databases, as well as provided methods to be used elsewhere.
+ * @author Sean Dowdle, . . .
  *
  */
 public class Controller implements AutoCloseable
@@ -24,12 +25,12 @@ public class Controller implements AutoCloseable
 	private static Controller theOne;
 	//private Controller() {}
 
+		/* ------------------- Sean ------------------*/
 		// Constants for the 3 databases
 		private DBModel mFoodsDB;
 		private DBModel mPreferencesDB;
 		private DBModel mFavoriteFoodsDB;
 		
-	
 		private ObservableList<Food> mAllFoodsList;
 		private ObservableList<Food> mAllFavoriteFoodsList;
 		private ObservableList<Preference> mAllPreferencesList;
@@ -90,6 +91,7 @@ public class Controller implements AutoCloseable
 				theOne.mAllUsersList = FXCollections.observableArrayList();
 				theOne.mAllOlympiansList = FXCollections.observableArrayList();
 				//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
+				// A: Yes otherwise they will throw NullPtrException when trying to add them later in this method
 				theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
 				try 
 				{
@@ -129,67 +131,67 @@ public class Controller implements AutoCloseable
 					
 						
 					/* ~~~~~~~~~~~~~~~~~~ Dietary Restrictions Databases ~~~~~~~~~~~~~~~~~~~~*/
-						// Create the foods database
-					theOne.mFoodsDB = new DBModel(FOODS_DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
-					theOne.initializeFoodDBFromFile();
-					ResultSet foodRS = theOne.mFoodsDB.getAllRecords();
-					if(foodRS != null)
+					// Create the foods database
+				theOne.mFoodsDB = new DBModel(FOODS_DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
+				theOne.initializeFoodDBFromFile();
+				ResultSet foodRS = theOne.mFoodsDB.getAllRecords();
+				if(foodRS != null)
+				{
+					while(foodRS.next())
 					{
-						while(foodRS.next())
-						{
-							int id = foodRS.getInt(FOODS_FIELD_NAMES[0]);
-						    String displayName = foodRS.getString(FOODS_FIELD_NAMES[1]);
-						    String portionDisplay = foodRS.getString(FOODS_FIELD_NAMES[2]);
-						    double vegetables = foodRS.getDouble(FOODS_FIELD_NAMES[3]);
-						    double fruits = foodRS.getDouble(FOODS_FIELD_NAMES[4]);
-						    double milk = foodRS.getDouble(FOODS_FIELD_NAMES[5]);
-						    double meats = foodRS.getDouble(FOODS_FIELD_NAMES[6]);
-						    double soy = foodRS.getDouble(FOODS_FIELD_NAMES[7]);
-						    double solidFats = foodRS.getDouble(FOODS_FIELD_NAMES[8]);
-						    double addedSugars = foodRS.getDouble(FOODS_FIELD_NAMES[9]);
-						    double alcohol = foodRS.getDouble(FOODS_FIELD_NAMES[10]);
-						    double calories = foodRS.getDouble(FOODS_FIELD_NAMES[11]);
-						    double saturatedFats = foodRS.getDouble(FOODS_FIELD_NAMES[12]);
-							theOne.mAllFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
-																meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
-						}
+						int id = foodRS.getInt(FOODS_FIELD_NAMES[0]);
+					    String displayName = foodRS.getString(FOODS_FIELD_NAMES[1]);
+					    String portionDisplay = foodRS.getString(FOODS_FIELD_NAMES[2]);
+					    double vegetables = foodRS.getDouble(FOODS_FIELD_NAMES[3]);
+					    double fruits = foodRS.getDouble(FOODS_FIELD_NAMES[4]);
+					    double milk = foodRS.getDouble(FOODS_FIELD_NAMES[5]);
+					    double meats = foodRS.getDouble(FOODS_FIELD_NAMES[6]);
+					    double soy = foodRS.getDouble(FOODS_FIELD_NAMES[7]);
+					    double solidFats = foodRS.getDouble(FOODS_FIELD_NAMES[8]);
+					    double addedSugars = foodRS.getDouble(FOODS_FIELD_NAMES[9]);
+					    double alcohol = foodRS.getDouble(FOODS_FIELD_NAMES[10]);
+					    double calories = foodRS.getDouble(FOODS_FIELD_NAMES[11]);
+					    double saturatedFats = foodRS.getDouble(FOODS_FIELD_NAMES[12]);
+						theOne.mAllFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
+															meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
 					}
-						// Create the favorite foods database
-					theOne.mFavoriteFoodsDB = new DBModel(FAVORITES_DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
-					ResultSet favoritesRS = theOne.mFavoriteFoodsDB.getAllRecords();
-					if(favoritesRS != null)
+				}
+					// Create the favorite foods database
+				theOne.mFavoriteFoodsDB = new DBModel(FAVORITES_DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
+				ResultSet favoritesRS = theOne.mFavoriteFoodsDB.getAllRecords();
+				if(favoritesRS != null)
+				{
+					while(favoritesRS.next())
 					{
-						while(favoritesRS.next())
-						{
-							int id = favoritesRS.getInt(FAVORITES_FIELD_NAMES[0]);
-						    String displayName = favoritesRS.getString(FAVORITES_FIELD_NAMES[1]);
-						    String portionDisplay = favoritesRS.getString(FAVORITES_FIELD_NAMES[2]);
-						    double vegetables = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[3]); // no such column 'vegetables'
-						    double fruits = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[4]);
-						    double milk = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[5]);
-						    double meats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[6]);
-						    double soy = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[7]);
-						    double solidFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[8]);
-						    double addedSugars = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[9]);
-						    double alcohol = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[10]);
-						    double calories = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[11]);
-						    double saturatedFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[12]);
-							theOne.mAllFavoriteFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
-																meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
-						}
+						int id = favoritesRS.getInt(FAVORITES_FIELD_NAMES[0]);
+					    String displayName = favoritesRS.getString(FAVORITES_FIELD_NAMES[1]);
+					    String portionDisplay = favoritesRS.getString(FAVORITES_FIELD_NAMES[2]);
+					    double vegetables = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[3]);
+					    double fruits = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[4]);
+					    double milk = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[5]);
+					    double meats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[6]);
+					    double soy = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[7]);
+					    double solidFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[8]);
+					    double addedSugars = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[9]);
+					    double alcohol = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[10]);
+					    double calories = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[11]);
+					    double saturatedFats = favoritesRS.getDouble(FAVORITES_FIELD_NAMES[12]);
+						theOne.mAllFavoriteFoodsList.add(new Food(id, displayName, portionDisplay, vegetables, fruits, milk,
+															meats, soy, solidFats, addedSugars, alcohol, calories, saturatedFats));
 					}
-						// Create the user preferences database	
-					theOne.mPreferencesDB = new DBModel(PREFERENCES_DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
-					ResultSet preferencesRS = theOne.mPreferencesDB.getAllRecords();
-					if(preferencesRS != null)
+				}
+					// Create the user preferences database	
+				theOne.mPreferencesDB = new DBModel(PREFERENCES_DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
+				ResultSet preferencesRS = theOne.mPreferencesDB.getAllRecords();
+				if(preferencesRS != null)
+				{
+					while(preferencesRS.next())
 					{
-						while(preferencesRS.next())
-						{
-							int id = preferencesRS.getInt(PREFERENCES_FIELD_NAMES[0]);
-						    String preference = preferencesRS.getString(PREFERENCES_FIELD_NAMES[1]);
-							theOne.mAllPreferencesList.add(new Preference(id, preference));
-						}
+						int id = preferencesRS.getInt(PREFERENCES_FIELD_NAMES[0]);
+					    String preference = preferencesRS.getString(PREFERENCES_FIELD_NAMES[1]);
+						theOne.mAllPreferencesList.add(new Preference(id, preference));
 					}
+				}
 					
 					/* ~~~~~~~~~~~~~~~~~~ Other 3 Below Databases ~~~~~~~~~~~~~~~~~~~~*/
 					//  Add your set up and initialization of the databases and observable lists
@@ -227,6 +229,7 @@ public class Controller implements AutoCloseable
 			return theOne;
 		}
 
+		/* --------------- Sean's Functions ------------------------*/
 		// Functions
 		private int initializeFoodDBFromFile() throws SQLException 
 		{
@@ -244,7 +247,7 @@ public class Controller implements AutoCloseable
 				{
 					String[] data = fileScanner.nextLine().split(",");
 					String[] values = new String[FOODS_FIELD_NAMES.length - 1];
-					values[0] = data[1]; // name [ Array Index out of bounds 1 ]
+					values[0] = data[1]; // name 
 					values[1] = data[4]; // portion 
 					values[2] = data[10]; // vegetables
 					values[3] = data[15]; // fruits
@@ -268,8 +271,6 @@ public class Controller implements AutoCloseable
 			}
 			return recordsCreated;
 		}
-		
-		
 		/**
 		 * Returns an ObservableList containing all of the Foods in the foods database.
 		 * @return an ObservableList containing all of the Foods in the foods database
@@ -307,30 +308,6 @@ public class Controller implements AutoCloseable
 												"No Fruits", "No Alcohol");	
 			}
 			return mAllPreferencesCBList;
-		}
-		
-		public ObservableList<String> getAllGenders()
-		{
-			if (mAllGendersList == null)
-			{
-				mAllGendersList = FXCollections.observableArrayList();
-				mAllGendersList.addAll(GENDER_TYPES);
-			}
-			
-			return mAllGendersList;
-		}
-		
-		public ObservableList<Integer> getAllowableAges()
-		{
-			if (mAllAgesList == null)
-			{
-				mAllAgesList = FXCollections.observableArrayList();
-				for (Integer min = 13; min < 60; min++)
-					mAllAgesList.add(min);
-			}
-			return mAllAgesList;
-			
-			
 		}
 		/**
 		 * Adds the chosen preference to the preferences database.
@@ -561,8 +538,6 @@ public class Controller implements AutoCloseable
 			}
 			return filteredFoodsList;
 		}
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~ END OF DIETARY RESTRICTIONS PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
