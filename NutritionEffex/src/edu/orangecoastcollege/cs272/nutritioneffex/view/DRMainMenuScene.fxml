@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.nutritioneffex.view.DRMainMenuScene">
+<BorderPane prefHeight="420.0" prefWidth="420.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.nutritioneffex.view.DRMainMenuScene">
    <bottom>
       <Button fx:id="backToMainMenuButton" mnemonicParsing="false" onAction="#loadMainMenuScene" prefHeight="30.0" prefWidth="60.0" text="Back" BorderPane.alignment="BOTTOM_LEFT">
          <font>
@@ -25,7 +25,7 @@
    <top>
       <VBox alignment="TOP_CENTER" prefHeight="89.0" prefWidth="700.0" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Welcome to the dietary restrictions main menu." textAlignment="CENTER">
+            <Label text="Dietary Restrictions Main Menu." textAlignment="CENTER">
                <font>
                   <Font name="Impact" size="24.0" />
                </font>

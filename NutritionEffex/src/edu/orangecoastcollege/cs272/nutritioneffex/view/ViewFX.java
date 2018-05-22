@@ -18,8 +18,8 @@ public class ViewFX extends Application
 	public void start(Stage primaryStage) throws Exception 
 	{		
 		// Set stage only needs to be called once for the view navigator
-		primaryStage.setMaxHeight(420);
-		primaryStage.setMaxWidth(420);
+		//primaryStage.setMaxHeight(420);
+		//primaryStage.setMaxWidth(420);
 		ViewNavigator.setStage(primaryStage);
 		ViewNavigator.loadScene("Welcome to NutritionEffex", ViewNavigator.LAUNCH_SCREEN_SCENE);
 		// Cannot get screen to show image; will be blank for now

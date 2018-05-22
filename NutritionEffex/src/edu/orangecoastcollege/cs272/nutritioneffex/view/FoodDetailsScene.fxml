@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.nutritioneffex.view.FoodDetailsScene">
+<BorderPane prefHeight="420.0" prefWidth="420.0" style="-fx-background-color: FFF2E0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.nutritioneffex.view.FoodDetailsScene">
    <bottom>
       <Button fx:id="backButton" mnemonicParsing="false" onAction="#loadFavoriteFoodsScene" prefHeight="30.0" prefWidth="60.0" text="Back" BorderPane.alignment="BOTTOM_LEFT">
          <font>
@@ -25,8 +25,8 @@
    <center>
       <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
         <columnConstraints>
-          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="122.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="567.0" minWidth="10.0" prefWidth="458.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="118.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="567.0" minWidth="10.0" prefWidth="302.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -41,9 +41,6 @@
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
-         <padding>
-            <Insets left="60.0" right="60.0" />
-         </padding>
          <children>
             <Label text="Name:" visible="false">
                <font>
@@ -54,6 +51,9 @@
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
             </Label>
             <Label text="Calories:" GridPane.rowIndex="2">
                <font>
@@ -97,6 +97,9 @@
             <Label fx:id="dairy" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Label fx:id="meat" GridPane.columnIndex="1" GridPane.rowIndex="7" />
          </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
       </GridPane>
    </center>
 </BorderPane>
