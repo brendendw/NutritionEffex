@@ -17,7 +17,7 @@ public class FitnessTransitionSceneController {
 	// Event Listener on Button[#CaloriesBurnedButton].onAction
 	@FXML
 	public void loadCaloriesBurnedCalculator(ActionEvent event) {
-		
+		ViewNavigator.loadScene("Calories Burned",ViewNavigator.CALORIES_BURNED_SCENE);
 	}
 		//ViewNavigator.loadScene("Calories Burned", ViewNavigator.CALORIES_BURNED_SCENE);	}
 	// Event Listener on Button[#workoutlogButton].onAction

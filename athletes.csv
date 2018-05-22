@@ -12,7 +12,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 343694681,Abadi Hadis,ETH,male,1997-11-06,1.70,63,athletics,0,0,0,
 591319906,Abbas Abubakar Abbas,BRN,male,1996-05-17,1.75,66,athletics,0,0,0,
 258556239,Abbas Qali,IOA,male,1992-10-11,,,aquatics,0,0,0,
-376068084,Abbey D'Agostino,USA,female,1992-05-25,1.61,49,athletics,0,0,0,
+376068084,Abbey D Agostino,USA,female,1992-05-25,1.61,49,athletics,0,0,0,
 162792594,Abbey Weitzeil,USA,female,1996-12-03,1.78,68,aquatics,1,1,0,
 521036704,Abbie Brown,GBR,female,1996-04-10,1.76,71,rugby sevens,0,0,0,
 149397772,Abbos Rakhmonov,UZB,male,1998-07-07,1.61,57,wrestling,0,0,0,
@@ -156,7 +156,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 120505360,Agnieszka Jerzyk,POL,female,1988-01-15,1.70,59,triathlon,0,0,0,
 665715516,Agnieszka Kobus,POL,female,1990-08-28,1.77,68,rowing,0,0,1,
 935702937,Agnieszka Nagay,POL,female,1981-02-20,1.69,61,shooting,0,0,0,
-220520929,Agnieszka Radwanska,POL,female,1989-03-06,1.73,59,tennis,0,0,0,"Agnieszka Radwanska's career high to date was finishing runner-up at Wimbledon, in 2012, when she lost to Serena Williams in the final. Despite the defeat, the result was celebrated in her country. This athlete appears near the top of the world rankings."
+220520929,Agnieszka Radwanska,POL,female,1989-03-06,1.73,59,tennis,0,0,0,"Agnieszka Radwanska s career high to date was finishing runner-up at Wimbledon, in 2012, when she lost to Serena Williams in the final. Despite the defeat, the result was celebrated in her country. This athlete appears near the top of the world rankings."
 527420548,Agnieszka Skrzypulec,POL,female,1989-06-03,1.66,53,sailing,0,0,0,
 983479171,Agnieszka Szwarnog,POL,female,1986-12-28,1.65,51,athletics,0,0,0,
 638298176,Agustin Mazzilli,ARG,male,1989-06-20,1.73,77,hockey,1,0,0,
@@ -520,14 +520,14 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 409870387,Alison Cerutti,BRA,male,1985-12-07,2.03,102,volleyball,1,0,0,
 376187965,Alison Young,GBR,female,1987-05-29,1.82,70,sailing,0,0,0,
 164566610,Alistair Bond,NZL,male,1989-08-16,1.86,71,rowing,0,0,0,
-198533399,Alistair Brownlee,GBR,male,1988-04-23,1.84,70,triathlon,1,0,0,"The current Olympic and European champion, Great Britain’s Alistair Brownlee also won two world championships, in 2009 and 2011. Introduced to the sport by his uncle Simon, at London 2012 he made the podium alongside his brother Jonathan, who took bronze."
+198533399,Alistair Brownlee,GBR,male,1988-04-23,1.84,70,triathlon,1,0,0,"The current Olympic and European champion, Great Britainâ€™s Alistair Brownlee also won two world championships, in 2009 and 2011. Introduced to the sport by his uncle Simon, at London 2012 he made the podium alongside his brother Jonathan, who took bronze."
 901422043,Aliya Mustafina,RUS,female,1994-09-30,1.61,48,gymnastics,1,1,1,
 340019479,Aliyah Abrams,GUY,female,1997-04-03,1.63,53,athletics,0,0,0,
 248018989,Alize Cornet,FRA,female,1990-01-22,1.73,63,tennis,0,0,0,
 777919762,Alla Cherkasova,UKR,female,1989-05-05,1.65,75,wrestling,0,0,0,
 848336898,Alla Shishkina,RUS,female,1989-08-02,1.70,56,aquatics,1,0,0,
 511388917,Allan Banegas,HON,male,1993-10-04,1.80,76,football,0,0,0,
-638093339,Allan Fa'alava'au,AUS,male,1993-11-15,1.70,87,rugby sevens,0,0,0,
+638093339,Allan Fa alava au,AUS,male,1993-11-15,1.70,87,rugby sevens,0,0,0,
 146313505,Allan Gutierrez,HON,male,1993-08-12,1.78,79,aquatics,0,0,0,
 32531728,Allan Julie,SEY,male,1977-03-23,1.81,91,sailing,0,0,0,
 40527372,Allan Norregaard,DEN,male,1981-03-19,1.73,67,sailing,0,0,0,
@@ -753,7 +753,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 676115258,Andrea Cassara,ITA,male,1984-01-03,1.93,93,fencing,0,0,0,
 161123035,Andrea Cedron,PER,female,1993-12-24,1.69,62,aquatics,0,0,0,
 626748734,Andrea Chiarabini,ITA,male,1995-03-12,1.79,79,aquatics,0,0,0,
-575091525,Andrea D'Arrigo,ITA,male,1995-04-28,1.94,85,aquatics,0,0,0,
+575091525,Andrea D Arrigo,ITA,male,1995-04-28,1.94,85,aquatics,0,0,0,
 400345706,Andrea Deelstra,NED,female,1985-03-06,1.64,46,athletics,0,0,0,
 419373605,Andrea Fondelli,ITA,male,1994-02-27,1.90,96,aquatics,0,0,1,
 478977690,Andrea Geubelle,USA,female,1991-06-26,1.63,58,athletics,0,0,0,
@@ -867,7 +867,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 129967030,Andriy Protsenko,UKR,male,1988-05-20,1.94,80,athletics,0,0,0,
 572732712,Andriy Yagodka,UKR,male,1988-07-06,1.95,85,fencing,0,0,0,
 277394115,Andro Buslje,CRO,male,1986-01-04,2.00,115,aquatics,0,1,0,
-526943972,Andy Murray,GBR,male,1987-05-15,1.88,85,tennis,1,0,0,"Part of the ""Big Four"", which includes the four greatest tennis players since 2000, Great Briton Andy Murray won the Olympic gold in the men's singles at London 2012 and took silver in the doubles. He recently won his second Wimbledon title, in July 2016."
+526943972,Andy Murray,GBR,male,1987-05-15,1.88,85,tennis,1,0,0,"Part of the ""Big Four"", which includes the four greatest tennis players since 2000, Great Briton Andy Murray won the Olympic gold in the men s singles at London 2012 and took silver in the doubles. He recently won his second Wimbledon title, in July 2016."
 551671372,Andy Ogide,NGR,male,1987-10-01,2.04,107,basketball,0,0,0,
 918724681,Andy Pereira,CUB,male,1989-08-31,1.66,73,table tennis,0,0,0,
 573932079,Ane Marcelle dos Santos,BRA,female,1994-01-12,1.53,53,archery,0,0,0,
@@ -958,7 +958,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 621267862,Anna Maria Mazzetti,ITA,female,1988-08-25,1.61,50,triathlon,0,0,0,
 334806416,Anna Maria Sepp,EST,female,1996-02-02,1.72,64,sailing,0,0,0,
 988042479,Anna Marton,HUN,female,1995-03-31,1.80,70,fencing,0,0,0,
-211067010,Anna Meares,AUS,female,1983-09-21,1.65,70,cycling,0,0,1,"Australia's highly decorated Anna Meares has medaled for the speed trial at the past three Olympic Games, with gold at London 2012, silver at Beijing 2008 and bronze at Athens 2004. Meares has 26 world championship medals, including 11 golds."
+211067010,Anna Meares,AUS,female,1983-09-21,1.65,70,cycling,0,0,1,"Australia s highly decorated Anna Meares has medaled for the speed trial at the past three Olympic Games, with gold at London 2012, silver at Beijing 2008 and bronze at Athens 2004. Meares has 26 world championship medals, including 11 golds."
 47625127,Anna Nordqvist,SWE,female,1987-06-10,1.83,75,golf,0,0,0,
 613249321,Anna Ntountounaki,GRE,female,1995-09-09,1.77,66,aquatics,0,0,0,
 68194105,Anna Plichta,POL,female,1992-02-10,1.76,60,cycling,0,0,0,
@@ -1149,9 +1149,9 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 268835792,Arthur Abele,GER,male,1986-07-30,1.84,85,athletics,0,0,0,
 33769282,Arthur Bergo,BRA,male,1994-03-07,1.83,83,rugby sevens,0,0,0,
 216948866,Arthur Biyarslanov,CAN,male,1995-04-22,1.74,,boxing,0,0,0,
-306653489,Arthur Lanigan-O'Keeffe,IRL,male,1991-09-13,1.82,76,modern pentathlon,0,0,0,
+306653489,Arthur Lanigan-O Keeffe,IRL,male,1991-09-13,1.82,76,modern pentathlon,0,0,0,
 938345533,Arthur Mariano,BRA,male,1993-09-18,1.69,65,gymnastics,0,0,1,
-11470529,Arthur Zanetti,BRA,male,1990-04-15,1.56,64,gymnastics,0,1,0,"Brazil’s biggest feat in the men's artistic gymnastics was set by Arthur Zanetti, with the country's first gold medal, won at London 2012, in the rings event. Zanetti also has three world championship medals: a gold (2013) and two silvers (2011 and 2014)."
+11470529,Arthur Zanetti,BRA,male,1990-04-15,1.56,64,gymnastics,0,1,0,"Brazilâ€™s biggest feat in the men s artistic gymnastics was set by Arthur Zanetti, with the country s first gold medal, won at London 2012, in the rings event. Zanetti also has three world championship medals: a gold (2013) and two silvers (2011 and 2014)."
 353946547,Arthur van Doren,BEL,male,1994-10-01,1.78,74,hockey,0,1,0,
 749009956,Artsem Bandarenka,BLR,male,1991-06-19,1.87,78,athletics,0,0,0,
 270627032,Artur Akhmatkhuzin,RUS,male,1988-05-21,1.87,79,fencing,1,0,0,
@@ -1333,7 +1333,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 958022952,Barbora Kodedova,CZE,female,1990-02-27,1.65,54,modern pentathlon,0,0,0,
 646823652,Barbora Mokosova,SVK,female,1997-03-10,1.68,62,gymnastics,0,0,0,
 233978154,Barbora Seemanova,CZE,female,2000-04-01,1.75,56,aquatics,0,0,0,
-804524103,Barbora Spotakova,CZE,female,1981-06-30,1.82,80,athletics,0,0,1,"After winning gold at Beijing 2008 and London 2012, Barbora Špotáková has dominated the event of javelin at the past two Olympic Games. The Czech athlete has also picked up a world championship gold, along with two silvers between 2007 and 2011."
+804524103,Barbora Spotakova,CZE,female,1981-06-30,1.82,80,athletics,0,0,1,"After winning gold at Beijing 2008 and London 2012, Barbora Å potÃ¡kovÃ¡ has dominated the event of javelin at the past two Olympic Games. The Czech athlete has also picked up a world championship gold, along with two silvers between 2007 and 2011."
 203332956,Barbora Strycova,CZE,female,1986-03-28,1.65,62,tennis,0,0,1,
 759587471,Barbora Zavadova,CZE,female,1993-01-23,1.77,68,aquatics,0,0,0,
 467627104,Barna Bor,HUN,male,1986-12-12,1.91,130,judo,0,0,0,
@@ -1344,7 +1344,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 999333930,Bartlomiej Wojciech Bonk,POL,male,1984-10-11,1.81,104,weightlifting,0,0,0,
 402969291,Bartosz Bednorz,POL,male,1994-07-25,2.01,84,volleyball,0,0,0,
 250887268,Bartosz Jurecki,POL,male,1979-01-31,1.92,107,handball,0,0,0,
-594052376,Bartosz Kurek,POL,male,1988-08-29,2.05,87,volleyball,0,0,0,"An extremely powerful server and spiker, Bartosz Kurek is the idol of Poland's passionate volleyball fans. This opposite spiker helped his country to the 2012 World League, when he was elected the player of the tournamentand the 2009 European championship"
+594052376,Bartosz Kurek,POL,male,1988-08-29,2.05,87,volleyball,0,0,0,"An extremely powerful server and spiker, Bartosz Kurek is the idol of Poland s passionate volleyball fans. This opposite spiker helped his country to the 2012 World League, when he was elected the player of the tournamentand the 2009 European championship"
 8007833,Bartosz Losiak,POL,male,1992-05-14,1.90,88,volleyball,0,0,0,
 678195803,Bas Verwijlen,NED,male,1983-10-01,1.90,85,fencing,0,0,0,
 902813031,Bashar Resan,IRQ,male,1996-12-22,1.75,69,football,0,0,0,
@@ -1386,7 +1386,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 389909627,Bedopassa Buassat Djonde,GBS,male,1992-09-20,1.72,97,wrestling,0,0,0,
 618056949,Begona Garcia,ESP,female,1995-07-19,1.64,54,hockey,0,0,0,
 471766284,Begona Gumucio,CHI,female,1992-01-14,1.69,66,sailing,0,0,0,
-57339699,Behdad Salimikordasiabi,IRI,male,1989-12-08,1.92,170,weightlifting,0,0,0,"Standing 1.97m tall and weighing almost 200kg, Iran's Behdad Salimi won the heaviest powerlifting event at the London 2012 Olympic Games, winning gold in the + 105kg category. This giant also holds two world and three Asian titles."
+57339699,Behdad Salimikordasiabi,IRI,male,1989-12-08,1.92,170,weightlifting,0,0,0,"Standing 1.97m tall and weighing almost 200kg, Iran s Behdad Salimi won the heaviest powerlifting event at the London 2012 Olympic Games, winning gold in the + 105kg category. This giant also holds two world and three Asian titles."
 302808648,Beka Gviniashvili,GEO,male,1995-10-26,1.75,95,judo,0,0,0,
 683307277,Bekhbayar Erdenebat,MGL,male,1992-08-13,1.61,62,wrestling,0,0,0,
 133958272,Bekir Karayel,TUR,male,1982-05-10,1.70,62,athletics,0,0,0,
@@ -1639,7 +1639,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 136154437,Brittany Crew,CAN,female,1994-03-06,1.78,112,athletics,0,0,0,
 974255098,Brittany Elmslie,AUS,female,1994-06-19,1.80,69,aquatics,1,1,0,
 975241751,Brittany Maclean,CAN,female,1994-03-03,1.68,59,aquatics,0,0,1,
-667985741,Brittany O'Brien,AUS,female,1998-05-27,1.68,55,aquatics,0,0,0,
+667985741,Brittany O Brien,AUS,female,1998-05-27,1.68,55,aquatics,0,0,0,
 601613381,Brittany Rogers,CAN,female,1993-06-08,1.65,60,gymnastics,0,0,0,
 387060457,Brittney Griner,USA,female,1990-10-18,2.03,94,basketball,1,0,0,
 772781845,Brittney Reese,USA,female,1986-09-09,1.73,61,athletics,0,1,0,
@@ -1752,7 +1752,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 873188308,Carla Suarez Navarro,ESP,female,1988-09-03,1.62,61,tennis,0,0,0,
 226631924,Carles Castillejo,ESP,male,1978-08-18,1.65,61,athletics,0,0,0,
 714231073,Carli Lloyd,USA,female,1989-08-06,1.80,75,volleyball,0,0,1,
-228340991,Carli Lloyd,USA,female,1982-07-16,1.72,61,football,0,0,0,"Voted the best player in the world by FIFA, in 2015, the USA's Carli Lloyd has two gold medals, taken at Beijing 2008 and London 2012. In China, this midfielder scored an extra-time goal that gave her country the win in the final."
+228340991,Carli Lloyd,USA,female,1982-07-16,1.72,61,football,0,0,0,"Voted the best player in the world by FIFA, in 2015, the USA s Carli Lloyd has two gold medals, taken at Beijing 2008 and London 2012. In China, this midfielder scored an extra-time goal that gave her country the win in the final."
 323715305,Carlien Dirkse van den Heuvel,NED,female,1987-04-16,1.70,56,hockey,0,1,0,
 215241067,Carlin Isles,USA,male,1989-11-21,1.73,74,rugby sevens,0,0,0,
 549956425,Carline Bouw,NED,female,1984-12-14,1.84,72,rowing,0,1,0,
@@ -1798,12 +1798,12 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 809071082,Carolina Arbelaez,COL,female,1995-03-08,1.61,55,football,0,0,0,
 467587531,Carolina Arias,COL,female,1990-09-02,1.59,52,football,0,0,0,
 552675291,Carolina Castillo Hidalgo,COL,female,1990-11-04,1.57,48,wrestling,0,0,0,
-905750537,Carolina Marin,ESP,female,1993-06-15,1.72,65,badminton,1,0,0,"At 23, Spain's Carolina Marin is a two-time world and European singles champion and one of the highest placed players in the world rankings. Her feats on the Badminton court led to Marin receiving her country's athlete of the year award in 2014."
+905750537,Carolina Marin,ESP,female,1993-06-15,1.72,65,badminton,1,0,0,"At 23, Spain s Carolina Marin is a two-time world and European singles champion and one of the highest placed players in the world rankings. Her feats on the Badminton court led to Marin receiving her country s athlete of the year award in 2014."
 362193279,Carolina Rodriguez,ESP,female,1986-05-24,1.64,48,gymnastics,0,0,0,
 275280990,Carolina Rodriguez Gutierrez,MEX,female,1993-09-30,1.63,80,cycling,0,0,0,
 488698668,Carolina Routier,ESP,female,1990-04-23,1.72,60,triathlon,0,0,0,
 763290090,Carolina Werner,GER,female,1994-03-02,1.68,58,sailing,0,0,0,
-237276170,Caroline Buchanan,AUS,female,1990-10-24,1.65,68,cycling,0,0,0,"World runner-up this year at the BMX Championships in Colombia, Australia's Caroline Buchanan is known as much for her social media activity. She recently launched her own video channel, called Buchanan on Air."
+237276170,Caroline Buchanan,AUS,female,1990-10-24,1.65,68,cycling,0,0,0,"World runner-up this year at the BMX Championships in Colombia, Australia s Caroline Buchanan is known as much for her social media activity. She recently launched her own video channel, called Buchanan on Air."
 618435469,Caroline Garcia,FRA,female,1993-10-16,1.77,61,tennis,0,0,0,
 8177230,Caroline Kumahara,BRA,female,1995-07-27,1.66,58,table tennis,0,0,0,
 965494911,Caroline Ladagnous,FRA,female,1988-09-22,1.72,65,rugby sevens,0,0,0,
@@ -1878,7 +1878,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 427211622,Cesar Montes,MEX,male,1997-02-24,1.91,70,football,0,0,0,
 794568410,Cesar Sempere,ESP,male,1984-05-26,1.82,86,rugby sevens,0,0,0,
 844330987,Cesar Y. Ruiz,CUB,male,1995-01-18,1.84,77,athletics,0,0,0,
-51787706,Chad Guy Bertrand le Clos,RSA,male,1992-04-12,1.90,83,aquatics,0,2,0,"Chad le Clos dream came true at London 2012, when he beat Michael Phelps to win gold in the 200m butterfly. This South African swimmer also won silver in the 100m butterfly – before winning the even at the 2015 world championship."
+51787706,Chad Guy Bertrand le Clos,RSA,male,1992-04-12,1.90,83,aquatics,0,2,0,"Chad le Clos dream came true at London 2012, when he beat Michael Phelps to win gold in the 200m butterfly. This South African swimmer also won silver in the 100m butterfly â€“ before winning the even at the 2015 world championship."
 797308674,Chad Ho,RSA,male,1990-06-21,1.72,75,aquatics,0,0,0,
 406780652,Chaebin Im,KOR,male,1991-10-29,1.69,75,cycling,0,0,0,
 300475041,Chafik Bouaoud,ALG,male,1999-02-12,1.77,74,shooting,0,0,0,
@@ -2009,7 +2009,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 87537613,Chloe Woodruff,USA,female,1987-07-21,1.58,51,cycling,0,0,0,
 993806329,Choaib Belhaj Salah,TUN,male,1987-06-04,1.94,93,volleyball,0,0,0,
 310773041,Chol Pak,PRK,male,1990-11-08,1.65,53,athletics,0,0,0,
-609981962,Chong Wei Lee,MAS,male,1982-10-21,1.70,68,badminton,0,1,0,"With two silvers, won in the singles tournaments at Beijing 2008 and London 2012, Lee Chong Wei is the greatest Olympian in Malaysia's history. Top of the world rankings from 2008 to 2012, he has won a silver medal at the past three world championships."
+609981962,Chong Wei Lee,MAS,male,1982-10-21,1.70,68,badminton,0,1,0,"With two silvers, won in the singles tournaments at Beijing 2008 and London 2012, Lee Chong Wei is the greatest Olympian in Malaysia s history. Top of the world rankings from 2008 to 2012, he has won a silver medal at the past three world championships."
 82546289,Chouaib Bouloudinats,ALG,male,1987-01-08,1.82,,boxing,0,0,0,
 93555495,Chris Adcock,GBR,male,1989-04-27,1.83,80,badminton,0,0,0,
 518947875,Chris Anker Sorensen,DEN,male,1984-09-05,1.84,65,cycling,0,0,0,
@@ -2024,7 +2024,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 277029308,Chris Grube,GBR,male,1985-01-22,1.94,72,sailing,0,0,0,
 110660329,Chris Langridge,GBR,male,1985-05-02,1.80,,badminton,0,0,1,
 628001010,Chris Mears,GBR,male,1993-02-07,1.73,73,aquatics,1,0,0,
-182303154,Chris O'Hare,GBR,male,1990-11-23,1.78,63,athletics,0,0,0,
+182303154,Chris O Hare,GBR,male,1990-11-23,1.78,63,athletics,0,0,0,
 150373801,Chris Walker-Hebborn,GBR,male,1990-07-01,1.84,84,aquatics,0,1,0,
 261887027,Chris Winter,CAN,male,1986-07-22,1.88,75,athletics,0,0,0,
 491144467,Chris Wyles,USA,male,1983-09-13,1.83,95,rugby sevens,0,0,0,
@@ -2126,7 +2126,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 52347584,Clare Abbott,IRL,female,1986-07-28,1.67,58,equestrian,0,0,0,
 317879815,Clare Polkinghorne,AUS,female,1989-02-01,1.73,67,football,0,0,0,
 805523212,Clarence Munyai,RSA,male,1998-02-20,1.70,65,athletics,0,0,0,
-175558091,Claressa Maria Shields,USA,female,1995-03-17,1.76,,boxing,1,0,0,"Beating Russia's Nadezda Torlopova in the up to 75kg class at London 2012 made Claressa Shields the first American to win an Olympic boxing gold medal. She then won two world titles, in 2014 and 2016, and another gold at the 2015 Pan American Games."
+175558091,Claressa Maria Shields,USA,female,1995-03-17,1.76,,boxing,1,0,0,"Beating Russia s Nadezda Torlopova in the up to 75kg class at London 2012 made Claressa Shields the first American to win an Olympic boxing gold medal. She then won two world titles, in 2014 and 2016, and another gold at the 2015 Pan American Games."
 161104873,Clarisa Sagardia,ARG,female,1989-06-29,1.74,67,volleyball,0,0,0,
 722629452,Clarissa Santos,BRA,female,1988-03-10,1.83,89,basketball,0,0,0,
 610018581,Clarisse Agbegnenou,FRA,female,1992-10-25,1.64,66,judo,0,1,0,
@@ -2238,7 +2238,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 243473518,Cyrille Maret,FRA,male,1987-08-11,1.89,108,judo,0,0,1,
 601293149,Cyrille Thiery,SUI,male,1990-09-27,1.79,67,cycling,0,0,0,
 77303549,Cyrus Hostetler,USA,male,1986-08-08,1.88,95,athletics,0,0,0,
-697656751,Céline van Gerner,NED,female,1994-12-01,1.58,51,gymnastics,0,0,0,
+697656751,CÃ©line van Gerner,NED,female,1994-12-01,1.58,51,gymnastics,0,0,0,
 781080188,D J Forbes,NZL,male,1982-12-15,1.89,103,rugby sevens,0,0,0,
 12021988,Daehoon Lee,KOR,male,1992-02-05,1.83,70,taekwondo,0,0,1,
 392205384,Daemyung Lee,KOR,male,1988-09-14,1.82,78,shooting,0,0,0,
@@ -2288,8 +2288,8 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 751391017,Dan Bibby,GBR,male,1991-02-06,1.76,86,rugby sevens,0,1,0,
 715044035,Dan Craven,NAM,male,1983-02-01,1.83,76,cycling,0,0,0,
 619597624,Dan Froyliche,ISR,male,1992-11-18,1.82,73,sailing,0,0,0,
-614482218,Dan Li,CHN,female,1988-09-18,1.55,48,gymnastics,0,0,1,"The current world champion in the individual, synchronised and team trampoline gymnastics, China's Li Dan returned to the top of the podium in the individual event five years after her first title in 2010."
-96353968,Dan Lin,CHN,male,1983-10-14,1.77,70,badminton,0,0,0,"Considered by most to be the best badminton player on the planet, China's Lin Dan won gold at the Olympic Games in Beijing 2008 and London 2012. He also holds five singles world titles."
+614482218,Dan Li,CHN,female,1988-09-18,1.55,48,gymnastics,0,0,1,"The current world champion in the individual, synchronised and team trampoline gymnastics, China s Li Dan returned to the top of the podium in the individual event five years after her first title in 2010."
+96353968,Dan Lin,CHN,male,1983-10-14,1.77,70,badminton,0,0,0,"Considered by most to be the best badminton player on the planet, China s Lin Dan won gold at the Olympic Games in Beijing 2008 and London 2012. He also holds five singles world titles."
 721862825,Dan Norton,GBR,male,1988-03-22,1.80,85,rugby sevens,0,1,0,
 765792716,Dan Wallace,GBR,male,1993-04-14,1.88,80,aquatics,0,1,0,
 134936135,Dana Veldakova,SVK,female,1981-06-03,1.79,61,athletics,0,0,0,
@@ -2350,7 +2350,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 815557568,Daniel Teklehaimanot,ERI,male,1988-11-10,,,cycling,0,0,0,
 689191404,Daniel Tihomirov Aleksandrov,BUL,male,1991-09-13,1.82,81,wrestling,0,0,0,
 278950598,Daniel Trojanowski,POL,male,1982-07-24,1.70,55,rowing,0,0,0,
-797414950,Daniel Varga,HUN,male,1983-09-25,2.01,96,aquatics,0,0,0,"Gold at Beijing 2008, Dániel Varga was the world champion in 2013 and runner-up twice, at Montreal 2005 and Melbourne 2007. In 2016, he won the bronze medal at the European championship."
+797414950,Daniel Varga,HUN,male,1983-09-25,2.01,96,aquatics,0,0,0,"Gold at Beijing 2008, DÃ¡niel Varga was the world champion in 2013 and runner-up twice, at Montreal 2005 and Melbourne 2007. In 2016, he won the bronze medal at the European championship."
 275083561,Daniel Vargas,MEX,male,1986-09-01,1.97,94,volleyball,0,0,0,
 986523075,Daniel Vargas,MEX,male,1984-03-06,1.62,53,athletics,0,0,0,
 317345417,Daniel Wiederkehr,SUI,male,1989-05-15,1.83,73,rowing,0,0,0,
@@ -2392,7 +2392,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 540892576,Danny Lee,NZL,male,1990-07-24,1.80,79,golf,0,0,0,
 879435329,Danny Pinheiro Rodrigues,FRA,male,1985-04-16,1.61,57,gymnastics,0,0,0,
 12537963,Danny Willett,GBR,male,1987-10-03,1.80,79,golf,0,0,0,
-552666305,Danuta Kozak,HUN,female,1987-01-11,1.68,63,canoe,3,0,0,"Eleven-time world champion Danuta Kozák won two golds in canoe sprints at London 2012: one for the individual K-1 500m event and the other as part of the Hungary team in the K-4 500m, an event in which she won silver at Beijing 2008."
+552666305,Danuta Kozak,HUN,female,1987-01-11,1.68,63,canoe,3,0,0,"Eleven-time world champion Danuta KozÃ¡k won two golds in canoe sprints at London 2012: one for the individual K-1 500m event and the other as part of the Hungary team in the K-4 500m, an event in which she won silver at Beijing 2008."
 221668114,Danuta Urbanik,POL,female,1989-12-24,1.67,49,athletics,0,0,0,
 729797574,Dapeng Wang,CHN,male,1996-12-03,1.84,95,archery,0,0,0,
 828313980,Dara Hassanien,EGY,female,1996-04-01,1.69,59,aquatics,0,0,0,
@@ -2472,7 +2472,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 553564024,David Katoatau,KIR,male,1984-07-17,1.70,105,weightlifting,0,0,0,
 823262201,David Kostelecky,CZE,male,1975-05-12,1.90,93,shooting,0,0,0,
 336599329,David Lee,USA,male,1982-03-08,2.03,105,volleyball,0,0,1,
-807043500,David Lekuta Rudisha,KEN,male,1988-12-17,1.90,76,athletics,1,0,0,"A shining example of Kenya's tradition in athletics, David Rudisha is the current 800m Olympic and world champion, having also won the 2011 Daegu World Championship. Rudisha was the first athlete in the world to run under 1m41s in the event."
+807043500,David Lekuta Rudisha,KEN,male,1988-12-17,1.90,76,athletics,1,0,0,"A shining example of Kenya s tradition in athletics, David Rudisha is the current 800m Olympic and world champion, having also won the 2011 Daegu World Championship. Rudisha was the first athlete in the world to run under 1m41s in the event."
 125537512,David Lingmerth,SWE,male,1987-07-22,1.70,80,golf,0,0,0,
 206952063,David Mauricio Mier Y Teran Cuevas,MEX,male,1978-08-07,1.72,68,sailing,0,0,0,
 906932951,David McKeon,AUS,male,1992-07-25,1.95,85,aquatics,0,0,0,
@@ -2489,7 +2489,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 440461124,David Smith,USA,male,1985-05-15,2.01,86,volleyball,0,0,1,
 665678036,David Soderberg,FIN,male,1979-08-11,1.85,96,athletics,0,0,0,
 517039410,David Storl,GER,male,1990-07-27,1.98,117,athletics,0,0,0,
-582202703,David Svoboda,CZE,male,1985-03-19,1.83,76,modern pentathlon,0,0,0,"Debuting at Beijing 2008, the Czech Republic's David Svoboda placed first in the modern pentathlon’s shooting event, but a fall in the equestrian part left him out of the running for the podium. He made up for it the next time, winning gold at London 2012"
+582202703,David Svoboda,CZE,male,1985-03-19,1.83,76,modern pentathlon,0,0,0,"Debuting at Beijing 2008, the Czech Republic s David Svoboda placed first in the modern pentathlonâ€™s shooting event, but a fall in the equestrian part left him out of the running for the podium. He made up for it the next time, winning gold at London 2012"
 9174337,David Sylvere Patrick Boui,CAF,male,1988-06-28,1.87,68,taekwondo,0,0,0,
 63423995,David Torrence,PER,male,1985-11-26,1.90,65,athletics,0,0,0,
 643201191,David Valero Serrano,ESP,male,1988-12-27,1.89,76,cycling,0,0,0,
@@ -2801,7 +2801,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 34157460,Edson Isaias Freitas da Silva,BRA,male,1982-03-25,1.70,83,canoe,0,0,0,
 906489293,Eduard Popp,GER,male,1991-06-16,1.90,128,wrestling,0,0,0,
 475508680,Eduard Soghomonyan,BRA,male,1990-02-19,1.90,120,wrestling,0,0,0,
-129556229,Eduarda Taleska,BRA,female,1986-09-23,1.86,84,handball,0,0,0,"Singled out as the best handball player in the world, in 2014, Brazil's Duda Amorim counts the 2013 world, 2007 and 2011 Pan American, and two European Champions League titles among her accomplishments."
+129556229,Eduarda Taleska,BRA,female,1986-09-23,1.86,84,handball,0,0,0,"Singled out as the best handball player in the world, in 2014, Brazil s Duda Amorim counts the 2013 world, 2007 and 2011 Pan American, and two European Champions League titles among her accomplishments."
 757748599,Eduardo Alvarez Aznar,ESP,male,1984-01-01,1.73,67,equestrian,0,0,0,
 454899916,Eduardo Jose Lorenzo,DOM,male,1966-08-31,1.71,84,shooting,0,0,0,
 543622278,Eduardo Menezes,BRA,male,1980-05-01,1.93,84,equestrian,0,0,0,
@@ -3071,7 +3071,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 166163342,English Gardner,USA,female,1992-04-22,1.68,54,athletics,1,0,0,
 786298586,Enkelejda Shehaj Bekurti,USA,female,1969-01-23,1.63,57,shooting,0,0,0,
 957160839,Enkh-Amar Kharkhuu,MGL,male,1992-08-05,1.70,,boxing,0,0,0,
-62584278,Enrico D'Aniello,ITA,male,1995-12-06,1.52,53,rowing,0,0,0,
+62584278,Enrico D Aniello,ITA,male,1995-12-06,1.52,53,rowing,0,0,0,
 686586839,Enrico Garozzo,ITA,male,1989-06-21,1.90,70,fencing,0,1,0,
 3678441,Enrico Lacruz,NED,male,1993-08-31,1.81,,boxing,0,0,0,
 561159124,Enrique Brol,GUA,male,1978-10-09,1.81,73,shooting,0,0,0,
@@ -3400,7 +3400,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 397905004,Fidel Antonio Vargas,CUB,male,1992-07-28,1.86,91,canoe,0,0,0,
 263607639,Fie Udby Erichsen,DEN,female,1985-04-23,1.84,79,rowing,0,0,0,
 990339292,Filip Dvorak,CZE,male,1988-07-30,1.89,89,canoe,0,0,0,
-198261943,Filip Filipovic,SRB,male,1987-05-01,1.96,101,aquatics,1,0,0,"A holder of two bronze medals, won at Beijing 2008 and London 2012, Serbia's Filip Filipović was world champion at Kazan 2015 and Rome 2009, and won five European championships, including the 2016 edition."
+198261943,Filip Filipovic,SRB,male,1987-05-01,1.96,101,aquatics,1,0,0,"A holder of two bronze medals, won at Beijing 2008 and London 2012, Serbia s Filip FilipoviÄ‡ was world champion at Kazan 2015 and Rome 2009, and won five European championships, including the 2016 edition."
 95290064,Filip Grgic,CRO,male,1989-10-25,1.73,70,taekwondo,0,0,0,
 155085294,Filip Hrgovic,CRO,male,1992-06-04,1.97,,boxing,0,0,1,
 797627457,Filip Ingebrigtsen,NOR,male,1993-04-20,,,athletics,0,0,0,
@@ -3464,7 +3464,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 407138612,Francena McCorory,USA,female,1988-10-20,1.71,68,athletics,1,0,0,
 513279514,Frances Houghton,GBR,female,1980-09-19,1.93,80,rowing,0,1,0,
 23123206,Francesca Clapcich,ITA,female,1988-01-28,1.77,68,sailing,0,0,0,
-278586505,Francesca Dallape',ITA,female,1986-06-24,1.64,58,aquatics,0,1,0,
+278586505,Francesca Dallape ,ITA,female,1986-06-24,1.64,58,aquatics,0,1,0,
 421533477,Francesca Deidda,ITA,female,1992-01-16,1.64,52,aquatics,0,0,0,
 870034029,Francesca Halsall,GBR,female,1990-04-12,1.71,64,aquatics,0,0,0,
 535720666,Francesca Pattaro,ITA,female,1995-03-12,1.70,58,cycling,0,0,0,
@@ -3592,7 +3592,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 745281987,Garbine Muguruza,ESP,female,1993-10-08,1.84,72,tennis,0,0,0,
 892862270,Garnik Mnatsakanyan,ARM,male,1989-11-07,1.61,57,wrestling,0,0,0,
 622386960,Garrett Bender,USA,male,1991-12-02,1.94,104,rugby sevens,0,0,0,
-800177354,Gary O'Donovan,IRL,male,1992-12-30,1.72,70,rowing,0,1,0,
+800177354,Gary O Donovan,IRL,male,1992-12-30,1.72,70,rowing,0,1,0,
 249661772,Gary Russell,USA,male,1996-06-14,1.73,,boxing,0,0,0,
 830687385,Gaspar Csere,HUN,male,1991-08-12,1.71,55,athletics,0,0,0,
 12459891,Gastao Elias,POR,male,1990-11-24,1.82,75,tennis,0,0,0,
@@ -3628,7 +3628,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 476981341,Genevieve Orton,CAN,female,1984-05-13,1.70,62,canoe,0,0,0,
 682915910,Genevra Stone,USA,female,1985-07-11,1.83,71,rowing,0,1,0,
 586682679,Geno Petriashvili,GEO,male,1994-04-01,1.98,125,wrestling,0,0,1,
-557935891,Genzebe Dibaba,ETH,female,1991-02-08,1.68,52,athletics,0,1,0,"Genzebe Dibaba is from an esteemed family of Olympic medal winners. Ethiopia's golden girl in the middle and long distance events, she won the 1500m at the 2015 Beijing World Championship, breaking a world record in the process, and a bronze in the 5000m."
+557935891,Genzebe Dibaba,ETH,female,1991-02-08,1.68,52,athletics,0,1,0,"Genzebe Dibaba is from an esteemed family of Olympic medal winners. Ethiopia s golden girl in the middle and long distance events, she won the 1500m at the 2015 Beijing World Championship, breaking a world record in the process, and a bronze in the 5000m."
 289855181,Geoffrey Butler,CAY,male,1995-12-07,1.88,84,aquatics,0,0,0,
 211177901,Geoffrey Cheah,HKG,male,1990-11-10,1.85,77,aquatics,0,0,0,
 242198158,Geoffrey Kipsang Kamworor,KEN,male,1992-11-22,1.72,58,athletics,0,0,0,
@@ -3746,7 +3746,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 453710519,Gladys Tejeda,PER,female,1985-09-30,1.56,47,athletics,0,0,0,
 261518671,Glencora McGhie,AUS,female,1988-08-08,1.78,68,aquatics,0,0,0,
 820466247,Glenn Kable,FIJ,male,1963-05-04,1.86,92,shooting,0,0,0,
-344080952,Glenn O'Shea,AUS,male,1989-06-14,1.80,76,cycling,0,0,0,
+344080952,Glenn O Shea,AUS,male,1989-06-14,1.80,76,cycling,0,0,0,
 801742919,Glenn Ochal,USA,male,1986-03-01,1.94,95,rowing,0,0,0,
 36388952,Glenn Schuurman,NED,male,1991-04-16,1.83,79,hockey,0,0,0,
 679206973,Glenn Snyders,NZL,male,1987-04-07,1.79,83,aquatics,0,0,0,
@@ -4248,7 +4248,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 705937798,Ida Marko-Varga,SWE,female,1985-03-10,1.70,65,aquatics,0,0,0,
 412225321,Ida Mayrin,ISR,female,1997-10-30,1.72,52,gymnastics,0,0,0,
 130996491,Ida Villumsen,DEN,female,1994-11-30,1.76,70,canoe,0,0,0,
-445744437,Idalys Ortiz,CUB,female,1989-09-27,1.80,82,judo,0,1,0,"Olympic champion in the + 78kg class at London 2012, Cuba's Idalyz Ortiz won bronze at Beijing 2008. She has been on the podium at five world championships, winning two golds – at Rio, in 2013, and Cheliabinsk, in 2014."
+445744437,Idalys Ortiz,CUB,female,1989-09-27,1.80,82,judo,0,1,0,"Olympic champion in the + 78kg class at London 2012, Cuba s Idalyz Ortiz won bronze at Beijing 2008. She has been on the podium at five world championships, winning two golds â€“ at Rio, in 2013, and Cheliabinsk, in 2014."
 664747134,Iera Echebarria,ESP,female,1992-10-20,1.60,63,rugby sevens,0,0,0,
 953620490,Ieuan Lloyd,GBR,male,1993-07-09,1.94,91,aquatics,0,0,0,
 262282271,Ieva Serapinaite,LTU,female,1995-02-04,1.75,62,modern pentathlon,0,0,0,
@@ -4290,7 +4290,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 853990592,Ilham Tanui Ozbilen,TUR,male,1990-03-05,1.77,60,athletics,0,0,0,
 351709088,Ilia Druzhinin,RUS,male,1998-04-23,1.73,63,aquatics,0,0,0,
 165852340,Ilia Shtokalov,RUS,male,1986-09-01,1.85,95,canoe,0,0,0,
-50995857,Ilia Zakharov,RUS,male,1991-05-02,1.75,69,aquatics,0,0,0,"Elected the best diver in the world, in 2012, Russia's Ilya Zakharov won gold in the 3m individual at London 2012 and silver in the 3m synchronised."
+50995857,Ilia Zakharov,RUS,male,1991-05-02,1.75,69,aquatics,0,0,0,"Elected the best diver in the world, in 2012, Russia s Ilya Zakharov won gold in the 3m individual at London 2012 and silver in the 3m synchronised."
 905071434,Ilias Iliadis,GRE,male,1986-11-10,1.79,90,judo,0,0,0,
 448835262,Ilija Brozovic,CRO,male,1991-05-26,1.96,109,handball,0,0,0,
 70065609,Ilke Ozyuksel,TUR,female,1997-02-26,1.67,53,modern pentathlon,0,0,0,
@@ -4445,7 +4445,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 734306362,Iuliia Olishevska,UKR,female,1989-02-02,1.67,60,athletics,0,0,0,
 36280393,Iuliia Paratova,UKR,female,1986-11-07,1.55,48,weightlifting,0,0,0,
 143130668,Iuliia Prokopchuk,UKR,female,1986-10-23,1.60,50,aquatics,0,0,0,
-967646151,Iurii Cheban,UKR,male,1986-07-05,1.85,93,canoe,1,0,0,"The Ukraine's Iurii  Cheban won the fastest canoe sprint event at the London 2012 Olympic Games, the C-1 200m, for which he also holds two world titles. Four years previously, at Beijing 2008, he took bronze in the C-1 500m."
+967646151,Iurii Cheban,UKR,male,1986-07-05,1.85,93,canoe,1,0,0,"The Ukraine s Iurii  Cheban won the fastest canoe sprint event at the London 2012 Olympic Games, the C-1 200m, for which he also holds two world titles. Four years previously, at Beijing 2008, he took bronze in the C-1 500m."
 689497328,Iurii Krakovetskii,KGZ,male,1992-08-27,1.80,130,judo,0,0,0,
 898570375,Ivan Banzeruk,UKR,male,1990-02-09,1.80,70,athletics,0,0,0,
 69692265,Ivan Cupic,CRO,male,1986-03-27,1.78,78,handball,0,0,0,
@@ -4491,7 +4491,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 269077637,Izzat Artykov,KGZ,male,1993-09-08,1.60,69,weightlifting,0,0,0,
 963470653,Izzet Safer,TUR,male,1990-07-10,1.78,74,athletics,0,0,0,
 860885364,Izzy Joachim,VIN,female,2000-05-11,,,aquatics,0,0,0,
-478575859,J'den Michael Tbory Cox,USA,male,1995-03-03,1.81,85,wrestling,0,0,1,
+478575859,J den Michael Tbory Cox,USA,male,1995-03-03,1.81,85,wrestling,0,0,1,
 411708041,Jaak-Heinrich Jagor,EST,male,1990-05-11,1.90,80,athletics,0,0,0,
 108953366,Jabrayil Hasanov,AZE,male,1990-02-24,1.70,74,wrestling,0,0,1,
 299391231,Jacco Arends,NED,male,1991-01-28,1.86,72,badminton,0,0,0,
@@ -4639,7 +4639,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 192489040,Janika Sprunger,SUI,female,1987-05-29,1.68,54,equestrian,0,0,0,
 497079797,Janine Beckie,CAN,female,1994-08-20,1.73,63,football,0,0,1,
 20326038,Janine van Wyk,RSA,female,1987-04-17,1.63,61,football,0,0,0,
-882695911,Janis Smedins,LAT,male,1987-07-31,1.91,89,volleyball,0,0,0,"Alongside Martins Plavins, Latvia's Janis Smedins surprised at the beach volleyball tournament in London 2012 by winning a bronze medal. This left-handed defender was also a world circuit champion in 2013 and 2014, playing with Aleksandrs Samoilovs."
+882695911,Janis Smedins,LAT,male,1987-07-31,1.91,89,volleyball,0,0,0,"Alongside Martins Plavins, Latvia s Janis Smedins surprised at the beach volleyball tournament in London 2012 by winning a bronze medal. This left-handed defender was also a world circuit champion in 2013 and 2014, playing with Aleksandrs Samoilovs."
 523195798,Janja Segel,SLO,female,2001-06-17,1.77,60,aquatics,0,0,0,
 974901356,Jannah Sonnenschein,MOZ,female,1996-04-24,1.68,60,aquatics,0,0,0,
 141611680,Janne Muller-Wieland,GER,female,1986-10-28,1.75,69,hockey,0,0,1,
@@ -4798,7 +4798,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 414345502,Jeremy Taiwo,USA,male,1990-01-15,1.94,90,athletics,0,0,0,
 231926753,Jeremy Toljan,GER,male,1994-08-08,1.82,77,football,0,1,0,
 995701112,Jermaine Seoposenwe,RSA,female,1993-10-12,1.67,62,football,0,0,0,
-882400057,Jeroen D'Hoedt,BEL,male,1990-01-10,1.83,63,athletics,0,0,0,
+882400057,Jeroen D Hoedt,BEL,male,1990-01-10,1.83,63,athletics,0,0,0,
 426243229,Jeroen Dubbeldam,NED,male,1973-04-15,1.85,85,equestrian,0,0,0,
 306559370,Jeroen Hertzberger,NED,male,1986-02-24,1.74,76,hockey,0,0,0,
 389822683,Jeroen Mooren,NED,male,1985-07-30,1.68,60,judo,0,0,0,
@@ -4834,7 +4834,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 116285055,Jessica Maier,BRA,female,1994-08-21,1.67,52,gymnastics,0,0,0,
 832460083,Jessica Mendoza,GBR,female,1996-04-09,1.72,62,equestrian,0,0,0,
 803585591,Jessica Morrison,AUS,female,1992-05-18,,,rowing,0,0,0,
-147271899,Jessica O'Connell,CAN,female,1989-02-10,1.58,48,athletics,0,0,0,
+147271899,Jessica O Connell,CAN,female,1989-02-10,1.58,48,athletics,0,0,0,
 223516819,Jessica Parratto,USA,female,1994-06-26,1.58,50,aquatics,0,0,0,
 463897901,Jessica Phoenix,CAN,female,1983-10-16,1.57,57,equestrian,0,0,0,
 679145498,Jessica Quintino,BRA,female,1991-04-17,1.72,67,handball,0,0,0,
@@ -4903,7 +4903,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 200297041,Jigeun Jeong,KOR,male,1990-01-10,1.77,79,shooting,0,0,0,
 934549463,Jihee Jeon,KOR,female,1992-10-28,1.59,56,table tennis,0,0,0,
 523127994,Jihoon Kim,KOR,male,1985-06-27,1.79,75,sailing,0,0,0,
-669978803,Jike Zhang,CHN,male,1988-02-14,1.78,70,table tennis,1,1,0,"With Brazilian roots (his name is a tribute to Zico, the idol of Flamengo), China's Zhang Jike is a table tennis ace. At London 2012 he won gold in the singles and team events, and has won the world championship seven times."
+669978803,Jike Zhang,CHN,male,1988-02-14,1.78,70,table tennis,1,1,0,"With Brazilian roots (his name is a tribute to Zico, the idol of Flamengo), China s Zhang Jike is a table tennis ace. At London 2012 he won gold in the singles and team events, and has won the world championship seven times."
 359354716,Jill Witmer,USA,female,1991-10-01,1.58,52,hockey,0,0,0,
 167215235,Jillian Alice Gallays,CAN,female,1986-10-20,1.65,53,wrestling,0,0,0,
 102526440,Jillion Potter,USA,female,1986-07-05,1.78,79,rugby sevens,0,0,0,
@@ -4921,7 +4921,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 890471066,Jinglin Shi,CHN,female,1993-01-03,1.75,69,aquatics,0,0,1,
 663047032,Jingnan Zhao,CHN,female,1995-03-07,1.68,51,gymnastics,0,0,0,
 822617830,Jingyao Yu,CHN,female,1999-02-13,1.78,63,aquatics,0,0,0,
-343852409,Jingyu Wu,CHN,female,1987-02-01,1.67,51,taekwondo,0,0,0,"Gold medalist in the up to 45kg taekwondo class at Beijing 2008 and London 2012, China's Wu Jingyu also has two golds, one silver and one bronze world championship medals."
+343852409,Jingyu Wu,CHN,female,1987-02-01,1.67,51,taekwondo,0,0,0,"Gold medalist in the up to 45kg taekwondo class at Beijing 2008 and London 2012, China s Wu Jingyu also has two golds, one silver and one bronze world championship medals."
 618968829,Jinhwa Jung,KOR,male,1989-05-25,1.83,75,modern pentathlon,0,0,0,
 262158592,Jinjie Gong,CHN,female,1986-11-12,1.65,65,cycling,1,0,0,
 307605969,Jinq En Phee,MAS,female,1997-11-29,1.66,51,aquatics,0,0,0,
@@ -5054,7 +5054,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 396780204,Jolanda Annen,SUI,female,1992-09-11,1.66,56,triathlon,0,0,0,
 22338705,Jolanda Neff,SUI,female,1993-01-05,1.68,53,cycling,0,0,0,
 317825722,Jolanta Ogar,AUT,female,1982-04-28,1.78,68,sailing,0,0,0,
-808313337,Jolien D'hoore,BEL,female,1990-03-14,1.76,64,cycling,0,0,1,
+808313337,Jolien D hoore,BEL,female,1990-03-14,1.76,64,cycling,0,0,1,
 774577987,Jomana Elmaghrabi,EGY,female,1995-06-21,1.62,51,aquatics,0,0,0,
 911513755,Jon Izaguirre Insausti,ESP,male,1989-02-04,1.72,61,cycling,0,0,0,
 793991394,Jon Schofield,GBR,male,1985-05-10,1.80,80,canoe,0,1,0,
@@ -5089,7 +5089,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 867882464,Jong Su Kim,PRK,male,1977-01-01,1.66,67,shooting,0,0,0,
 438574326,Jongeun Kim,KOR,female,1986-02-18,1.67,58,hockey,0,0,0,
 342096767,Jonghyun Kim,KOR,male,1985-07-21,1.70,73,shooting,0,1,0,
-326377611,Jongoh Jin,KOR,male,1979-09-24,1.75,78,shooting,1,0,0,"A specialist in the 50m pistol and 10m air pistol, the Republic of Korea's Jin Jongoh has won five medals over the past three Olympic Games: a silver at Athens 2004, a gold and a silver at Beijing 2008 and two golds at London 2012."
+326377611,Jongoh Jin,KOR,male,1979-09-24,1.75,78,shooting,1,0,0,"A specialist in the 50m pistol and 10m air pistol, the Republic of Korea s Jin Jongoh has won five medals over the past three Olympic Games: a silver at Athens 2004, a gold and a silver at Beijing 2008 and two golds at London 2012."
 318221769,Jonna Andersson,SWE,female,1993-01-02,1.67,64,football,0,1,0,
 160814323,Jono Clegg,GBR,male,1989-07-14,1.86,72,rowing,0,0,0,
 497079798,Jonty Evans,IRL,male,1971-10-04,1.93,82,equestrian,0,0,0,
@@ -5107,7 +5107,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 89037230,Jordan Pothain,FRA,male,1994-10-14,1.87,74,aquatics,0,0,0,
 780854442,Jordan Silva,MEX,male,1994-07-30,1.86,75,football,0,0,0,
 900671149,Jordan Thompson,AUS,male,1994-04-20,1.83,73,tennis,0,0,0,
-710046367,Jordan Wilimovsky,USA,male,1994-04-22,1.78,68,aquatics,0,0,0,"The current world champion in the 10km marathon swimming event and the second of the USA's athletes to win this title, Jordan Wilimovsky, was elected the 2015 athlete of the year by the International Swimming Federation."
+710046367,Jordan Wilimovsky,USA,male,1994-04-22,1.78,68,aquatics,0,0,0,"The current world champion in the 10km marathon swimming event and the second of the USA s athletes to win this title, Jordan Wilimovsky, was elected the 2015 athlete of the year by the International Swimming Federation."
 221513683,Jordan Wood,AUS,male,1994-08-01,1.82,78,canoe,0,0,0,
 821771282,Jordi Xammar Hernandez,ESP,male,1993-12-02,1.76,63,sailing,0,0,0,
 339973873,Jordin Andrade,CPV,male,1992-05-05,1.82,77,athletics,0,0,0,
@@ -5308,7 +5308,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 867157773,Julien Gobaux,FRA,male,1990-12-11,1.67,62,gymnastics,0,0,0,
 774410191,Julien Quesne,FRA,male,1980-08-16,1.85,88,golf,0,0,0,
 757315970,Julien Watrin,BEL,male,1992-06-27,1.89,83,athletics,0,0,0,
-962879306,Julien d'Ortoli,FRA,male,1983-10-07,1.80,75,sailing,0,0,0,
+962879306,Julien d Ortoli,FRA,male,1983-10-07,1.80,75,sailing,0,0,0,
 950043572,Juliet Chekwel,UGA,female,1990-03-25,,,athletics,0,0,0,
 307667762,Juliet Itoya,ESP,female,1986-08-17,1.69,58,athletics,0,0,0,
 149975684,Julieta Constanza Lazcano,ARG,female,1989-06-25,1.90,74,volleyball,0,0,0,
@@ -5421,7 +5421,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 743776991,Kano Omata,JPN,female,1996-07-24,1.61,48,aquatics,0,0,1,
 141149492,Kanstantsin Barycheuski,BLR,male,1990-05-29,1.91,87,athletics,0,0,0,
 791361517,Kanstantsin Siutsou,BLR,male,1982-08-09,1.84,70,cycling,0,0,0,
-447034461,Kaori Icho,JPN,female,1984-06-13,1.66,61,wrestling,1,0,0,"Olympic three-time wrestling champion, with golds at Athens 2004, Beijing 2008 and London 2012, Japan's Kaori Icho remained undefeated between 2003 and 2016 in the up to 63kg class. Over this period, she has won ten world championships."
+447034461,Kaori Icho,JPN,female,1984-06-13,1.66,61,wrestling,1,0,0,"Olympic three-time wrestling champion, with golds at Athens 2004, Beijing 2008 and London 2012, Japan s Kaori Icho remained undefeated between 2003 and 2016 in the up to 63kg class. Over this period, she has won ten world championships."
 316924793,Kaori Kawanaka,JPN,female,1991-08-03,1.59,51,archery,0,0,0,
 351978454,Kaori Matsumoto,JPN,female,1987-09-11,1.63,57,judo,0,0,1,
 429591068,Kapririel Kitson,FSM,male,1993-12-10,1.53,70,athletics,0,0,0,
@@ -5439,7 +5439,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 582647371,Karen Riveros,PAR,female,1994-12-04,1.70,66,aquatics,0,0,0,
 419664403,Karen Tebar,FRA,female,1964-09-19,1.59,57,equestrian,0,0,0,
 141875290,Karen Torrez,BOL,female,1992-07-29,1.65,59,aquatics,0,0,0,
-339808080,Kari Aalvik Grimsbo,NOR,female,1985-01-04,1.80,,handball,0,0,1,"Two-time Olympic champion (Beijing 2008 and London 2012) and world champion with the Norway handball team, goalkeeper Kari Aalvik Grimsbø was also part of the four European titles they won."
+339808080,Kari Aalvik Grimsbo,NOR,female,1985-01-04,1.80,,handball,0,0,1,"Two-time Olympic champion (Beijing 2008 and London 2012) and world champion with the Norway handball team, goalkeeper Kari Aalvik GrimsbÃ¸ was also part of the four European titles they won."
 550682162,Kariem Hussein,SUI,male,1989-01-04,1.91,76,athletics,0,0,0,
 306135130,Karien Robbers,NED,female,1993-08-16,1.80,68,rowing,0,0,0,
 617638592,Karim Elsayed,EGY,male,1995-02-16,1.83,87,canoe,0,0,0,
@@ -5490,7 +5490,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 745894634,Kasumi Ishikawa,JPN,female,1993-02-23,1.58,51,table tennis,0,0,1,
 372060903,Katai Yeerlanbieke,CHN,male,1990-07-16,1.69,77,wrestling,0,0,0,
 621329519,Katarina Beresova,SVK,female,1987-10-10,1.62,49,athletics,0,0,0,
-963217820,Katarina Bulatovic,MNE,female,1984-11-15,1.86,71,handball,0,0,0,"The Montenegro handball team won an unprecedented silver medal at the London 2012 Olympic Games. With 53 goals, Katarina Bulatović was the topscorer of the competition – and repeated that feat at the European championship that same year."
+963217820,Katarina Bulatovic,MNE,female,1984-11-15,1.86,71,handball,0,0,0,"The Montenegro handball team won an unprecedented silver medal at the London 2012 Olympic Games. With 53 goals, Katarina BulatoviÄ‡ was the topscorer of the competition â€“ and repeated that feat at the European championship that same year."
 682459058,Katarina Johnson-Thompson,GBR,female,1993-01-09,1.83,68,athletics,0,0,0,
 776863385,Katarina Listopadova,SVK,female,1993-03-22,1.69,60,aquatics,0,0,0,
 448575637,Katarina Simonovic,SRB,female,1994-10-25,1.64,64,aquatics,0,0,0,
@@ -5508,7 +5508,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 750498579,Kate Foo kune,MRI,female,1993-03-29,,,badminton,0,0,0,
 659941173,Kate French,GBR,female,1991-02-11,1.75,65,modern pentathlon,0,0,0,
 42745952,Kate Grace,USA,female,1988-10-24,1.73,55,athletics,0,0,0,
-562453603,Kate O'Brien,CAN,female,1988-07-23,1.68,70,cycling,0,0,0,
+562453603,Kate O Brien,CAN,female,1988-07-23,1.68,70,cycling,0,0,0,
 669429758,Kate Richardson-Walsh,GBR,female,1980-05-09,1.61,66,hockey,1,0,0,
 845437093,Katelin Snyder,USA,female,1987-08-16,1.63,49,rowing,1,0,0,
 211784095,Katelyn Falgowski,USA,female,1988-10-23,1.68,62,hockey,0,0,0,
@@ -5549,9 +5549,9 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 56946849,Katie Clark,GBR,female,1994-03-23,1.68,56,aquatics,0,0,0,
 447673304,Katie Duncan,NZL,female,1988-02-01,1.61,56,football,0,0,0,
 932382598,Katie Greves,GBR,female,1982-09-02,1.79,71,rowing,0,1,0,
-960103057,Katie Ledecky,USA,female,1997-03-17,1.83,72,aquatics,4,1,0,"She burst onto the scene at London 2012 by winning, at 15, gold in the 800m freestyle. The USA's Katie Ledecky has already climbed the podium in nine events over two world championships and broken 11 world records."
+960103057,Katie Ledecky,USA,female,1997-03-17,1.83,72,aquatics,4,1,0,"She burst onto the scene at London 2012 by winning, at 15, gold in the 800m freestyle. The USA s Katie Ledecky has already climbed the podium in nine events over two world championships and broken 11 world records."
 624052007,Katie Rae Ebzery,AUS,female,1990-01-08,1.77,70,basketball,0,0,0,
-810072016,Katie Taylor,IRL,female,1986-07-01,1.62,,boxing,0,0,0,"Ireland's flag bearer at London 2012, Katie Taylor started boxing at the age of 11 and was instrumental in it becoming an Olympic sport for women. She is the current Olympic and European champion in the up to 60kg class and holds five world titles."
+810072016,Katie Taylor,IRL,female,1986-07-01,1.62,,boxing,0,0,0,"Ireland s flag bearer at London 2012, Katie Taylor started boxing at the age of 11 and was instrumental in it becoming an Olympic sport for women. She is the current Olympic and European champion in the up to 60kg class and holds five world titles."
 204377038,Katie Zaferes,USA,female,1989-06-09,1.73,58,triathlon,0,0,0,
 643664378,Katinka Hosszu,HUN,female,1989-05-03,1.75,68,aquatics,3,1,0,
 353743276,Katja Steen Salskov-Iversen,DEN,female,1994-08-19,1.73,70,sailing,0,0,1,
@@ -5577,9 +5577,9 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 706766581,Kawika Shoji,USA,male,1987-11-11,1.90,79,volleyball,0,0,1,
 55365531,Kaya Adwoa Forson,GHA,female,2002-03-19,,,aquatics,0,0,0,
 707077587,Kayla Banwarth,USA,female,1989-01-21,1.78,75,volleyball,0,0,1,
-204954873,Kayla Harrison,USA,female,1990-07-02,1.73,74,judo,1,0,0,"She started judo at the age of six, following in thefootsteps of her mother, a black belt. The Olympic champion in the + 78kg class at London 2012, the USA's Kayla Harrison has also won two Pan American golds, at Guadalajara 2011 and Toronto 2015."
+204954873,Kayla Harrison,USA,female,1990-07-02,1.73,74,judo,1,0,0,"She started judo at the age of six, following in thefootsteps of her mother, a black belt. The Olympic champion in the + 78kg class at London 2012, the USA s Kayla Harrison has also won two Pan American golds, at Guadalajara 2011 and Toronto 2015."
 852366261,Kayla Imrie,NZL,female,1992-02-04,1.82,80,canoe,0,0,0,
-536942057,Kayla McAlister,NZL,female,1988-08-06,1.69,70,rugby sevens,0,1,0,"The sister of Luke McAlister, who for many years played in the national rugby union team (the All Blacks), Kayla McAlister only started playing rugby sevens in 2012, because of this sport's inclusion in the Rio 2016 schedule."
+536942057,Kayla McAlister,NZL,female,1988-08-06,1.69,70,rugby sevens,0,1,0,"The sister of Luke McAlister, who for many years played in the national rugby union team (the All Blacks), Kayla McAlister only started playing rugby sevens in 2012, because of this sport s inclusion in the Rio 2016 schedule."
 430232213,Kayla Moleschi,CAN,female,1990-10-25,1.59,65,rugby sevens,0,0,1,
 445589182,Kayla Pratt,NZL,female,1991-05-27,1.79,73,rowing,0,0,0,
 892601199,Kayla Whitelock,NZL,female,1985-10-30,1.74,72,hockey,0,0,0,
@@ -5671,10 +5671,10 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 519543861,Keren Siebner,ISR,female,1990-06-09,1.80,68,aquatics,0,0,0,
 976260835,Keri-Anne Payne,GBR,female,1987-12-09,1.77,66,aquatics,0,0,0,
 423484325,Kerri Gowler,NZL,female,1993-12-18,1.82,76,rowing,0,0,0,
-499209508,Kerri Walsh Jennings,USA,female,1978-08-15,1.88,72,volleyball,0,0,1,"This three-time world champion is married to fellow player Casey Jennings (and a mother of three), the USA's Kerri Walsh Jennings has never lost a game at the Olympics – winning gold at Athens 2004, Beijing 2008 and London 2012 with Misty May."
+499209508,Kerri Walsh Jennings,USA,female,1978-08-15,1.88,72,volleyball,0,0,1,"This three-time world champion is married to fellow player Casey Jennings (and a mother of three), the USA s Kerri Walsh Jennings has never lost a game at the Olympics â€“ winning gold at Athens 2004, Beijing 2008 and London 2012 with Misty May."
 891867859,Kerron Clement,USA,male,1985-10-31,1.88,86,athletics,1,0,0,
 233041375,Kerry Hore,AUS,female,1981-07-03,1.83,74,rowing,0,0,0,
-281101041,Kerry O'Flaherty,IRL,female,1981-07-15,1.67,53,athletics,0,0,0,
+281101041,Kerry O Flaherty,IRL,female,1981-07-15,1.67,53,athletics,0,0,0,
 419463510,Kerry Simmonds,USA,female,1989-04-03,1.83,81,rowing,1,0,0,
 897407929,Kersten Thiele,GER,male,1992-09-29,1.79,75,cycling,0,0,0,
 199341754,Kerstin Hartmann,GER,female,1988-06-14,1.77,70,rowing,0,0,0,
@@ -5692,7 +5692,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 905417640,Kevin Cordes,USA,male,1993-08-13,2.21,88,aquatics,1,0,0,
 665096571,Kevin Cordon,GUA,male,1986-11-28,1.80,80,badminton,0,0,0,
 936447136,Kevin Crovetto,MON,male,1992-06-10,1.83,81,gymnastics,0,0,0,
-887138863,Kevin Durant,USA,male,1988-09-29,2.05,104,basketball,1,0,0,"This London 2012 Olympic and 2010 world champion (voted the MVP of the latter competition), won as the USA's small forward, Kevin Durant has also topped the NBA scoring charts four times."
+887138863,Kevin Durant,USA,male,1988-09-29,2.05,104,basketball,1,0,0,"This London 2012 Olympic and 2010 world champion (voted the MVP of the latter competition), won as the USA s small forward, Kevin Durant has also topped the NBA scoring charts four times."
 947055286,Kevin Lisch,AUS,male,1986-05-16,1.88,89,basketball,0,0,0,
 985840182,Kevin Lopez,HON,male,1996-02-03,1.70,69,football,0,0,0,
 631415010,Kevin Lopez,ESP,male,1990-06-12,1.71,56,athletics,0,0,0,
@@ -5755,7 +5755,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 991525559,Kimberly Garcia,PER,female,1993-10-19,1.64,51,athletics,0,0,0,
 649635243,Kimberly Hill,USA,female,1989-11-30,1.93,72,volleyball,0,0,1,
 904668387,Kimberly Hyacinthe,CAN,female,1989-03-28,1.79,65,athletics,0,0,0,
-447699488,Kimberly Rhode,USA,female,1979-07-16,1.63,83,shooting,0,0,1,"With the most medals won in shooting, the USA's Kim Rhode has climbed the podium at each of the past five Olympic Games, in the double trap and skeet – gold at Atlanta 1996, Athens 2004 and London 2012, silver at Beijing 2008 and bronze at Sydney 2000."
+447699488,Kimberly Rhode,USA,female,1979-07-16,1.63,83,shooting,0,0,1,"With the most medals won in shooting, the USA s Kim Rhode has climbed the podium at each of the past five Olympic Games, in the double trap and skeet â€“ gold at Atlanta 1996, Athens 2004 and London 2012, silver at Beijing 2008 and bronze at Sydney 2000."
 195712246,Kimberly Williams,JAM,female,1988-11-03,1.78,62,athletics,0,0,0,
 943752318,Kimia Alizadeh Zenoorin,IRI,female,1998-07-10,1.85,62,taekwondo,0,0,1,
 145845453,Kimihiko Imamura,JPN,male,1984-02-03,1.80,78,sailing,0,0,0,
@@ -5804,7 +5804,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 189267095,Kodo Nakano,PHI,male,1993-03-08,,81,judo,0,0,0,
 332048858,Koen Naert,BEL,male,1989-09-03,1.82,66,athletics,0,0,0,
 608163038,Kohei Uchima,JPN,male,1988-11-08,1.70,60,cycling,0,0,0,
-199243053,Kohei Uchimura,JPN,male,1989-01-02,1.62,52,gymnastics,2,0,0,"The biggest name in artistic gymnastics today, Japan's Kohei Uchimura is a six-time world championship winner in the general individual – where he is also the current Olympic champion. He has another four silvers and 19 world championship medals."
+199243053,Kohei Uchimura,JPN,male,1989-01-02,1.62,52,gymnastics,2,0,0,"The biggest name in artistic gymnastics today, Japan s Kohei Uchimura is a six-time world championship winner in the general individual â€“ where he is also the current Olympic champion. He has another four silvers and 19 world championship medals."
 86038956,Kohei Yamamoto,JPN,male,1985-08-20,1.82,69,cycling,0,0,0,
 51425019,Kohei Yamashita,JPN,male,1994-09-06,1.79,69,athletics,0,0,0,
 656874306,Koichiro Morioka,JPN,male,1985-04-02,1.85,69,athletics,0,0,0,
@@ -5971,7 +5971,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 609688727,Larisa Ceric,BIH,female,1991-01-26,1.76,110,judo,0,0,0,
 838253467,Larissa Araujo,BRA,female,1992-07-01,1.67,62,handball,0,0,0,
 842092433,Larissa Crummer,AUS,female,1996-01-10,1.78,70,football,0,0,0,
-564844336,Larissa Franca Maestrini,BRA,female,1982-04-14,1.74,70,volleyball,0,0,0,"Considered the best setter in the world, Brazil's Larissa won bronze at the London 2012 Olympic Games. She is also the holder of one world championship and two Pan American golds, as well as seven beach volleyball world circuit titles."
+564844336,Larissa Franca Maestrini,BRA,female,1982-04-14,1.74,70,volleyball,0,0,0,"Considered the best setter in the world, Brazil s Larissa won bronze at the London 2012 Olympic Games. She is also the holder of one world championship and two Pan American golds, as well as seven beach volleyball world circuit titles."
 923732002,Larissa Oliveira,BRA,female,1993-02-16,1.69,57,aquatics,0,0,0,
 768025423,Larrissa Miller,AUS,female,1992-07-12,1.59,50,gymnastics,0,0,0,
 715498421,Lars Bender,GER,male,1989-04-27,1.84,77,football,0,1,0,
@@ -5991,7 +5991,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 27973136,Laszlo Csoknyai,HUN,male,1987-10-25,1.72,83,judo,0,0,0,
 932218677,Latario Collie-Minns,BAH,male,1994-03-10,1.73,64,athletics,0,0,0,
 486930749,Laura Alleway,AUS,female,1989-11-28,1.78,74,football,0,0,0,
-70272751,Laura Asadauskaite,LTU,female,1984-02-28,1.60,49,modern pentathlon,0,0,0,"Married to Andrejus Zadneprovskis, a two-time Olympic medallist in the modern pentathlon, Laura Asadauskaitė won gold in this event at London 2012. This Lithuanian athlete also holds two world titles – an individual (2013) and one mixed relay (2014)."
+70272751,Laura Asadauskaite,LTU,female,1984-02-28,1.60,49,modern pentathlon,0,0,0,"Married to Andrejus Zadneprovskis, a two-time Olympic medallist in the modern pentathlon, Laura AsadauskaitÄ— won gold in this event at London 2012. This Lithuanian athlete also holds two world titles â€“ an individual (2013) and one mixed relay (2014)."
 151499815,Laura Auge,FRA,female,1992-01-17,1.75,60,aquatics,0,0,0,
 247206821,Laura Benkarth,GER,female,1992-10-14,1.73,68,football,1,0,0,
 529217667,Laura Brown,CAN,female,1986-11-27,1.67,61,cycling,0,0,1,
@@ -6094,7 +6094,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 277445751,Lee Parkhill,CAN,male,1988-11-22,1.81,82,sailing,0,0,0,
 101248331,Lee-Ann Persse,RSA,female,1988-11-20,1.81,74,rowing,0,0,0,
 603020546,Leevan Sands,BAH,male,1981-08-16,1.91,82,athletics,0,0,0,
-804034599,Lei Gao,CHN,male,1992-01-02,1.70,64,gymnastics,0,0,1,"By overcoming his compatriot (and current Olympic champion) Dong Dong, China's Gao Lei won the world individual general trampoline gymnastics title in 2015. He was also world champion as part of the Chinese team in 2013."
+804034599,Lei Gao,CHN,male,1992-01-02,1.70,64,gymnastics,0,0,1,"By overcoming his compatriot (and current Olympic champion) Dong Dong, China s Gao Lei won the world individual general trampoline gymnastics title in 2015. He was also world champion as part of the Chinese team in 2013."
 101911346,Lei Gong,CHN,male,1983-03-26,1.85,88,sailing,0,0,0,
 512537797,Lei Kou,UKR,male,1987-11-20,1.76,74,table tennis,0,0,0,
 988926338,Leia da Silva Nicolosi,BRA,female,1985-03-01,1.69,58,volleyball,0,0,0,
@@ -6248,7 +6248,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 983582126,Liosbel Hernandez,CUB,male,1983-12-17,1.90,70,rowing,0,0,0,
 557752206,Lisa Altenburg,GER,female,1989-09-23,1.55,58,hockey,0,0,1,
 416331629,Lisa Brennauer,GER,female,1988-06-08,1.68,63,cycling,0,0,0,
-135005136,Lisa Carrington,NZL,female,1989-06-23,1.68,63,canoe,1,0,1,"A specialist in the K-1 200m canoe sprint event, New Zealand's Lisa Carrington won gold at London 2012, as well as in the 2011, 2013, 2014 and 2015 world championships (also winning the 500m in the latter)."
+135005136,Lisa Carrington,NZL,female,1989-06-23,1.68,63,canoe,1,0,1,"A specialist in the K-1 200m canoe sprint event, New Zealand s Lisa Carrington won gold at London 2012, as well as in the 2011, 2013, 2014 and 2015 world championships (also winning the 500m in the latter)."
 922248644,Lisa Dahlkvist,SWE,female,1987-02-06,1.73,68,football,0,1,0,
 191131636,Lisa Darmanin,AUS,female,1991-08-27,1.68,65,sailing,0,1,0,
 954723577,Lisa Ecker,AUT,female,1992-09-19,1.57,55,gymnastics,0,0,0,
@@ -6258,7 +6258,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 211903668,Lisa Jane Weightman,AUS,female,1979-01-16,1.57,44,athletics,0,0,0,
 18063764,Lisa Klein,GER,female,1996-07-15,1.70,62,cycling,0,0,0,
 526656164,Lisa Mayer,GER,female,1996-05-02,1.71,57,athletics,0,0,0,
-765502625,Lisa Norden,SWE,female,1984-11-24,1.76,60,triathlon,0,0,0,"Silver medallist at London 2012, Sweden's Lisa Nordén lost the gold to Switzerland's Nicola Spirig in a photo finish. That same year, Lisa was the world champion, but recently won bronze at the European Games, in 2015."
+765502625,Lisa Norden,SWE,female,1984-11-24,1.76,60,triathlon,0,0,0,"Silver medallist at London 2012, Sweden s Lisa NordÃ©n lost the gold to Switzerland s Nicola Spirig in a photo finish. That same year, Lisa was the world champion, but recently won bronze at the European Games, in 2015."
 620856226,Lisa Roman,CAN,female,1989-09-17,1.78,76,rowing,0,0,0,
 298441762,Lisa Ryzih,GER,female,1988-09-27,1.79,62,athletics,0,0,0,
 130489647,Lisa Schmidla,GER,female,1991-06-05,1.73,76,rowing,1,0,0,
@@ -6300,7 +6300,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 270039898,Lola Riera,ESP,female,1991-06-25,1.72,74,hockey,0,0,0,
 993580824,Lolita Ananasova,UKR,female,1992-07-09,1.69,52,aquatics,0,0,0,
 962247263,Lomano Lemeki,JPN,male,1989-01-20,1.77,92,rugby sevens,0,0,0,
-366057032,Long Chen,CHN,male,1989-01-18,1.88,81,badminton,1,0,0,"A two-time world badminton champion having won the singles tournaments in 2014 and 2015, China's Chen Long is among the top ranked Badminton players in the world. His Olympic debut came at London 2012, where he took home the bronze."
+366057032,Long Chen,CHN,male,1989-01-18,1.88,81,badminton,1,0,0,"A two-time world badminton champion having won the singles tournaments in 2014 and 2015, China s Chen Long is among the top ranked Badminton players in the world. His Olympic debut came at London 2012, where he took home the bronze."
 865328770,Long Gutierrez Feng,MEX,male,1995-02-23,1.90,85,aquatics,0,0,0,
 736738706,Long Ma,CHN,male,1988-10-20,1.75,72,table tennis,2,0,0,
 399910648,Lonneke Sloetjes,NED,female,1990-11-15,1.92,77,volleyball,0,0,0,
@@ -6548,7 +6548,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 296260449,Magdiel Estrada,CUB,male,1994-08-26,1.76,73,judo,0,0,0,
 28493203,Maggie Hogan,USA,female,1979-01-01,1.71,61,canoe,0,0,0,
 610096820,Maggie Malone,USA,female,1993-12-30,1.73,77,athletics,0,0,0,
-151348032,Maggie Steffens,USA,female,1993-06-03,1.73,74,aquatics,1,0,0,"Top scorer in the women's water polo tournament at London 2012, with 21 goals, the USA's Maggie Steffens helped her country win the gold medal. Her father also played this sport for Puerto Rico and competed in three Pan American Games."
+151348032,Maggie Steffens,USA,female,1993-06-03,1.73,74,aquatics,1,0,0,"Top scorer in the women s water polo tournament at London 2012, with 21 goals, the USA s Maggie Steffens helped her country win the gold medal. Her father also played this sport for Puerto Rico and competed in three Pan American Games."
 558981183,Magnus Kirt,EST,male,1990-04-10,1.92,90,athletics,0,0,0,
 344707477,Magnus Westermann,DEN,male,1995-03-13,1.94,94,aquatics,0,0,0,
 829849936,Magomed Idrisovitch Ibragimov,UZB,male,1985-06-02,1.83,97,wrestling,0,0,1,
@@ -6565,7 +6565,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 448445626,Mahdi Kamil,IRQ,male,1995-01-06,1.70,60,football,0,0,0,
 452893279,Mahdi Khodabakhshi,IRI,male,1991-04-21,1.92,87,taekwondo,0,0,0,
 167441839,Mahdi Marandi,IRI,male,1986-05-12,1.72,69,volleyball,0,0,0,
-472129595,Mahe Drysdale,NZL,male,1978-11-19,2.00,102,rowing,1,0,0,"New Zealand's Mahé Drysdale made his rowing debut at the Athens 2004 Olympic Games, coming in fifth place in the coxless four. He then began competing in the single scull, winning silver at Beijing 2008 and gold at London 2012."
+472129595,Mahe Drysdale,NZL,male,1978-11-19,2.00,102,rowing,1,0,0,"New Zealand s MahÃ© Drysdale made his rowing debut at the Athens 2004 Olympic Games, coming in fifth place in the coxless four. He then began competing in the single scull, winning silver at Beijing 2008 and gold at London 2012."
 150879921,Mahiedine Mekhissi,FRA,male,1985-03-15,1.90,75,athletics,0,0,1,
 526960763,Mahlagha Jambozorg,IRI,female,1991-08-15,1.69,80,shooting,0,0,0,
 74259823,Mahmood Haji,BRN,male,1991-03-11,1.75,69,shooting,0,0,0,
@@ -6672,7 +6672,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 857446492,Manrique Larduet,CUB,male,1996-07-10,1.60,63,gymnastics,0,0,0,
 690679655,Mantas Kalnietis,LTU,male,1986-09-06,1.94,90,basketball,0,0,0,
 737047784,Manu Attri,IND,male,1992-12-31,1.72,73,badminton,0,0,0,
-949112523,Manu Ginobili,ARG,male,1977-07-28,1.98,91,basketball,0,0,0,"An Olympic basketball champion at Athens 2004 and a bronze medal winner at Beijing 2008 for the Argentina team, shooting guard Manu Ginóbili was decisive in four NBA titles won by the San Antonio Spurs – 2003, 2005, 2007 and 2014."
+949112523,Manu Ginobili,ARG,male,1977-07-28,1.98,91,basketball,0,0,0,"An Olympic basketball champion at Athens 2004 and a bronze medal winner at Beijing 2008 for the Argentina team, shooting guard Manu GinÃ³bili was decisive in four NBA titles won by the San Antonio Spurs â€“ 2003, 2005, 2007 and 2014."
 933012630,Manuel Alexander Torres,VEN,male,1987-01-20,1.76,66,wrestling,0,0,0,
 653187190,Manuel Brunet,ARG,male,1985-11-16,1.79,79,hockey,1,0,0,
 621320289,Manuel Cappai,ITA,male,1992-10-09,1.68,,boxing,0,0,0,
@@ -6748,7 +6748,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 372806643,Marcos Poggi,ESP,male,1987-08-31,1.82,86,rugby sevens,0,0,0,
 481791889,Marcos Pulido Rodriguez,MEX,male,1995-08-18,1.79,74,canoe,0,0,0,
 414759597,Marcus Child,NZL,male,1991-03-02,1.82,81,hockey,0,0,0,
-728513422,Marcus D'almeida,BRA,male,1998-01-30,1.83,90,archery,0,0,0,
+728513422,Marcus D almeida,BRA,male,1998-01-30,1.83,90,archery,0,0,0,
 84514689,Marcus Daniell,NZL,male,1989-11-09,1.90,76,tennis,0,0,0,
 22207553,Marcus Duncan,TTO,male,1986-12-04,1.77,,athletics,0,0,0,
 820182386,Marcus Ellis,GBR,male,1989-09-14,1.75,80,badminton,0,0,1,
@@ -6771,7 +6771,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 978084317,Margaret Bamgbose,NGR,female,1993-10-19,1.71,63,athletics,0,0,0,
 780545996,Margaret Nyairera Wambui,KEN,female,1995-09-15,,66,athletics,0,0,1,
 644993560,Margarita Hernandez,MEX,female,1985-12-03,1.50,44,athletics,0,0,0,
-592591211,Margarita Mamun,RUS,female,1995-10-31,1.70,50,gymnastics,1,0,0,"She is the complete gymnast: between 2013 and 2015, Russia's Margarita Mamun won the world championship gold in four different apparatuses – the ball, clubs, tape and hoop –, in addition to the team first place."
+592591211,Margarita Mamun,RUS,female,1995-10-31,1.70,50,gymnastics,1,0,0,"She is the complete gymnast: between 2013 and 2015, Russia s Margarita Mamun won the world championship gold in four different apparatuses â€“ the ball, clubs, tape and hoop â€“, in addition to the team first place."
 822811465,Margarita Mukasheva,KAZ,female,1986-01-04,1.65,50,athletics,0,0,0,
 330489011,Margarita Yelisseyeva,KAZ,female,1992-07-20,1.50,48,weightlifting,0,0,0,
 936647883,Margaux Chretien,FRA,female,1992-12-11,1.72,61,aquatics,0,0,0,
@@ -6789,7 +6789,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 192881723,Maria Alexandra Escobar Guerrero,ECU,female,1980-07-17,1.61,57,weightlifting,0,0,0,
 220995361,Maria Andrade,CPV,female,1993-03-19,1.69,49,taekwondo,0,0,0,
 289043459,Maria Andrejczyk,POL,female,1996-03-09,1.74,77,athletics,0,0,0,
-60248392,Maria Barrionuevo,ARG,female,1984-05-16,1.71,58,hockey,0,0,0,"One of the most experienced Argentine field hockey players, defender Noel Barrionuevo led her country to the podium at Beijing 2008, with the bronze, and London 2012, with the silver – as well as the 2010 World Cup and 2014/2015 World League."
+60248392,Maria Barrionuevo,ARG,female,1984-05-16,1.71,58,hockey,0,0,0,"One of the most experienced Argentine field hockey players, defender Noel Barrionuevo led her country to the podium at Beijing 2008, with the bronze, and London 2012, with the silver â€“ as well as the 2010 World Cup and 2014/2015 World League."
 437720766,Maria Belen Perez Maurice,ARG,female,1985-07-12,1.80,68,fencing,0,0,0,
 581742825,Maria Belimpasaki,GRE,female,1991-06-19,1.75,64,athletics,0,0,0,
 671806829,Maria Bernabeu,ESP,female,1988-02-15,1.70,70,judo,0,0,0,
@@ -6864,7 +6864,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 114574006,Mariana Duarte,BRA,female,1996-10-05,1.70,67,aquatics,0,0,0,
 939892477,Mariana Duque-Marino,COL,female,1989-08-12,1.69,61,tennis,0,0,0,
 123852277,Mariana Foglia Costa,URU,female,1982-06-28,1.73,69,sailing,0,0,0,
-441871483,Mariana Pajon,COL,female,1991-10-10,1.58,50,cycling,1,0,0,"Colombia's flag bearer at the London 2012 opening ceremony, Mariana Pajón won gold in the cycling BMX event at that same Olympics – the second in the South American country's Olympic history."
+441871483,Mariana Pajon,COL,female,1991-10-10,1.58,50,cycling,1,0,0,"Colombia s flag bearer at the London 2012 opening ceremony, Mariana PajÃ³n won gold in the cycling BMX event at that same Olympics â€“ the second in the South American country s Olympic history."
 267541302,Mariana Ramalho,BRA,female,1987-08-17,,,rugby sevens,0,0,0,
 583952076,Mariana Sahakian,LIB,female,1977-09-02,1.55,52,table tennis,0,0,0,
 354121976,Mariana Silva,BRA,female,1990-02-22,1.73,63,judo,0,0,0,
@@ -6910,7 +6910,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 500168497,Marin Cilic,CRO,male,1988-09-28,1.98,89,tennis,0,0,0,
 461854211,Marin Draganja,CRO,male,1991-05-13,1.86,80,tennis,0,0,0,
 161253255,Marina Aframeeva,RUS,female,1991-03-04,1.71,62,equestrian,0,0,0,
-521412968,Marina Alabau Neira,ESP,female,1985-08-31,1.64,55,sailing,0,0,0,"Five-time European champion and holder of one gold medal, two silvers and two bronzes at world championships, Spain's Marina Alabau is also the current Olympic champion in the RS:X class – she won the regattas at London 2012."
+521412968,Marina Alabau Neira,ESP,female,1985-08-31,1.64,55,sailing,0,0,0,"Five-time European champion and holder of one gold medal, two silvers and two bronzes at world championships, Spain s Marina Alabau is also the current Olympic champion in the RS:X class â€“ she won the regattas at London 2012."
 430360045,Marina Arzamasova,BLR,female,1987-12-17,1.73,58,athletics,0,0,0,
 276990393,Marina Bravo,ESP,female,1989-07-02,1.73,68,rugby sevens,0,0,0,
 190849137,Marina Canetta,BRA,female,1989-04-01,1.62,51,archery,0,0,0,
@@ -6939,7 +6939,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 506325009,Mario Todorovic,CRO,male,1988-10-11,1.85,82,aquatics,0,0,0,
 31095617,Marion Lepert,USA,female,1995-09-18,1.78,61,sailing,0,0,0,
 653316415,Marios Georgiou,CYP,male,1997-11-10,1.67,60,gymnastics,0,0,0,
-63803519,Maris Strombergs,LAT,male,1987-03-10,1.86,90,cycling,0,0,0,"Known as “The Machine”, Latvia's Māris Štrombergs is the only Olympic champion in the men's cycling BMX event – winning gold at both the Beijing Olympics in 2008 and London in 2012. Štrombergs also holds two world titles from 2008 and 2010."
+63803519,Maris Strombergs,LAT,male,1987-03-10,1.86,90,cycling,0,0,0,"Known as â€œThe Machineâ€�, Latvia s MÄ�ris Å trombergs is the only Olympic champion in the men s cycling BMX event â€“ winning gold at both the Beijing Olympics in 2008 and London in 2012. Å trombergs also holds two world titles from 2008 and 2010."
 476920635,Marisa Dick,TTO,female,1997-05-26,1.53,47,gymnastics,0,0,0,
 935870296,Marisa Lavanchy,SUI,female,1990-01-04,1.70,58,athletics,0,0,0,
 257657428,Marisol Carratu,ARG,female,1986-07-15,1.74,85,handball,0,0,0,
@@ -7295,7 +7295,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 350561307,Megan Simmonds,JAM,female,1994-03-18,1.57,49,athletics,0,0,0,
 618204486,Meghan Klingenberg,USA,female,1988-08-02,1.58,56,football,0,0,0,
 26643473,Meghan Musnicki,USA,female,1983-02-05,1.83,73,rowing,1,0,0,
-626601674,Meghan O'Leary,USA,female,1984-08-24,1.83,73,rowing,0,0,0,
+626601674,Meghan O Leary,USA,female,1984-08-24,1.83,73,rowing,0,0,0,
 86610737,Megumi Iseda,JPN,female,1987-06-30,1.57,56,sailing,0,0,0,
 463812760,Mehboob Ali,PAK,male,1990-04-10,,,athletics,0,0,0,
 44950691,Mehdi Mahdavi,IRI,male,1984-02-13,1.91,96,volleyball,0,0,0,
@@ -7379,7 +7379,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 828603866,Michael Alexandre Bodegas,ITA,male,1987-05-03,1.92,102,aquatics,0,0,1,
 500190525,Michael Brake,NZL,male,1994-10-22,1.87,91,rowing,0,0,0,
 814037531,Michael Bultheel,BEL,male,1986-06-30,1.89,81,athletics,0,0,0,
-992884097,Michael D'Almeida,FRA,male,1987-09-03,1.76,80,cycling,0,0,1,
+992884097,Michael D Almeida,FRA,male,1987-09-03,1.76,80,cycling,0,0,1,
 969061469,Michael Damgaard Nielsen,DEN,male,1990-03-18,1.92,92,handball,1,0,0,
 386535330,Michael Darling,IRL,male,1988-07-03,1.70,65,hockey,0,0,0,
 442019186,Michael Di Santo,USA,male,1989-12-10,1.86,90,rowing,0,0,0,
@@ -7392,7 +7392,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 46089311,Michael Janker,GER,male,1992-03-23,1.80,75,shooting,0,0,0,
 360677958,Michael John Conlan,IRL,male,1991-11-19,1.70,,boxing,0,0,0,
 245131295,Michael Julian Meyer,RSA,male,1992-09-01,1.84,76,aquatics,0,0,0,
-878101089,Michael Jung,GER,male,1982-07-31,1.68,70,equestrian,1,1,0,"He received the greatest present one could ask for on his 30th birthday winning two golds at London 2012, in the individual and team eventing competitions. Germany's Michael Jung was the first athlete to win the Olympic, world and European titles."
+878101089,Michael Jung,GER,male,1982-07-31,1.68,70,equestrian,1,1,0,"He received the greatest present one could ask for on his 30th birthday winning two golds at London 2012, in the individual and team eventing competitions. Germany s Michael Jung was the first athlete to win the Olympic, world and European titles."
 415356488,Michael Kalomiris,GRE,male,1986-10-09,1.81,65,athletics,0,0,0,
 753189621,Michael Maskell,BAR,male,1966-11-24,1.75,114,shooting,0,0,0,
 255856000,Michael Mason,CAN,male,1986-09-30,1.86,67,athletics,0,0,0,
@@ -7400,7 +7400,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 359582375,Michael McPhail,USA,male,1981-12-15,1.83,88,shooting,0,0,0,
 876833914,"Michael O,Reilly",IRL,male,1993-04-30,1.80,,boxing,0,0,0,
 672059782,Michael Perez,MEX,male,1993-02-14,1.69,75,football,0,0,0,
-491565031,Michael Phelps,USA,male,1985-06-30,1.94,90,aquatics,5,1,0,"The USA's Michael Phelps has claimed 22 Olympic medals from three editions, 18 of which were gold, setting the record for medals won. He also has 26 world championship golds and retired from the sport after London 2012, but returns to compete at Rio 2016."
+491565031,Michael Phelps,USA,male,1985-06-30,1.94,90,aquatics,5,1,0,"The USA s Michael Phelps has claimed 22 Olympic medals from three editions, 18 of which were gold, setting the record for medals won. He also has 26 world championship golds and retired from the sport after London 2012, but returns to compete at Rio 2016."
 963798182,Michael Rimmer,GBR,male,1986-02-03,1.82,66,athletics,0,0,0,
 212707556,Michael Robson,IRL,male,1995-04-18,1.75,70,hockey,0,0,0,
 776809154,Michael Schmid,SUI,male,1988-01-02,1.79,73,rowing,0,0,0,
@@ -7501,7 +7501,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 231091970,Miho Teramura,JPN,female,1994-09-27,1.65,53,aquatics,0,0,0,
 569747933,Miho Yoshioka,JPN,female,1990-08-27,1.77,68,sailing,0,0,0,
 218617298,Mihyun Park,KOR,female,1986-01-26,1.60,63,hockey,0,0,0,
-659143143,Mijain Lopez Nunez,CUB,male,1982-08-20,1.98,130,wrestling,1,0,0,"The biggest name in Greco-Roman wrestling, in the Americas, Cuba's Mijaín López won gold in the up to 120kg class at Beijing 2008 and London 2012 – in addition to holding five world and four Pan American titles."
+659143143,Mijain Lopez Nunez,CUB,male,1982-08-20,1.98,130,wrestling,1,0,0,"The biggest name in Greco-Roman wrestling, in the Americas, Cuba s MijaÃ­n LÃ³pez won gold in the up to 120kg class at Beijing 2008 and London 2012 â€“ in addition to holding five world and four Pan American titles."
 427135506,Mika Kurihara,JPN,female,1989-05-14,1.76,68,basketball,0,0,0,
 945541721,Mikael Appelgren,SWE,male,1989-09-06,1.91,103,handball,0,0,0,
 629406000,Mikael Ishak,SWE,male,1993-03-31,1.84,74,football,0,0,0,
@@ -7510,7 +7510,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 166082362,Mike Dawson,NZL,male,1986-10-15,1.83,75,canoe,0,0,0,
 281525534,Mike Hartfield,USA,male,1990-03-29,1.91,77,athletics,0,0,0,
 302902046,Mike Hixon,USA,male,1994-07-16,1.73,68,aquatics,0,1,0,
-999394723,Mike Mokamba Nyang'au,KEN,male,1994-08-28,1.70,70,athletics,0,0,0,
+999394723,Mike Mokamba Nyang au,KEN,male,1994-08-28,1.70,70,athletics,0,0,0,
 716059894,Mike Rodgers,USA,male,1985-04-24,1.76,80,athletics,0,0,0,
 929371856,Mikel Schreuders,ARU,male,1998-09-21,1.89,90,aquatics,0,0,0,
 627661082,Mikel Thomas,TTO,male,1987-11-23,1.70,79,athletics,0,0,0,
@@ -7655,7 +7655,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 219235142,Mohamed Daud Mohamed,SOM,male,1996-03-01,,,athletics,0,0,0,
 310689410,Mohamed Elhadi Elkawisah,LBA,male,1987-03-08,,,judo,0,0,0,
 956253727,Mohamed Essam,EGY,male,1994-12-06,1.80,74,fencing,0,0,0,
-302433626,Mohamed Farah,GBR,male,1983-03-23,1.75,58,athletics,2,0,0,"After winning gold in the 5000m and 10,000m at his home Olympics in London 2012, Great Britain´s Mo Farah showed his prowess in these events once again by taking gold in the same races at the 2013 and 2015 World Championships."
+302433626,Mohamed Farah,GBR,male,1983-03-23,1.75,58,athletics,2,0,0,"After winning gold in the 5000m and 10,000m at his home Olympics in London 2012, Great BritainÂ´s Mo Farah showed his prowess in these events once again by taking gold in the same races at the 2013 and 2015 World Championships."
 464902728,Mohamed Flissi,ALG,male,1990-02-13,1.74,,boxing,0,0,0,
 662693282,Mohamed Hamout,MAR,male,1993-12-11,1.67,,boxing,0,0,0,
 189738440,Mohamed Hamza,EGY,male,2000-09-11,1.72,62,fencing,0,0,0,
@@ -7881,7 +7881,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 945555989,Natalia Duco,CHI,female,1989-01-31,1.77,100,athletics,0,0,0,
 501264763,Natalia Gaitan,COL,female,1991-04-03,1.64,56,football,0,0,0,
 29258479,Natalia Gaudio,BRA,female,1992-12-18,1.70,55,gymnastics,0,0,0,
-102725469,Natalia Ishchenko,RUS,female,1986-04-08,1.77,56,aquatics,2,0,0,"With a total of 19 world championship medals, Russia's Natalia Ischchenko also won three golds from two Olympic Games: the team event at Beijing 2008 and London 2012 – as well as the individual event in the latter."
+102725469,Natalia Ishchenko,RUS,female,1986-04-08,1.77,56,aquatics,2,0,0,"With a total of 19 world championship medals, Russia s Natalia Ischchenko also won three golds from two Olympic Games: the team event at Beijing 2008 and London 2012 â€“ as well as the individual event in the latter."
 508230574,Natalia Kuziutina,RUS,female,1989-05-08,1.60,52,judo,0,0,1,
 131987947,Natalia Lovtcova,RUS,female,1988-04-14,,,aquatics,0,0,0,
 482560028,Natalia Luccas,BRA,female,1996-09-13,1.67,63,aquatics,0,0,0,
@@ -8001,7 +8001,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 806128359,Niall Williams,NZL,female,1988-04-21,1.73,74,rugby sevens,0,1,0,
 959123687,Nic Woods,NZL,male,1995-08-26,1.80,90,hockey,0,0,0,
 487583469,Niccolo Campriani,ITA,male,1987-11-06,1.77,80,shooting,2,0,0,
-81940931,Niccolo' Gitto,ITA,male,1986-10-12,1.90,90,aquatics,0,0,1,
+81940931,Niccolo  Gitto,ITA,male,1986-10-12,1.90,90,aquatics,0,0,1,
 284825190,Nichelle Prince,CAN,female,1995-02-19,1.63,65,football,0,0,1,
 832227468,Nicholas Delpopolo,USA,male,1989-02-08,1.73,77,judo,0,0,0,
 451660058,Nicholas Hoag,CAN,male,1992-08-19,2.00,91,volleyball,0,0,0,
@@ -8050,7 +8050,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 708871411,Nicolas Colsaerts,BEL,male,1982-11-14,1.88,75,golf,0,0,0,
 768215755,Nicolas Cordoba,ARG,male,1989-11-20,1.65,71,gymnastics,0,0,0,
 162021826,Nicolas Cuestas,URU,male,1986-12-08,1.80,63,athletics,0,0,0,
-153786575,Nicolas D'Oriano,FRA,male,1997-05-05,1.75,68,aquatics,0,0,0,
+153786575,Nicolas D Oriano,FRA,male,1997-05-05,1.75,68,aquatics,0,0,0,
 997930388,Nicolas Ferreira,BRA,male,1992-09-25,1.85,84,fencing,0,0,0,
 715985574,Nicolas Jacobi,GER,male,1987-04-13,1.93,95,hockey,0,0,1,
 164743566,Nicolas Laprovittola,ARG,male,1990-01-31,1.93,88,basketball,0,0,0,
@@ -8129,7 +8129,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 677508603,Nils Jakob Hoff,NOR,male,1985-02-05,,,rowing,0,0,0,
 599711815,Nils Petersen,GER,male,1988-12-06,1.88,80,football,0,1,0,
 471728310,Nils Schomber,GER,male,1994-03-15,1.83,72,cycling,0,0,0,
-625149958,Nils van 't Hoenderdaal,NED,male,1993-10-03,1.78,86,cycling,0,0,0,
+625149958,Nils van  t Hoenderdaal,NED,male,1993-10-03,1.78,86,cycling,0,0,0,
 424937241,Nilson Moreira da Silva,BRA,male,1976-12-24,1.78,74,equestrian,0,0,0,
 828507480,Niluka Karunaratne,SRI,male,1985-02-13,1.76,73,badminton,0,0,0,
 690491812,Niluka Rajasekara,SRI,female,1982-03-17,1.55,42,athletics,0,0,0,
@@ -8191,7 +8191,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 753747298,Nour Elhouda Ettaieb,TUN,female,1996-10-15,1.70,57,rowing,0,0,0,
 947989381,Noura Mana,MAR,female,1997-12-12,1.70,62,aquatics,0,0,0,
 792186214,Noura Mohamed,EGY,female,1998-03-05,1.73,60,fencing,0,0,0,
-913461449,Novak Djokovic,SRB,male,1987-05-22,1.88,88,tennis,0,0,0,"Top of the world rankings since July 2014, Serbia's Novak Djokovic crowned his glorious career by winning his first trophy at Roland Garros in 2016. In all, ""Nole"" has 12 Grand Slams and a bronze medal won at the Beijing 2008 Olympic Games."
+913461449,Novak Djokovic,SRB,male,1987-05-22,1.88,88,tennis,0,0,0,"Top of the world rankings since July 2014, Serbia s Novak Djokovic crowned his glorious career by winning his first trophy at Roland Garros in 2016. In all, ""Nole"" has 12 Grand Slams and a bronze medal won at the Beijing 2008 Olympic Games."
 123381244,Novlene Williams-Mills,JAM,female,1982-04-26,1.68,57,athletics,0,1,0,
 795015528,Nozomi Okuhara,JPN,female,1995-03-13,1.56,51,badminton,0,0,1,
 860526701,Nozomi Sato,JPN,female,1986-07-03,1.73,61,fencing,0,0,0,
@@ -8207,7 +8207,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 395961774,Nyakisi Adero,UGA,female,1986-07-02,,,athletics,0,0,0,
 699476083,Nycke Groot,NED,female,1988-05-04,1.75,70,handball,0,0,0,
 959020954,Nzingha Prescod,USA,female,1992-08-14,1.63,62,fencing,0,0,0,
-998833102,O'dayne Richards,JAM,male,1988-12-14,1.77,120,athletics,0,0,0,
+998833102,O dayne Richards,JAM,male,1988-12-14,1.77,120,athletics,0,0,0,
 838284014,Oana Manea,ROU,female,1985-04-18,1.77,78,handball,0,0,0,
 703472773,Obada Alkasbeh,JOR,male,1994-07-30,1.66,,boxing,0,0,0,
 381088762,Odbayar Ganbaatar,MGL,male,1989-08-20,1.60,,judo,0,0,0,
@@ -8378,7 +8378,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 819236187,Oussama Boughanmi,TUN,male,1990-02-05,1.85,87,handball,0,0,0,
 304396524,Oussama Darfalou,ALG,male,1993-09-29,1.86,75,football,0,0,0,
 311177552,Oussama Hosni,TUN,male,1992-09-17,1.92,88,handball,0,0,0,
-518631495,Oussama Mellouli,TUN,male,1984-02-16,1.92,84,aquatics,0,0,0,"At London 2012, Tunisia's Oussama Mellouli won gold in the swimming marathons and also won the bronze in the 1500m – the same event in which he had already won the gold, four years previously, at Beijing 2008."
+518631495,Oussama Mellouli,TUN,male,1984-02-16,1.92,84,aquatics,0,0,0,"At London 2012, Tunisia s Oussama Mellouli won gold in the swimming marathons and also won the bronze in the 1500m â€“ the same event in which he had already won the gold, four years previously, at Beijing 2008."
 538663975,Oussama Methazem,ALG,male,1993-12-15,1.80,75,football,0,0,0,
 374267293,Oussama Oueslati,TUN,male,1996-03-24,1.99,80,taekwondo,0,0,1,
 16385389,Oussama Sahnoune,ALG,male,1992-08-02,1.87,84,aquatics,0,0,0,
@@ -8501,7 +8501,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 498755923,Paul Kipkemoi Chelimo,USA,male,1990-10-27,1.80,57,athletics,0,1,0,
 357755328,Paul Kipngetich Tanui,KEN,male,1990-12-22,1.68,47,athletics,0,1,0,
 29049380,Paul Kohlhoff,GER,male,1995-06-26,1.87,83,sailing,0,0,0,
-367795663,Paul O'Donovan,IRL,male,1994-04-19,1.77,70,rowing,0,1,0,
+367795663,Paul O Donovan,IRL,male,1994-04-19,1.77,70,rowing,0,1,0,
 674380639,Paul Omba Biongolo,FRA,male,1995-12-28,1.89,,boxing,0,0,0,
 350939465,Paul Pollock,IRL,male,1986-06-25,1.77,57,athletics,0,0,0,
 696711515,Paul Sieber,AUT,male,1993-02-12,1.77,70,rowing,0,0,0,
@@ -8623,7 +8623,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 788615502,Peter Mullenberg,NED,male,1987-12-30,1.83,,boxing,0,0,0,
 730243242,Peter Mungai Warui,KEN,male,1981-04-22,,,boxing,0,0,0,
 208033661,Peter Nagy,HUN,male,1986-01-16,1.92,159,weightlifting,0,0,0,
-945986909,Peter Sagan,SVK,male,1990-01-26,1.82,79,cycling,0,0,0,"After exploding onto the mountain bike scene with junior world and European titles in 2008, Slovakia's Peter Sagan went on to excel on the road, culminating in his world championship win in 2015."
+945986909,Peter Sagan,SVK,male,1990-01-26,1.82,79,cycling,0,0,0,"After exploding onto the mountain bike scene with junior world and European titles in 2008, Slovakia s Peter Sagan went on to excel on the road, culminating in his world championship win in 2015."
 183289884,Peter Sidi,HUN,male,1978-09-11,1.76,86,shooting,0,0,0,
 4878555,Peter Skantar,SVK,male,1982-07-20,1.82,78,canoe,1,0,0,
 690076235,Peter Somfai,HUN,male,1980-04-02,1.88,85,fencing,0,0,1,
@@ -8734,7 +8734,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 172536875,Pol Pla,ESP,male,1993-02-18,1.77,75,rugby sevens,0,0,0,
 704580585,Polat Kemboi Arikan,TUR,male,1990-12-12,1.75,59,athletics,0,0,0,
 974099683,Poliana,BRA,female,1991-02-06,1.72,60,football,0,0,0,
-39584129,Poliana Okimoto,BRA,female,1983-03-08,1.65,52,aquatics,0,0,1,"Brazil's first world marathon swimming champion, in 2009, Poliana Okimoto had the best year of her career to date, in 2013. She won three medals at the World Aquatics Championship, in Barcelona, including gold in the 10km."
+39584129,Poliana Okimoto,BRA,female,1983-03-08,1.65,52,aquatics,0,0,1,"Brazil s first world marathon swimming champion, in 2009, Poliana Okimoto had the best year of her career to date, in 2013. She won three medals at the World Aquatics Championship, in Barcelona, including gold in the 10km."
 343525700,Polina Kuznetsova,RUS,female,1987-06-10,1.68,60,handball,1,0,0,
 543469512,Polina Mikhailova,RUS,female,1986-08-31,1.68,60,table tennis,0,0,0,
 593041020,Polina Repina,KAZ,female,1990-06-29,1.70,50,athletics,0,0,0,
@@ -8836,10 +8836,10 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 632477118,Rafael Castillo,CUB,male,1993-08-12,2.02,87,taekwondo,0,0,0,
 558313217,Rafael Hettsheimeir,BRA,male,1986-06-16,2.08,120,basketball,0,0,0,
 125913109,Rafael Luz,BRA,male,1992-02-11,1.88,95,basketball,0,0,0,
-845065634,Rafael Nadal,ESP,male,1986-06-03,1.85,79,tennis,1,0,0,"The “Miura Bull” is a phenomenon. Dominating on clay, Rafael Nadal broke Björn Borg's record by winning nine Roland Garros titles. The Spaniard has already won all four tennis Grand Slams – and took home the gold at Beijing 2008."
+845065634,Rafael Nadal,ESP,male,1986-06-03,1.85,79,tennis,1,0,0,"The â€œMiura Bullâ€� is a phenomenon. Dominating on clay, Rafael Nadal broke BjÃ¶rn Borg s record by winning nine Roland Garros titles. The Spaniard has already won all four tennis Grand Slams â€“ and took home the gold at Beijing 2008."
 691523372,Rafael Quintero,PUR,male,1994-07-24,1.80,68,aquatics,0,0,0,
 501691381,Rafael Silva,BRA,male,1987-05-11,2.03,160,judo,0,0,1,
-361799297,Rafaela Silva,BRA,female,1992-04-24,1.69,57,judo,1,0,0,"Judoka Rafaela Silva has won the first gold medal for Brazil at the Rio 2016 Games, in the Women’s Lightweight category (up to 57kg). Born in Cidade de Deus, Rio de Janeiro, she became the first Brazilian world champion in the sport in 2013."
+361799297,Rafaela Silva,BRA,female,1992-04-24,1.69,57,judo,1,0,0,"Judoka Rafaela Silva has won the first gold medal for Brazil at the Rio 2016 Games, in the Womenâ€™s Lightweight category (up to 57kg). Born in Cidade de Deus, Rio de Janeiro, she became the first Brazilian world champion in the sport in 2013."
 98299217,Rafaelle,BRA,female,1991-06-18,1.75,67,football,0,0,0,
 155018393,Rafal Augustyn,POL,male,1984-05-14,1.80,82,athletics,0,0,0,
 178643168,Rafal Buszek,POL,male,1987-04-28,1.94,81,volleyball,0,0,0,
@@ -9092,7 +9092,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 892281190,Robert Munn,USA,male,1990-07-26,1.94,97,rowing,0,0,0,
 595627689,Robert Paez,VEN,male,1994-06-01,1.74,72,aquatics,0,0,0,
 455331641,Robert Renner,SLO,male,1994-03-08,1.83,75,athletics,0,0,0,
-503602363,Robert Scheidt,BRA,male,1973-04-15,1.88,76,sailing,0,0,0,"Brazil's Robert Scheidt has won medals at each of the five Olympic Games he competed in; gold at Atlanta 1996 and Athens 2004 and silver at Sydney 2000 in the Star class, as well as silver at Beijing 2008 and bronze at London 2012 in the Laser class."
+503602363,Robert Scheidt,BRA,male,1973-04-15,1.88,76,sailing,0,0,0,"Brazil s Robert Scheidt has won medals at each of the five Olympic Games he competed in; gold at Atlanta 1996 and Athens 2004 and silver at Sydney 2000 in the Star class, as well as silver at Beijing 2008 and bronze at London 2012 in the Laser class."
 720405492,Robert Skov,DEN,male,1996-05-20,1.83,78,football,0,0,0,
 853386777,Robert Sobera,POL,male,1991-01-19,1.91,86,athletics,0,0,0,
 532564803,Robert Timothy David Smith,USA,male,1987-01-30,1.83,127,wrestling,0,0,0,
@@ -9194,7 +9194,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 947165381,Rondel Sorrillo,TTO,male,1986-01-24,1.78,62,athletics,0,0,0,
 209988250,Rong Shang,CHN,female,2000-02-12,1.70,45,gymnastics,0,0,0,
 821012000,Rong Zhao,CHN,female,1991-08-02,1.71,59,football,0,0,0,
-151465997,Roniel Iglesias,CUB,male,1988-08-14,1.82,,boxing,0,0,0,"The Olympic boxing champion at London 2012 in the up to 64kg class, Cuba's Roniel Iglesias also won a bronze at Beijing 2008. The following year, in 2009, he won the world amateur title, in Milan."
+151465997,Roniel Iglesias,CUB,male,1988-08-14,1.82,,boxing,0,0,0,"The Olympic boxing champion at London 2012 in the up to 64kg class, Cuba s Roniel Iglesias also won a bronze at Beijing 2008. The following year, in 2009, he won the world amateur title, in Milan."
 243518732,Ronja Sturm,GER,female,1995-09-11,1.65,55,rowing,0,0,0,
 644702031,Ronnie Ash,USA,male,1988-07-02,1.88,94,athletics,0,0,0,
 948499068,Roope Kakko,FIN,male,1982-02-13,1.83,82,golf,0,0,0,
@@ -9205,7 +9205,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 616812664,Rosane Sibele Budag,BRA,female,1973-08-27,1.74,66,shooting,0,0,0,
 389253550,Rosane dos Reis Santos,BRA,female,1987-06-20,1.62,53,weightlifting,0,0,0,
 828730273,Rosangela Santos,BRA,female,1990-12-20,1.66,64,athletics,0,0,0,
-870380362,Rosannagh Maclennan,CAN,female,1988-08-27,1.58,54,gymnastics,1,0,0,"Runner-up at the World Championships in 2011, Rosannagh MacLennan won Canada's only gold medal at London 2012 in the individual trampoline event, achieving a personal best result. In 2013, she went on to win the world title."
+870380362,Rosannagh Maclennan,CAN,female,1988-08-27,1.58,54,gymnastics,1,0,0,"Runner-up at the World Championships in 2011, Rosannagh MacLennan won Canada s only gold medal at London 2012 in the individual trampoline event, achieving a personal best result. In 2013, she went on to win the world title."
 353182484,Rosaria Aiello,ITA,female,1989-05-12,1.72,74,aquatics,0,1,0,
 686173584,Rose Chelimo,BRN,female,1989-07-12,,,athletics,0,0,0,
 72544057,Rose Mary Almanza,CUB,female,1992-07-13,1.65,53,athletics,0,0,0,
@@ -9237,7 +9237,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 402214262,Rozaliya Nasretdinova,RUS,female,1997-02-10,1.80,66,aquatics,0,0,0,
 75479348,Ruaridh McConnochie,GBR,male,1991-10-23,1.90,93,rugby sevens,0,1,0,
 209686890,Ruben Aleksanyan,ARM,male,1990-03-14,1.80,152,weightlifting,0,0,0,
-477986784,Ruben Limardo Gascon,VEN,male,1985-08-03,1.75,75,fencing,0,0,0,"Venezuela's flag bearer at the Rio 2016 opening ceremony, Rubén Limardo was this country's second gold medal winner, taken at London 2012, in the épée event. A two-time Pan American fencing champion, he was a runner-up in the 2013 world championship."
+477986784,Ruben Limardo Gascon,VEN,male,1985-08-03,1.75,75,fencing,0,0,0,"Venezuela s flag bearer at the Rio 2016 opening ceremony, RubÃ©n Limardo was this country s second gold medal winner, taken at London 2012, in the Ã©pÃ©e event. A two-time Pan American fencing champion, he was a runner-up in the 2013 world championship."
 411710210,Ruben Scheire,BEL,male,1991-12-06,1.75,62,cycling,0,0,0,
 249844758,Ruben Voisard Rezola,ARG,male,1991-04-21,1.74,80,canoe,0,0,0,
 179815659,Rubens Donizete Valeriano,BRA,male,1979-08-14,1.73,69,cycling,0,0,0,
@@ -9265,7 +9265,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 32285535,Rumen Dimitrov,BUL,male,1986-09-19,1.92,80,athletics,0,0,0,
 621812972,Runa Imai,JPN,female,2000-08-15,1.63,50,aquatics,0,0,0,
 377313576,Rune Hermans,BEL,female,1999-05-09,1.59,48,gymnastics,0,0,0,
-854755696,Ruolin Chen,CHN,female,1992-12-12,1.60,49,aquatics,1,0,0,"China's diving hopeful Chen Ruolin is the country's only athlete to win the gold at the Olympic Games, world championship and world cup. She is a two-time Olympic champion in the 10m individual and the 10m synchronised."
+854755696,Ruolin Chen,CHN,female,1992-12-12,1.60,49,aquatics,1,0,0,"China s diving hopeful Chen Ruolin is the country s only athlete to win the gold at the Olympic Games, world championship and world cup. She is a two-time Olympic champion in the 10m individual and the 10m synchronised."
 777015312,Ruoqi Hui,CHN,female,1991-03-04,1.92,78,volleyball,1,0,0,
 111970158,Rupinder Pal Singh,IND,male,1990-11-11,1.93,93,hockey,0,0,0,
 333696204,Rushana Nurjavova,TKM,female,1994-06-22,1.65,57,judo,0,0,0,
@@ -9309,7 +9309,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 739862351,Ryan Fox,NZL,male,1987-01-22,1.79,98,golf,0,0,0,
 976252794,Ryan Gregson,AUS,male,1990-04-26,1.74,83,athletics,0,0,0,
 788805861,Ryan Held,USA,male,1995-06-27,,,aquatics,1,0,0,
-712200855,Ryan Lochte,USA,male,1984-08-03,1.88,88,aquatics,1,0,0,"With 11 Olympic medals in swimming (of which five are gold) and 27 world championship medals, the USA's Ryan Lochte holds the 200m medley world record, set in 2009."
+712200855,Ryan Lochte,USA,male,1984-08-03,1.88,88,aquatics,1,0,0,"With 11 Olympic medals in swimming (of which five are gold) and 27 world championship medals, the USA s Ryan Lochte holds the 200m medley world record, set in 2009."
 237391684,Ryan Murphy,USA,male,1995-07-02,1.91,90,aquatics,3,0,0,
 524278516,Ryan Patterson,RSA,male,1994-01-10,1.77,72,gymnastics,0,0,0,
 882980527,Ryan Pini,PNG,male,1981-12-10,1.96,98,aquatics,0,0,0,
@@ -9335,7 +9335,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 971872432,Sabina Mikina,AZE,female,1987-10-24,1.68,51,fencing,0,0,0,
 935009563,Sabina Veit,SLO,female,1985-12-02,1.67,59,athletics,0,0,0,
 602319311,Sabine Kusterer,GER,female,1991-01-04,1.56,58,weightlifting,0,0,0,
-634385368,Sabine Spitz,GER,female,1971-12-27,1.67,60,cycling,0,0,0,"At the past three Olympic Games, Germany's Sabine Spitz has medaled in the women's cycling mountain bike events. She took silver at London 2012, gold at Beijing 2008 and bronze at Athens 2004 – and was also world champion in 2003."
+634385368,Sabine Spitz,GER,female,1971-12-27,1.67,60,cycling,0,0,0,"At the past three Olympic Games, Germany s Sabine Spitz has medaled in the women s cycling mountain bike events. She took silver at London 2012, gold at Beijing 2008 and bronze at Athens 2004 â€“ and was also world champion in 2003."
 665063441,Sabrina Ameghino,ARG,female,1980-07-06,1.69,64,canoe,0,0,0,
 574404234,Sabrina D Angelo,CAN,female,1993-05-11,1.73,71,football,0,0,1,
 726001944,Sabrina Delannoy,FRA,female,1986-05-18,1.71,62,football,0,0,0,
@@ -9361,7 +9361,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 863864577,Saily Viart,CUB,female,1995-09-10,1.70,94,athletics,0,0,0,
 311986373,Saina Nehwal,IND,female,1990-03-17,1.65,65,badminton,0,0,0,
 138238574,Saisai Zheng,CHN,female,1994-02-05,1.70,62,tennis,0,0,0,
-872568098,Saiyidah Mohamed Rafa'ee,SIN,female,1988-04-20,1.73,68,rowing,0,0,0,
+872568098,Saiyidah Mohamed Rafa ee,SIN,female,1988-04-20,1.73,68,rowing,0,0,0,
 745752282,Saiyinjirigala,CHN,male,1989-12-14,1.75,73,judo,0,0,0,
 528224389,Sajan Prakash Prakash,IND,male,1993-09-14,1.78,70,aquatics,0,0,0,
 950063976,Sajjad Mardani,IRI,male,1988-07-01,1.98,96,taekwondo,0,0,0,
@@ -9420,7 +9420,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 556027153,Samira Amirova,UZB,female,1998-04-02,1.62,47,gymnastics,0,0,0,
 108428818,Samira Ouass,MAR,female,1992-04-22,1.62,74,weightlifting,0,0,0,
 969554371,Samira Rocha,BRA,female,1989-01-26,1.70,64,handball,0,0,0,
-65132330,Samisoni Viriviri,FIJ,male,1988-04-25,1.86,88,rugby sevens,1,0,0,"Champion of the 2015/2016 Sevens World Series, and elected the 2014 rugby sevens player of the year, Samisoni Viriviri is following the family tradition – his grandfather was also a professional in the sport and played for the national side."
+65132330,Samisoni Viriviri,FIJ,male,1988-04-25,1.86,88,rugby sevens,1,0,0,"Champion of the 2015/2016 Sevens World Series, and elected the 2014 rugby sevens player of the year, Samisoni Viriviri is following the family tradition â€“ his grandfather was also a professional in the sport and played for the national side."
 496725946,Samkelisiwe Zulu,ZIM,female,1990-04-14,1.64,50,football,0,0,0,
 712300954,Samson Samuel Opuakpo Forcados,NGR,male,1986-04-24,1.83,81,aquatics,0,0,0,
 120558748,Samuel Albrecht,BRA,male,1981-09-02,1.80,71,sailing,0,0,0,
@@ -9496,7 +9496,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 754215814,Saori Kimura,JPN,female,1986-08-19,1.85,65,volleyball,0,0,0,
 43036553,Saori Nagamine,JPN,female,1993-07-05,1.66,60,archery,0,0,0,
 631663441,Saori Sakoda,JPN,female,1987-12-18,1.75,63,volleyball,0,0,0,
-39484933,Saori Yoshida,JPN,female,1982-10-05,1.57,55,wrestling,0,1,0,"One of only two three-time Olympic wrestling champions, Japan's Saori Yoshida won at Athens 2004, Beijing 2008 and London 2012. This athlete dominates the up to 55kg category and has won all 13 world championships since 2002."
+39484933,Saori Yoshida,JPN,female,1982-10-05,1.57,55,wrestling,0,1,0,"One of only two three-time Olympic wrestling champions, Japan s Saori Yoshida won at Athens 2004, Beijing 2008 and London 2012. This athlete dominates the up to 55kg category and has won all 13 world championships since 2002."
 988318457,Saoussen Boudiaf,FRA,female,1993-12-31,1.73,69,fencing,0,0,0,
 451333617,Sapana Sapana,IND,female,1988-01-02,,,athletics,0,0,0,
 361564419,Sapsiree Taerattanachai,THA,female,1992-04-18,1.70,59,badminton,0,0,0,
@@ -9607,7 +9607,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 915415519,Sean Safo-Antwi,GHA,male,1990-10-31,1.71,69,athletics,0,0,0,
 644711592,Seavmey Sorn,CAM,female,1995-09-14,1.83,73,taekwondo,0,0,0,
 188093060,Sebastiaan Verschuren,NED,male,1988-10-07,1.92,84,aquatics,0,0,0,
-746518634,Sebastian Brendel,GER,male,1988-03-12,1.92,92,canoe,2,0,0,"Germany's Sebastian Brendel took his country to the top of the podium in the C-1 1000m event at London 2012. He then dominated the world championships, also competing in the 5000m and winning five golds over three editions."
+746518634,Sebastian Brendel,GER,male,1988-03-12,1.92,92,canoe,2,0,0,"Germany s Sebastian Brendel took his country to the top of the podium in the C-1 1000m event at London 2012. He then dominated the world championships, also competing in the 5000m and winning five golds over three editions."
 782106653,Sebastian Fleischer,DEN,male,1993-12-26,1.79,74,sailing,0,0,0,
 947656351,Sebastian Kerk,GER,male,1994-04-17,1.84,76,football,0,0,0,
 821529588,Sebastian Kuntschik,AUT,male,1988-09-23,1.82,79,shooting,0,0,0,
@@ -9666,7 +9666,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 86771577,Seref Osmanoglu,TUR,male,1989-01-02,1.83,75,athletics,0,0,0,
 310865074,Seren Bundy-Davies,GBR,female,1994-12-30,1.75,63,athletics,0,0,0,
 24929950,Serena Ortolani,ITA,female,1987-01-07,1.87,63,volleyball,0,0,0,
-379931177,Serena Williams,USA,female,1981-09-26,1.78,72,tennis,0,0,0,"The USA's Serena Williams has won 22 Grand Slams, seven of which were at Wimbledon (most recently in June 2016) and three at Roland Garros. She also holds four Olympic golds, including a pair – singles and doubles – won at London 2012."
+379931177,Serena Williams,USA,female,1981-09-26,1.78,72,tennis,0,0,0,"The USA s Serena Williams has won 22 Grand Slams, seven of which were at Wimbledon (most recently in June 2016) and three at Roland Garros. She also holds four Olympic golds, including a pair â€“ singles and doubles â€“ won at London 2012."
 297370521,Serge Gnabry,GER,male,1995-07-14,1.73,80,football,0,1,0,
 270678554,Serge Michel,GER,male,1988-09-10,1.81,,boxing,0,0,0,
 612124451,Serge Pauwels,BEL,male,1983-11-21,1.77,64,cycling,0,0,0,
@@ -9704,7 +9704,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 76496713,Serhiy Kulish,UKR,male,1993-04-17,1.76,64,shooting,0,1,0,
 612592716,Serhiy Smelyk,UKR,male,1987-04-19,1.78,72,athletics,0,0,0,
 544720324,Serik Mirbekov,UZB,male,1988-06-09,1.76,83,canoe,0,0,0,
-983390495,Servet Tazegul,TUR,male,1988-09-26,1.76,68,taekwondo,0,0,0,"In the past two Olympic Games, Servet Tazegül has won medals for Turkey in taekwondo, gold at London 2012 and bronze at Beijing 2008, in classes up to 68kg. The world champion in 2011 and 2015, this athlete has won the past five European championships."
+983390495,Servet Tazegul,TUR,male,1988-09-26,1.76,68,taekwondo,0,0,0,"In the past two Olympic Games, Servet TazegÃ¼l has won medals for Turkey in taekwondo, gold at London 2012 and bronze at Beijing 2008, in classes up to 68kg. The world champion in 2011 and 2015, this athlete has won the past five European championships."
 631502285,Setareki Hughes,FIJ,male,1995-06-08,1.75,73,football,0,0,0,
 13474372,Seth Weil,USA,male,1987-03-09,1.99,97,rowing,0,0,0,
 526516331,Seul-Ki Ahn,KOR,female,1992-05-29,1.61,46,athletics,0,0,0,
@@ -9736,7 +9736,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 591949071,Shalane Flanagan,USA,female,1981-07-08,1.66,47,athletics,0,0,0,
 289631929,Shallon Olsen,CAN,female,2000-07-10,1.58,52,gymnastics,0,0,0,
 551301673,Shamoli Ray,BAN,female,1994-04-05,,,archery,0,0,0,
-722411313,Shane O'Donoghue,IRL,male,1992-11-24,1.83,80,hockey,0,0,0,
+722411313,Shane O Donoghue,IRL,male,1992-11-24,1.83,80,hockey,0,0,0,
 827053441,Shane Rose,AUS,male,1973-04-24,1.81,80,equestrian,0,0,1,
 123371543,Shane Ryan,IRL,male,1994-01-27,1.98,89,aquatics,0,0,0,
 304415448,Shaneel Naidu,FIJ,male,1995-03-28,1.80,77,football,0,0,0,
@@ -9782,7 +9782,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 963097425,Shelina Zadorsky,CAN,female,1992-10-24,1.72,67,football,0,0,1,
 425110382,Shelley Marie Watts,AUS,female,1987-08-10,1.64,,boxing,0,0,0,
 80192943,Shelly Francis,USA,female,1958-12-16,1.58,65,equestrian,0,0,0,
-422183350,Shelly-Ann Fraser-Pryce,JAM,female,1986-12-27,1.52,57,athletics,0,1,1,"Seven-time gold medalist in the world championship, Jamaica's Shelly-Ann Fraser Pryce also won gold at the past two Olympic Games in athletics’ fastest and most high-profile race: the 100m. At London 2012, she also took silver in the 200m and 4x100m relay"
+422183350,Shelly-Ann Fraser-Pryce,JAM,female,1986-12-27,1.52,57,athletics,0,1,1,"Seven-time gold medalist in the world championship, Jamaica s Shelly-Ann Fraser Pryce also won gold at the past two Olympic Games in athleticsâ€™ fastest and most high-profile race: the 100m. At London 2012, she also took silver in the 200m and 4x100m relay"
 256335420,Sheng Lei,CHN,male,1984-03-07,1.93,77,fencing,0,0,0,
 830512513,Sheng Mu Lee,TPE,male,1986-10-03,1.79,71,badminton,0,0,0,
 551099828,Shengbo Zhao,CHN,male,1982-04-14,1.75,81,shooting,0,0,0,
@@ -9814,7 +9814,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 476256445,Shivani Shivani,IND,female,1997-09-27,1.63,60,aquatics,0,0,0,
 720527022,Shiwe Nogwanya,RSA,female,1994-03-07,1.68,61,football,0,0,0,
 207795938,Shiwen Liu,CHN,female,1991-04-12,1.60,54,table tennis,1,0,0,
-538468544,Shiwen Ye,CHN,female,1996-03-01,1.72,71,aquatics,0,0,0,"Aged only 16, China's Ye Shiwen made history at London 2012 by winning two gold medals – in the 200m and 400m medleys – and setting new Olympic and world records to boot."
+538468544,Shiwen Ye,CHN,female,1996-03-01,1.72,71,aquatics,0,0,0,"Aged only 16, China s Ye Shiwen made history at London 2012 by winning two gold medals â€“ in the 200m and 400m medleys â€“ and setting new Olympic and world records to boot."
 36387534,Shiying Liu,CHN,female,1993-09-24,1.79,76,athletics,0,0,0,
 880751102,Shlomi Haimy,ISR,male,1989-06-19,1.67,58,cycling,0,0,0,
 522662655,Shmagi Bolkvadze,GEO,male,1994-07-26,1.70,66,wrestling,0,0,1,
@@ -9914,7 +9914,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 303411588,Sinphet Kruaithong,THA,male,1995-08-22,1.59,55,weightlifting,0,0,1,
 434262676,Sinta Ozolina,LAT,female,1988-02-26,1.86,77,athletics,0,0,0,
 313529097,Siobhan Haughey,HKG,female,1997-10-31,1.77,64,aquatics,0,0,0,
-306151586,Siobhan-Marie O'Connor,GBR,female,1995-11-29,1.73,64,aquatics,0,1,0,
+306151586,Siobhan-Marie O Connor,GBR,female,1995-11-29,1.73,64,aquatics,0,1,0,
 543220260,Sione Molia,NZL,male,1993-09-05,1.86,95,rugby sevens,0,0,0,
 498918427,Siraba Dembele,FRA,female,1986-06-28,1.72,64,handball,0,1,0,
 112175885,Siri Arun Budcharern,LAO,female,2002-01-12,1.66,63,aquatics,0,0,0,
@@ -10104,7 +10104,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 946544198,Stephen Jenness,NZL,male,1990-06-07,1.79,76,hockey,0,0,0,
 203402435,Stephen Jones,NZL,male,1993-04-29,1.92,95,rowing,0,0,0,
 156864780,Stephen Kasprzyk,USA,male,1982-02-14,2.01,103,rowing,0,0,0,
-82771185,Stephen Kiprotich,UGA,male,1989-02-27,,,athletics,0,0,0,"Current Olympic marathon champion Stephen Kiprotich is another athletics exponent who proves Africa's dominance in this particular race. One year after winning gold at London 2012, he finished in first place in the marathon at the world championship."
+82771185,Stephen Kiprotich,UGA,male,1989-02-27,,,athletics,0,0,0,"Current Olympic marathon champion Stephen Kiprotich is another athletics exponent who proves Africa s dominance in this particular race. One year after winning gold at London 2012, he finished in first place in the marathon at the world championship."
 641360615,Stephen Lambdin,USA,male,1988-03-09,1.88,108,taekwondo,0,0,0,
 653237544,Stephen Milne,GBR,male,1994-04-29,1.86,76,aquatics,0,1,0,
 144812081,Stephen Mokoka,RSA,male,1985-01-31,1.57,52,athletics,0,0,0,
@@ -10143,7 +10143,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 377406840,Subenrat Insaeng,THA,female,1994-02-10,1.82,115,athletics,0,0,0,
 863916736,Sudha Singh,IND,female,1986-06-25,1.58,45,athletics,0,0,0,
 676826208,Sudirman Hadi,INA,male,1996-03-09,1.71,76,athletics,0,0,0,
-549566772,Sue Bird,USA,female,1980-10-16,1.75,66,basketball,1,0,0,"A three-time Olympic (Athens 2004, Beijing 2008 and London 2012) and world champion for the USA, point guard Sue Bird was voted, in 2011, one of the 15 best players in the history of the WNBA history, her country's main women's league."
+549566772,Sue Bird,USA,female,1980-10-16,1.75,66,basketball,1,0,0,"A three-time Olympic (Athens 2004, Beijing 2008 and London 2012) and world champion for the USA, point guard Sue Bird was voted, in 2011, one of the 15 best players in the history of the WNBA history, her country s main women s league."
 523057836,Suehiro Ishikawa,JPN,male,1979-09-27,1.69,56,athletics,0,0,0,
 321796870,Sugoi Uriarte,ESP,male,1984-05-14,1.72,66,judo,0,0,0,
 566595674,Suguru Osako,JPN,male,1991-05-23,1.70,52,athletics,0,0,0,
@@ -10346,7 +10346,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 58561312,Teau McKenzie,COK,female,1995-03-12,1.83,67,sailing,0,0,0,
 777261301,Tebogo Moerane,RSA,male,1995-04-07,1.67,64,football,0,0,0,
 93902028,Teddy Atine - Venel,FRA,male,1985-03-16,1.84,77,athletics,0,0,0,
-714540580,Teddy Riner,FRA,male,1989-04-07,2.03,139,judo,1,0,0,"The “Teddy Bear” (undefeated since 2010) is a 2.04m-tall French athlete. Riner is an eight-time world champion in the +100kg class (winning twice at Rio, in 2007 and 2013), five-time European champion and won gold at London 2012 and bronze at Beijing 2008"
+714540580,Teddy Riner,FRA,male,1989-04-07,2.03,139,judo,1,0,0,"The â€œTeddy Bearâ€� (undefeated since 2010) is a 2.04m-tall French athlete. Riner is an eight-time world champion in the +100kg class (winning twice at Rio, in 2007 and 2013), five-time European champion and won gold at London 2012 and bronze at Beijing 2008"
 97224345,Tega Odele,NGR,male,1995-12-06,1.88,80,athletics,0,0,0,
 606135754,Teja Belak,SLO,female,1994-04-22,1.57,48,gymnastics,0,0,0,
 556483244,Teliana Pereira,BRA,female,1988-07-20,1.67,62,tennis,0,0,0,
@@ -10430,7 +10430,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 914516277,Thibaut Amani Danho,CIV,male,1994-01-15,1.85,82,aquatics,0,0,0,
 814590429,Thibaut Simon,FRA,male,1983-12-18,1.92,98,aquatics,0,0,0,
 999374064,Thibaut Vallette,FRA,male,1974-01-18,1.71,60,equestrian,1,0,0,
-50266146,Thierry Omeyer,FRA,male,1976-11-02,1.92,93,handball,0,1,0,"Elected the best keeper in the world, in 2008, Thierry Omeyer has won the most important titles of his career with France's national handball team. These include two Olympic golds (Beijing 2008 and London 2012) and four world and three European titles."
+50266146,Thierry Omeyer,FRA,male,1976-11-02,1.92,93,handball,0,1,0,"Elected the best keeper in the world, in 2008, Thierry Omeyer has won the most important titles of his career with France s national handball team. These include two Olympic golds (Beijing 2008 and London 2012) and four world and three European titles."
 963532102,Thijs Visser,ARU,male,1989-10-19,1.84,88,sailing,0,0,0,
 326914230,Thint Myaat,MYA,male,2002-04-14,1.60,52,aquatics,0,0,0,
 172048822,Thomas Baroukh,FRA,male,1987-12-15,1.83,70,rowing,0,0,1,
@@ -10512,7 +10512,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 375628571,Timm Herzbruch,GER,male,1997-06-07,1.80,76,hockey,0,0,1,
 169189076,Timo Boll,GER,male,1981-03-08,1.81,74,table tennis,0,0,1,
 490797825,Timo Horn,GER,male,1993-05-12,1.91,89,football,0,1,0,
-533145484,Timothey N'Guessan,FRA,male,1992-09-18,1.86,105,handball,0,1,0,
+533145484,Timothey N Guessan,FRA,male,1992-09-18,1.86,105,handball,0,1,0,
 439125836,Timothy Cockram,IRL,male,1984-01-18,1.77,78,hockey,0,0,0,
 114387888,Timothy Toroitich,UGA,male,1991-10-10,,,athletics,0,0,0,
 170511922,Timothy Wang,USA,male,1991-08-17,1.76,65,table tennis,0,0,0,
@@ -10601,13 +10601,13 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 724384082,Tonje Angelsen,NOR,female,1990-01-17,,,athletics,0,0,0,
 999578859,Tontowi Ahmad,INA,male,1987-07-18,1.79,72,badminton,1,0,0,
 287253228,Tonu Endrekson,EST,male,1979-06-11,1.98,104,rowing,0,0,1,
-870620846,Tony Azevedo,USA,male,1981-11-20,1.86,90,aquatics,0,0,0,"Born in Rio de Janeiro, Tony Azevedo's family moved to California, when he was only a month old. He won silver with the USA team at Beijing 2008 and was the team captain at London 2012."
+870620846,Tony Azevedo,USA,male,1981-11-20,1.86,90,aquatics,0,0,0,"Born in Rio de Janeiro, Tony Azevedo s family moved to California, when he was only a month old. He won silver with the USA team at Beijing 2008 and was the team captain at London 2012."
 229204643,Tony Dodds,NZL,male,1987-06-16,1.83,68,triathlon,0,0,0,
 238201796,Tony Martin,GER,male,1985-04-23,1.86,75,cycling,0,0,0,"Three-time world champion (2011, 2012 and 2013) in the time trial event, in which he also took silver at London 2012, Tony Martin left the former East Germany shortly before the Berlin wall came down (he was born in Cottbus)."
 947438087,Tony McQuay,USA,male,1990-04-16,1.81,72,athletics,1,0,0,
 35377706,Tony Parker,FRA,male,1982-05-17,1.86,80,basketball,0,0,0,
 479731950,Tony Tuivuna,FIJ,male,1995-03-20,1.92,77,football,0,0,0,
-34099719,Tony Victor James Yoka,FRA,male,1992-04-27,2.00,,boxing,1,0,0,"The Singapore 2010 Summer Youth Olympics champion in the + 91kg class, France's Tony Yoka has more recently won the world boxing title at Doha, in 2015. Also known as “The Artist”, Yoka stands at 1.97m tall."
+34099719,Tony Victor James Yoka,FRA,male,1992-04-27,2.00,,boxing,1,0,0,"The Singapore 2010 Summer Youth Olympics champion in the + 91kg class, France s Tony Yoka has more recently won the world boxing title at Doha, in 2015. Also known as â€œThe Artistâ€�, Yoka stands at 1.97m tall."
 291445847,Torben Grimmel,DEN,male,1975-11-23,1.82,90,shooting,0,0,0,
 764236472,Tore Navrestad,NOR,male,1996-02-19,,,cycling,0,0,0,
 207258213,Tori Bowie,USA,female,1990-08-27,1.76,58,athletics,1,1,1,
@@ -10693,7 +10693,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 586282820,Ursula Gonzalez Garate,MEX,female,1991-11-22,1.71,71,fencing,0,0,0,
 718417906,Ursula Grobler,RSA,female,1980-02-06,1.73,60,rowing,0,0,0,
 88669293,Ursula Wikstrom,FIN,female,1980-07-03,1.66,55,golf,0,0,0,
-579416064,Usain Bolt,JAM,male,1986-08-21,1.96,95,athletics,3,0,0,"One of the most charismatic – and fastest – athletes in the world, Jamaica's Usain Bolt has won six Olympic golds in athletics, winning the 100m, 200m and 4x100m relay at Beijing 2008 and London 2012. Bolt also holds 11 world titles."
+579416064,Usain Bolt,JAM,male,1986-08-21,1.96,95,athletics,3,0,0,"One of the most charismatic â€“ and fastest â€“ athletes in the world, Jamaica s Usain Bolt has won six Olympic golds in athletics, winning the 100m, 200m and 4x100m relay at Beijing 2008 and London 2012. Bolt also holds 11 world titles."
 149615945,Uschi Freitag,NED,female,1989-08-19,1.67,68,aquatics,0,0,0,
 530272776,Ushangi Kokauri,AZE,male,1992-01-10,1.95,135,judo,0,0,0,
 39407530,Usman Muhammed,NGR,male,1994-03-02,1.69,,football,0,0,1,
@@ -10802,7 +10802,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 454698818,Vicenc Ruiz,ESP,male,1991-10-30,1.81,70,hockey,0,0,0,
 721846159,Vicente Hernandez,ESP,male,1991-04-20,1.81,74,triathlon,0,0,0,
 885291469,Vicky Holland,GBR,female,1986-01-12,1.68,56,triathlon,0,0,1,
-690173780,Victoire Pauline L'or Ngon Ntame,CMR,female,1985-12-31,1.77,79,volleyball,0,0,0,
+690173780,Victoire Pauline L or Ngon Ntame,CMR,female,1985-12-31,1.77,79,volleyball,0,0,0,
 198342904,Victor Aravena,CHI,male,1990-02-05,1.66,55,athletics,0,0,0,
 753873468,Victor Claver,ESP,male,1988-08-30,2.06,107,basketball,0,0,1,
 616975176,Victor Cuesta,ARG,male,1998-11-19,1.64,65,football,0,0,0,
@@ -11014,7 +11014,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 151807374,William Chetcuti,MLT,male,1985-01-07,1.80,93,shooting,0,0,0,
 63879528,William Collazo,CUB,male,1986-08-31,1.72,71,athletics,0,0,0,
 213332524,William Ekong,NGR,male,1993-09-01,1.75,,football,0,0,1,
-410962720,William Fox-Pitt,GBR,male,1969-01-02,1.96,80,equestrian,0,0,0,"A collector of medals for Great Britain in equestrian eventing, William Fox-Pit won the silver at Athens 2004 and London 2012, and a bronze at Beijing 2008. He was his country's first athlete to achieve the world number one ranking."
+410962720,William Fox-Pitt,GBR,male,1969-01-02,1.96,80,equestrian,0,0,0,"A collector of medals for Great Britain in equestrian eventing, William Fox-Pit won the silver at Athens 2004 and London 2012, and a bronze at Beijing 2008. He was his country s first athlete to achieve the world number one ranking."
 974426000,William Lockwood,AUS,male,1988-05-13,1.91,88,rowing,0,1,0,
 177039593,William Meynard,FRA,male,1987-07-11,1.92,85,aquatics,0,1,0,
 150307137,William Reid Priddy,USA,male,1977-10-01,1.94,89,volleyball,0,0,1,
@@ -11078,7 +11078,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 195305057,Xiaona Shan,GER,female,1983-01-18,1.65,54,table tennis,0,1,0,
 70171405,Xiaonan Zhang,CHN,female,1992-07-21,1.68,58,modern pentathlon,0,0,0,
 620187619,Xiaotong Liu,CHN,female,1990-02-16,1.88,70,volleyball,1,0,0,
-363955533,Xiaoxia Li,CHN,female,1988-01-15,1.74,65,table tennis,1,1,0,"Holding nine world championship golds, won over the past decade, China's Li Xiaoxia shone in table tennis at London 2012, when she won gold in the singles and team events."
+363955533,Xiaoxia Li,CHN,female,1988-01-15,1.74,65,table tennis,1,1,0,"Holding nine world championship golds, won over the past decade, China s Li Xiaoxia shone in table tennis at London 2012, when she won gold in the singles and team events."
 53876451,Xiaoxu Ma,CHN,female,1988-06-05,1.72,73,football,0,0,0,
 870464131,Xiaoxue Zhang,CHN,female,1992-12-13,1.62,51,hockey,0,0,0,
 518352291,Xin Xin,CHN,female,1996-11-06,1.76,61,aquatics,0,0,0,
@@ -11128,7 +11128,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 76793158,Yana Alekseevna,AZE,female,1987-10-30,1.69,,boxing,0,0,0,
 541557997,Yana Belomoina,UKR,female,1992-11-02,1.64,46,cycling,0,0,0,
 223640307,Yana Egorian,RUS,female,1993-12-20,1.75,64,fencing,2,0,0,
-243275636,Yana Kudryavtseva,RUS,female,1997-09-29,1.70,47,gymnastics,0,1,0,"Russia's Yana Kudryavtseva is a three-time world rhythmic gymnastics champion. Her first win came when she was just 15, making her the youngest world champion in history. Yana is the daughter of former Olympic champion swimmer Aleksey Kudryavtsev."
+243275636,Yana Kudryavtseva,RUS,female,1997-09-29,1.70,47,gymnastics,0,1,0,"Russia s Yana Kudryavtseva is a three-time world rhythmic gymnastics champion. Her first win came when she was just 15, making her the youngest world champion in history. Yana is the daughter of former Olympic champion swimmer Aleksey Kudryavtsev."
 43753188,Yana Pavlova,RUS,female,1996-01-06,1.56,51,gymnastics,0,0,0,
 435033885,Yana Shcherban,RUS,female,1989-09-06,1.85,71,volleyball,0,0,0,
 297532714,Yana Shemyakina,UKR,female,1986-01-05,1.68,60,fencing,0,0,0,
@@ -11286,7 +11286,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 430969568,Yoo Na Bae,KOR,female,1989-11-30,1.82,66,volleyball,0,0,0,
 366615764,Yoojin Hong,KOR,female,1989-02-21,1.66,56,hockey,0,0,0,
 400985709,Yoosun Nam,KOR,female,1985-07-23,1.69,52,aquatics,0,0,0,
-824249467,Yordan L. O'Farrill,CUB,male,1993-02-09,1.83,72,athletics,0,0,0,
+824249467,Yordan L. O Farrill,CUB,male,1993-02-09,1.83,72,athletics,0,0,0,
 860020616,Yordani Garcia,CUB,male,1988-11-21,1.95,84,athletics,0,0,0,
 365796318,Yordanys Duranona,DMA,male,1988-06-16,1.85,83,athletics,0,0,0,
 889022842,Yorgelis Rodriguez,CUB,female,1995-01-25,1.70,66,athletics,0,0,0,
@@ -11391,7 +11391,7 @@ id,name,nationality,sex,date_of_birth,height,weight,sport,gold,silver,bronze,inf
 109766656,Yun Chol Om,PRK,male,1991-11-18,1.51,56,weightlifting,0,1,0,
 660495063,Yun Hu,HKG,male,1981-08-31,1.78,73,badminton,0,0,0,
 402313954,Yung-Jan Chan,TPE,female,1989-08-17,1.71,65,tennis,0,0,0,
-491896324,Yunlei Zhao,CHN,female,1986-08-25,1.73,60,badminton,0,0,1,"At the London 2012 Olympic Games, China's Zhao Yunlei climbed to the top of the podium twice, winning both the singles and doubles tournaments; a feat he went on to repeat at the last two world championships."
+491896324,Yunlei Zhao,CHN,female,1986-08-25,1.73,60,badminton,0,0,1,"At the London 2012 Olympic Games, China s Zhao Yunlei climbed to the top of the podium twice, winning both the singles and doubles tournaments; a feat he went on to repeat at the last two world championships."
 787363560,Yunli Xu,CHN,female,1987-08-02,1.95,75,volleyball,1,0,0,
 243639998,Yunlong Jiao,CHN,male,1988-05-19,1.90,87,fencing,0,0,0,
 274497328,Yuqing Bao,CHN,female,1993-09-23,1.73,55,gymnastics,0,0,0,

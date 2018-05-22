@@ -1,12 +1,14 @@
 package edu.orangecoastcollege.cs272.nutritioneffex.view;
 
 import javafx.fxml.FXML;
-
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import javafx.scene.control.TextField;
 
+import java.net.URL;
 import java.text.DecimalFormat;
+import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -18,11 +20,11 @@ import javafx.scene.control.ComboBox;
 
 import javafx.scene.input.MouseEvent;
 
-public class CaloriesBurnedCalculator extends CaloriesBurnedFX{
+public class CaloriesBurnedCalculator implements Initializable{
 	
 	@SuppressWarnings("rawtypes")
 	@FXML
-	private ComboBox activityComboBox; 
+	private ComboBox<String> activityComboBox; 
 	
 	@FXML
 	private Slider DurationSlider;
@@ -35,23 +37,23 @@ public class CaloriesBurnedCalculator extends CaloriesBurnedFX{
 	@FXML
 	private Button backtoCalculatorsButton;
 
-	// Event Listener on ComboBox[#activityComboBox].onAction
-	@SuppressWarnings("unchecked")
-	@FXML
-	public void comboboxselected(ActionEvent event) {
-		/*ObservableList<String> options = 
-			FXCollections.observableArrayList(
-			    		"Run",
-			    		"Walk",
-			    		"Swim", 
-			    		"Bike",
-			    		"Surf", 
-			    		"Standing",
-			    		"Rockclimbing"
-			    );// 
-		activityComboBox= new ComboBox<String>(options);
-		*/
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		ObservableList<String> options = 
+		FXCollections.observableArrayList(
+	    		"Run",
+	    		"Walk",
+	    		"Swim", 
+	    		"Bike",
+	    		"Surf", 
+	    		"Standing",
+	    		"Rockclimbing"
+	    );
+		activityComboBox.setItems(options);
 	}
+	
+	
 	// Event Listener on Slider[#DurationSlider].onMouseDragged
 	@FXML
 	public void mousedragged(MouseEvent event) {
@@ -125,4 +127,5 @@ totalCaloriesTF.setText(String.valueOf(twoDPs.format(totalcals)));
 	public void backtoCalculatorsMenu(ActionEvent event) {
 ViewNavigator.loadScene("Calculators Main Menu", ViewNavigator.CALCULATOR_MENU_SCENE);
 	}
+
 }

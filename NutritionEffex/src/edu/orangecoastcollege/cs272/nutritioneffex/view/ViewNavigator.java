@@ -21,7 +21,7 @@ public class ViewNavigator
 	
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ [  Sydney's Scenes ] ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	//public static final String MAIN_MENU_SCENE = "MainMenuScene.fxml";
-	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedFX.java";
+	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedCalculator.fxml";
 	//I also made a .fxml file for Caloriesburned but it is not functioning.
 													//"CaloriesBurnedCalculator.fxml"
 	public static final String BMI_CALCULATOR_SCENE = "BMICalculatorScene.fxml";//done

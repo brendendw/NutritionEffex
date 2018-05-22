@@ -1,12 +1,12 @@
 package edu.orangecoastcollege.cs272.nutritioneffex.test;
 
-import static org.junit.Assert.assertEquals;
+//import static org.junit.Assert.assertEquals;
 import java.util.Collections;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.AfterAll;
+//import org.junit.jupiter.api.AfterEach;
+//import org.junit.jupiter.api.BeforeAll;
+//import org.junit.jupiter.api.BeforeEach;
+//import org.junit.jupiter.api.Test;
 import edu.orangecoastcollege.cs272.nutritioneffex.controller.Controller;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.Food;
 import edu.orangecoastcollege.cs272.nutritioneffex.model.Preference;
@@ -27,6 +27,7 @@ import javafx.collections.ObservableList;
  */
 class TestFoodScene 
 {
+	/*
 	private static Controller controller = Controller.getInstance();
 	private static ObservableList<Food> allFoods = FXCollections.observableArrayList();
 	private static ObservableList<Preference> preferences = FXCollections.observableArrayList();
@@ -152,5 +153,5 @@ class TestFoodScene
 		}
 		assertEquals("Testing list of foods is in order by calories", false, isOutOfOrder);
 	}
-
+*/
 }

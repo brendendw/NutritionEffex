@@ -41,9 +41,7 @@ public class Controller implements AutoCloseable
 		
 		
 		
-		private static final String PREFERENCES_DB_NAME = "dietary_preferences.db";
-		private static final String FOODS_DB_NAME = "foods.db";
-		private static final String FAVORITES_DB_NAME = "favorite_foods.db";
+		private static final String DB_NAME = "nutrition_effex.db";
 
 		// Dietary Preferences Database
 		private static final String PREFERENCES_TABLE_NAME = "dietary_preferences";
@@ -77,21 +75,18 @@ public class Controller implements AutoCloseable
 
 		// User database
 		private DBModel mUserDB;
-		private static final String USER_DB = "user_names.db";
 		private static final String USER_TABLE_NAME = "users";
 		private static final String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
 		private static final String[] USER_FIELD_TYPES = {"INTEGER PRIMARY KEY", "TEXT", "TEXT", "INTEGER", "TEXT", "TEXT"};
 		
 		// Relational caloric database
 		private DBModel mCaloricTrackerDB;
-		private static final String CALORIC_DB = "caloric_tracker.db";
 		private static final String CALORIC_TABLE_NAME = "calories";
 		private static final String[] CALORIC_FIELD_NAMES = {"_id", "userID", "rec_calories"};
 		private static final String[] CALORIC_FIELD_TYPES = {"INTEGER PRIMARY KEY", "INTEGER", "REAL" };
 		
 		// Relational user preferences database
 		private DBModel mUserPreferencesDB;
-		private static final String USER_PREF_DB = "user_preferences.db";
 		private static final String USER_PREF_TABLE_NAME = "preferences";
 		private static final String[] USER_PREF_FIELD_NAMES = {"_id", "userID", "preference"};
 		private static final String[] USER_PREF_FIELD_TYPES = {"INTEGER PRIMARY KEY", "INTEGER", "TEXT" };
@@ -151,7 +146,7 @@ public class Controller implements AutoCloseable
 							theOne.mAllUsersList.add(new User(userID, name, gender, email));
 						}
 						*/
-					theOne.mUserDB = new DBModel(USER_DB, USER_TABLE_NAME, USER_FIELD_NAMES, USER_FIELD_TYPES);
+					theOne.mUserDB = new DBModel(DB_NAME, USER_TABLE_NAME, USER_FIELD_NAMES, USER_FIELD_TYPES);
 					ArrayList<ArrayList<String>> usersRS = theOne.mUserDB.getAllRecordsArrayList();
 					for (ArrayList<String> values : usersRS)
 					{
@@ -170,7 +165,7 @@ public class Controller implements AutoCloseable
 						
 					/* ~~~~~~~~~~~~~~~~~~ Dietary Restrictions Databases ~~~~~~~~~~~~~~~~~~~~*/
 						// Create the foods database
-					theOne.mFoodsDB = new DBModel(FOODS_DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
+					theOne.mFoodsDB = new DBModel(DB_NAME, FOODS_TABLE_NAME, FOODS_FIELD_NAMES, FOODS_FIELD_TYPES);
 					theOne.initializeFoodDBFromFile();
 					ResultSet foodRS = theOne.mFoodsDB.getAllRecords();
 					if(foodRS != null)
@@ -195,7 +190,7 @@ public class Controller implements AutoCloseable
 						}
 					}
 						// Create the favorite foods database
-					theOne.mFavoriteFoodsDB = new DBModel(FAVORITES_DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
+					theOne.mFavoriteFoodsDB = new DBModel(DB_NAME, FAVORITES_TABLE_NAME, FAVORITES_FIELD_NAMES, FAVORITES_FIELD_TYPES);
 					ResultSet favoritesRS = theOne.mFavoriteFoodsDB.getAllRecords();
 					if(favoritesRS != null)
 					{
@@ -219,7 +214,7 @@ public class Controller implements AutoCloseable
 						}
 					}
 						// Create the user preferences database	
-					theOne.mPreferencesDB = new DBModel(PREFERENCES_DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
+					theOne.mPreferencesDB = new DBModel(DB_NAME, PREFERENCES_TABLE_NAME, PREFERENCES_FIELD_NAMES, PREFERENCES_FIELD_TYPES);
 					ResultSet preferencesRS = theOne.mPreferencesDB.getAllRecords();
 					if(preferencesRS != null)
 					{
@@ -236,7 +231,7 @@ public class Controller implements AutoCloseable
 					// Create the olympians database
 					
 					
-					theOne.mOlympiansDB = new DBModel(OLYMPIANS_DB_NAME, OLYMPIANS_TABLE_NAME, OLYMPIANS_FIELD_NAMES, OLYMPIANS_FIELD_TYPES);
+					theOne.mOlympiansDB = new DBModel(DB_NAME, OLYMPIANS_TABLE_NAME, OLYMPIANS_FIELD_NAMES, OLYMPIANS_FIELD_TYPES);
 					theOne.initializeOlympianDBFromFile();
 					ResultSet olympianRS = theOne.mOlympiansDB.getAllRecords();
 					if(olympianRS != null)
@@ -631,14 +626,11 @@ public class Controller implements AutoCloseable
 		private ObservableList<Workout> mWorkoutsList;
 
 		
-		private static final String OLYMPIANS_DB_NAME = "olympians.db";
-		
-		private static final String WORKOUTS_DB_NAME = "workouts.db";
 
 		// Olympians Database
 		private static final String OLYMPIANS_TABLE_NAME = "olympians";
-		private static final String[] OLYMPIANS_FIELD_NAMES = { "_id", "age","sport","height","weight","gender"};
-		private static final String[] OLYMPIANS_FIELD_TYPES = { "INTEGER PRIMARY KEY", "TEXT","TEXT", "REAL", "REAL", "INTEGER"};
+		private static final String[] OLYMPIANS_FIELD_NAMES = { "_id", "name", "age","sport","height","weight","gender"};
+		private static final String[] OLYMPIANS_FIELD_TYPES = { "INTEGER PRIMARY KEY", "TEXT", "TEXT","TEXT", "REAL", "REAL", "INTEGER"};
 		private static final String OLYMPIANS_DATA_FILE = "athletes.csv";
 
 		//Workouts Database
@@ -667,9 +659,9 @@ public class Controller implements AutoCloseable
 					values[0] = data[1]; // name
 					values[1] = data[4]; // age
 					values[2] = data[7]; // sport
-					values[3] = data[5]; // height
-					values[4] = data[6]; // weight
-					values[5] = data[3]; // gender
+					values[3] = "".equalsIgnoreCase(data[5]) ? "0" : data[5]; // height
+					values[4] = "".equalsIgnoreCase(data[6]) ? "0" : data[6]; // weight
+					values[5] = data[3].equalsIgnoreCase("male") ? "0" : "1"; // gender
 					
 					theOne.mOlympiansDB.createRecord(Arrays.copyOfRange(OLYMPIANS_FIELD_NAMES, 1, OLYMPIANS_FIELD_NAMES.length), values);
 					recordsCreated++;
@@ -862,7 +854,7 @@ public class Controller implements AutoCloseable
 		try {
 			
 			if (theOne.mCaloricTrackerDB == null) 
-				theOne.mCaloricTrackerDB = new DBModel(CALORIC_DB, CALORIC_TABLE_NAME, CALORIC_FIELD_NAMES, CALORIC_FIELD_TYPES);
+				theOne.mCaloricTrackerDB = new DBModel(DB_NAME, CALORIC_TABLE_NAME, CALORIC_FIELD_NAMES, CALORIC_FIELD_TYPES);
 			
 			theOne.mCaloricTrackerDB.createRecord(CALORIC_FIELD_NAMES, values);
 			
@@ -888,7 +880,7 @@ public class Controller implements AutoCloseable
 
 		try {
 			if (theOne.mUserPreferencesDB == null) 
-				theOne.mUserPreferencesDB = new DBModel(USER_PREF_DB, USER_PREF_TABLE_NAME, USER_PREF_FIELD_NAMES, USER_PREF_FIELD_TYPES);
+				theOne.mUserPreferencesDB = new DBModel(DB_NAME, USER_PREF_TABLE_NAME, USER_PREF_FIELD_NAMES, USER_PREF_FIELD_TYPES);
 			
 			theOne.mCaloricTrackerDB.createRecord(USER_PREF_FIELD_NAMES, values);
 			
