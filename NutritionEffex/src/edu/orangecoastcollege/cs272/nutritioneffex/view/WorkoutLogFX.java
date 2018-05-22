@@ -28,16 +28,14 @@ public class WorkoutLogFX extends Application{
 		private TextField mDurationTF = new TextField();
 		private TextField mDateTF = new TextField();
 		
-		
 		private Button mAddWorkoutButton = new Button("Add Workout");
 
 		@Override
 		public void start(Stage primaryStage) throws Exception {
 		    //Observable List automatically updates the list view connectd to it.
 	mWorkoutsList = FXCollections.observableArrayList();
-	//connect listview with observabel list
+	//connect listview with observable list
 	mWorkoutsLV.setItems(mWorkoutsList);
-
 
 		    createDBTable();
 		    
@@ -55,9 +53,6 @@ public class WorkoutLogFX extends Application{
 			labelBox.getChildren().add(new Label("Date"));
 
 			pane.add(labelBox, 0, 2);
-			
-			
-			
 			
 			HBox hBox = new HBox();
 			hBox.getChildren().add(mWorkoutTF);
@@ -85,6 +80,7 @@ public class WorkoutLogFX extends Application{
 		    
 		    Workout workout = new Workout(workoutType,duration,date);
 		    addWorkoutToDB(workout);
+		    
 		    
 		    mWorkoutsList.add(workout.toString());
 		    
@@ -182,9 +178,8 @@ public class WorkoutLogFX extends Application{
 		        sb.append(duration).append("','");
 		        sb.append(date).append("')");
 		        
-		     	        
 		        System.out.println(sb.toString());
-		        //execute update
+		        //execute the update
 		           stmt.executeUpdate(sb.toString());
 		       }
 		       catch(SQLException e){

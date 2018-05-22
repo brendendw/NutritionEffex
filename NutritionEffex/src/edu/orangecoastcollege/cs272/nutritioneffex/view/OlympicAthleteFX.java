@@ -35,13 +35,13 @@ import javafx.application.Application;
 			WeightSlider.setShowTickLabels(true);
 			WeightSlider.setMajorTickUnit(10.0f);
 			WeightSlider.setBlockIncrement(1.0f);
-			WeightSlider.setOnMouseDragged(e-> filter());
+			WeightSlider.setOnMouseDragged(e-> filterathlete());
 
 			HeightSlider.setShowTickMarks(true);
 			HeightSlider.setShowTickLabels(true);
 			HeightSlider.setMajorTickUnit(5.0f);
 			HeightSlider.setBlockIncrement(100.0f);
-			HeightSlider.setOnMouseDragged(e->filter());
+			HeightSlider.setOnMouseDragged(e->filterathlete());
 			
 			GridPane pane = new GridPane();
 			pane.setHgap(10.0);
@@ -62,7 +62,7 @@ import javafx.application.Application;
 			primaryStage.show();
 		}
 
-		private void filter() {
+		private void filterathlete() {
 			//need to convert to metric to match the csv.
 		    double inkg,inmeters;
 		    double Weight = WeightSlider.getValue();
@@ -73,7 +73,8 @@ import javafx.application.Application;
 		    double Height = HeightSlider.getValue();
 		    inmeters = Height*.0254;
 		    
-		    OlympiansList = controller.filter(b -> ( b.getWeight()< (inkg +4 )
+		    //Margin of error
+		    OlympiansList = controller.filterathlete(b -> ( b.getWeight() < (inkg + 4)
 		    		&& b.getWeight()> (inkg - 4) 
 		    		&& b.getHeight() >(inmeters-0.2) 
 		    		&& b.getHeight() <(inmeters+ 0.2 )));
