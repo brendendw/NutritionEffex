@@ -61,23 +61,58 @@ public class Controller implements AutoCloseable
 																"REAL", "REAL", "REAL", "REAL" };
 		
 		
-		// ------ BRENDEN ------- \\
-		private ObservableList<String> mAllGendersList;
-		private ObservableList<Integer> mAllAgesList;
-		private ObservableList<User> mAllUsersList;
+		/**
+		 *  @author brendendrew
+		 *  Three databases:
+		 *  	1) User database to store new users or access existing users
+		 *  	2) Relational caloric database to save recommended calorie intake for particular users
+		 *  	3) Relational user preferences database  to save intake for particular users
+		 */
+		
 
-		// DB Model for users
+		// User database
 		private DBModel mUserDB;
-		private User mCurrentUser;
-
 		private static final String USER_DB = "user_names.db";
 		private static final String USER_TABLE_NAME = "users";
 		private static final String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
 		private static final String[] USER_FIELD_TYPES = {"INTEGER PRIMARY KEY", "TEXT", "TEXT", "INTEGER", "TEXT", "TEXT"};
-				
-		// Age and gender options for ComboBoxes
+		
+		// Relational caloric database
+		private DBModel mCaloricTrackerDB;
+		private static final String CALORIC_DB = "caloric_tracker.db";
+		private static final String CALORIC_TABLE_NAME = "calories";
+		private static final String[] CALORIC_FIELD_NAMES = {"_id", "userID", "rec_calories"};
+		private static final String[] CALORIC_FIELD_TYPES = {"INTEGER PRIMARY KEY", "INTEGER", "REAL" };
+		
+		// Relational user preferences database
+		private DBModel mUserPreferencesDB;
+		private static final String USER_PREF_DB = "user_preferences.db";
+		private static final String USER_PREF_TABLE_NAME = "preferences";
+		private static final String[] USER_PREF_FIELD_NAMES = {"_id", "userID", "preference"};
+		private static final String[] USER_PREF_FIELD_TYPES = {"INTEGER PRIMARY KEY", "INTEGER", "TEXT" };
+		
+		/**
+		 *  @author brendendrew
+		 *  ObservableLists to be used to fill ComboBoxes
+		 *  String arrays to store information that will fill ComboBoxes
+		 *  mCurrentUser to be able to access current users information
+		 */
+		private ObservableList<String> mAllGendersList;
+		private ObservableList<Integer> mAllAgesList;
+		private ObservableList<User> mAllUsersList;
+		private ObservableList<String> mAllGoalWeightsList;
+		
 		private static final String[] GENDER_TYPES = {"male", "female"};
-		// decided not to add age array for the CB & will just fill with a loop
+		private static final String[] GOAL_WEIGHTS = {"lose weight", "gain weight", "maintain"};
+		
+		private User mCurrentUser;
+						
+				
+		/**
+		 * @end of code by
+		 * @author brendendrew
+		 */
+		
 		
 		public static Controller getInstance() 
 		{
@@ -91,6 +126,7 @@ public class Controller implements AutoCloseable
 				theOne.mAllOlympiansList = FXCollections.observableArrayList();
 				//HELP: Hey guys, do we need to have to instantiate the filtered lists here?
 				theOne.mFilteredOlympiansList = FXCollections.observableArrayList();
+				
 				try 
 				{
 					
@@ -318,6 +354,16 @@ public class Controller implements AutoCloseable
 			}
 			
 			return mAllGendersList;
+		}
+		
+		public ObservableList<String> getGoalWeights()
+		{
+			if (mAllGoalWeightsList == null)
+			{
+				mAllGoalWeightsList = FXCollections.observableArrayList();
+				mAllGoalWeightsList.addAll(GOAL_WEIGHTS);
+			}
+			return mAllGoalWeightsList;
 		}
 		
 		public ObservableList<Integer> getAllowableAges()
@@ -618,7 +664,7 @@ public class Controller implements AutoCloseable
 			return recordsCreated;
 		}
 		
-		//methods for the olympian's scene. 
+		// methods for the olympian's scene. 
 		public ObservableList<Olympian> getAllOlympiansList()
 					{
 					    return mAllOlympiansList;
@@ -658,6 +704,17 @@ public class Controller implements AutoCloseable
 				+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 	}	
 	
+	/**
+	 * @author brendendrew
+	 * Signs up a new user and stores their information into the user database.
+	 * @param name of user
+	 * @param email of user
+	 * @param password of user
+	 * @param age of user
+	 * @param gender of user
+	 * @return Code to be displayed if there is an error or not.
+	 * 
+	 */
 	public String signUpUser(String name, String email, String password, int age, String gender)
 	{
 		if (!isValidEmail(email))
@@ -667,13 +724,12 @@ public class Controller implements AutoCloseable
 				if (email.equalsIgnoreCase(u.getEmail()))
 					return "please try a different e-mail ";
 		}
-		//String[] USER_FIELD_NAMES = {"_id", "name", "email", "age", "gender", "password"};
+		
 
 		String[] values = {name, email, String.valueOf(age), gender, password};
 		
 		try {
-			// mUserDB is null, and stays null--even with this addition of code
-			// if (theOne.mUserDB == null) theOne.getInstance();
+	
 			// Store the ID in the database
 			int id = theOne.mUserDB.createRecord(Arrays.copyOfRange(USER_FIELD_NAMES, 1, USER_FIELD_NAMES.length), values);
 			// Set the new user as the current user
@@ -689,6 +745,13 @@ public class Controller implements AutoCloseable
 		
 	}
 	
+	/**
+	 * @author brendendrew
+	 * Signs in a current user if their information is stored in the database.
+	 * @param email -
+	 * @param password -
+	 * @return Code to be displayed if an error goes wrong or if there is no error
+	 */
 	public String signInUser(String email, String password) {
 		
 		for (User user : theOne.mAllUsersList)
@@ -719,14 +782,27 @@ public class Controller implements AutoCloseable
 		return "incorrect login info";
 	}
 	
+	/**
+	 * @author brendendrew
+	 * Logs the current user off of the application.
+	 */
 	public void logOffUser() {
 		
 		mCurrentUser = null;
 		ViewNavigator.loadScene("Welcome to NutritionEffex", ViewNavigator.LAUNCH_SCREEN_SCENE);
 		
 	}
-//github.com/brendendw/NutritionEffex
 	
+	/**
+	 * @author brendendrew
+	 * Updates user information in the user database.
+	 * @param name of user
+	 * @param email of user
+	 * @param password of user
+	 * @param gender of user
+	 * @param age of user
+	 * @return true if the information is updated
+	 */
 	public boolean updateUserInformation(String name, String email, String password, String gender, int age) {
 		
 		boolean updated = false;
@@ -752,6 +828,61 @@ public class Controller implements AutoCloseable
 		
 	}
 	
+	/**
+	 * Adds the recommended intake from the calorie calculator to a relational database so that different
+	 * users are able to keep track of their individual daily calorie goals.
+	 * @author brendendrew
+	 * @param recommendedIntake
+	 */
+	public void addCaloricIntake(double recommendedIntake)
+	{
+		
+		String[] values = { String.valueOf(theOne.mCurrentUser.getID()), String.valueOf(recommendedIntake)};
+
+		try {
+			
+			if (theOne.mCaloricTrackerDB == null) 
+				theOne.mCaloricTrackerDB = new DBModel(CALORIC_DB, CALORIC_TABLE_NAME, CALORIC_FIELD_NAMES, CALORIC_FIELD_TYPES);
+			
+			theOne.mCaloricTrackerDB.createRecord(CALORIC_FIELD_NAMES, values);
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	/**
+	 * 
+	 * Adds user preferences to a relational database so that different users are able to store different
+	 * preferences.
+	 * @author brendendrew
+	 * @param preference the input preference to be added to the relational database
+	 */
+	public void addUserPreferences(String preference)
+	{
+		String[] values = { String.valueOf(theOne.mCurrentUser.getID()), preference};
+
+		try {
+			if (theOne.mUserPreferencesDB == null) 
+				theOne.mUserPreferencesDB = new DBModel(USER_PREF_DB, USER_PREF_TABLE_NAME, USER_PREF_FIELD_NAMES, USER_PREF_FIELD_TYPES);
+			
+			theOne.mCaloricTrackerDB.createRecord(USER_PREF_FIELD_NAMES, values);
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	/**
+	 * @author brendendrew
+	 * @return the current user logged into the application.
+	 */
 	public User getCurrentUser() {
 		return mCurrentUser;
 	}

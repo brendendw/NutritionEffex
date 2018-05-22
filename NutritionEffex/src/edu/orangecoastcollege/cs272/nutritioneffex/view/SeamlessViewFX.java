@@ -28,23 +28,5 @@ public abstract class SeamlessViewFX {
     		"-fx-background-color: white; -fx-background-radius: 30, 30, 30, 30; -fx-border-radius: 10 10 0 0;"
     		+ "-fx-scale-x: 1.0; -fx-scale-y: 1.0; -fx-scale-z: 1.0;";
 	
-	// Allows error label to fade out
-	// protected FadeTransition fadeOut = new FadeTransition(Duration.millis(3000));
-	/*
-	public boolean showImage(ImageView backgroundImage) {
-	    try {
-	        Image image = new Image("welcome_background.jpeg");
-	    	//this.backgroundImage = new ImageView(new Image(getClass().getResourceAsStream("/assets/imgsrc/welcome_background.jpeg")));
-	        backgroundImage.setImage(image);
-	        backgroundImage.setCache(true);
-	        return true;
-	    } catch (Exception e) {
-	        System.out.println("Couldn't find image");
-	        e.printStackTrace();
-	    }
-	    
-	    return false;
-	}
-	*/
 	
 }

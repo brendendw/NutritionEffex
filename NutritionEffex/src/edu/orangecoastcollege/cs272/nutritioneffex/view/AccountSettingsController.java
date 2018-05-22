@@ -19,6 +19,12 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
+/**
+ * ViewController that allows the user to update their settings. Class calls the 
+ * controller to update their settings in the database.
+ * @author brendendrew
+ *
+ */
 public class AccountSettingsController extends SeamlessViewFX implements Initializable {
 	
 	Controller controller = Controller.getInstance();

@@ -19,6 +19,11 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.TextAlignment;
 import javafx.util.Duration;
 
+/**
+ * View that allows the user to sign into the application, given their information is currently in the database.
+ * @author brendendrew
+ *
+ */
 public class SignInSceneController extends SeamlessViewFX implements Initializable {
 	
 	private static Controller controller = Controller.getInstance();
