@@ -4,10 +4,15 @@ import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+/**
+ * This class is responsible for loading scenes in order
+ * for the user to navigate through multiple scenes.
+ * @author Sean Dowdle, . . .
+ *
+ */
 public class ViewNavigator 
 {
-	/*~~~~~~~~~~~~~~~~~~~~~~~~ Dietary Restrictions Scenes ~~~~~~~~~~~~~~~~~~~~~~~~*/
+	/*~~~~~~~~~~~~~~~~~~~~~~~~ Sean's Scenes ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	public static final String DR_MAIN_MENU_SCENE = "DRMainMenuScene.fxml";
 	public static final String FAVORITE_FOODS_SCENE = "FavoriteFoodsScene.fxml";
 	public static final String FOOD_DETAILS_SCENE = "FoodDetailsScene.fxml";
@@ -19,7 +24,7 @@ public class ViewNavigator
 	public static final String CALORIES_BURNED_SCENE = "CaloriesBurnedFX.java";
 	public static final String BMI_CALCULATOR_SCENE = "BMICalculatorScene.fxml";
 	public static final String DAILY_WATER_INTAKE_SCENE = "WaterIntakeFX.java";
-	public static final String OLYMPIC_POTENTIAL_SCENE = "OlympicAthleteFX.fxml";
+	public static final String OLYMPIC_POTENTIAL_SCENE = "OlympicAthleteFX.java";
 	public static final String WORKOUT_LOG_SCENE = "WorkoutLogFX.java";
 
 
@@ -36,12 +41,20 @@ public class ViewNavigator
 	/*~~~~~~~~~~~~~~~~~~~~~~~~ END OF CONSTANTS ~~~~~~~~~~~~~~~~~~~~~~~~*/
 	
 	public static Stage mainStage;
-
+	/**
+	 * Sets the stage for the GUI application.
+	 * @param stage The new stage to set.
+	 */
 	public static void setStage(Stage stage)
 	{
 		mainStage = stage;
 	}
-
+	/**
+	 * Loads the scene from the fxml file and sets the 
+	 * window title.
+	 * @param title The title to set on the window
+	 * @param sceneFXML The fxml file to load from
+	 */
 	public static void loadScene(String title, String sceneFXML) 
 	{
 		try 
