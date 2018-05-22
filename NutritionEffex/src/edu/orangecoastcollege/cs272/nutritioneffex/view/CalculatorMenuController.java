@@ -17,7 +17,7 @@ import javafx.scene.input.MouseEvent;
  * @author brendendrew
  *
  */
-public class CalculatorMenuController extends SeamlessViewFX implements Initializable {
+public class CalculatorMenuController  extends SeamlessViewFX implements Initializable {
 	
 	Controller controller = Controller.getInstance();
 	@FXML
@@ -41,6 +41,7 @@ public class CalculatorMenuController extends SeamlessViewFX implements Initiali
 	// Event Listener on Label[#CalorieCalculatorButton].onMouseClicked
 	@FXML
 	public void loadCalorieCalculator(MouseEvent event) {
+		
 		ViewNavigator.loadScene("Calorie Calculator", ViewNavigator.CALORIE_CALCULATOR_SCENE);
 	}
 	// Event Listener on Label[#BMIButton].onMouseClicked
@@ -51,7 +52,7 @@ ViewNavigator.loadScene("BMI Calculator", ViewNavigator.BMI_CALCULATOR_SCENE);
 	// Event Listener on Label[#FitnessButton].onMouseClicked
 	@FXML
 	public void loadFitnessOptions(MouseEvent event) {
-		ViewNavigator.loadScene("CaloriesBurned",ViewNavigator.CALORIES_BURNED_SCENE);
+		ViewNavigator.loadScene("Fitness Options",ViewNavigator.FITNESS_TRANSITION_SCENE);
 	}
 	
 	// Scales a button up when a mouse is hovered over
