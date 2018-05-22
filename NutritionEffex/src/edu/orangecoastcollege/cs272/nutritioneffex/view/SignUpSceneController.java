@@ -16,6 +16,11 @@ import javafx.scene.image.ImageView;
 
 import javafx.scene.input.MouseEvent;
 
+/**
+ * Allows the user to sign up to be a member of NutritionFX.
+ * @author brendendrew
+ *
+ */
 public class SignUpSceneController extends SeamlessViewFX implements Initializable {
 	
 	private static Controller controller = Controller.getInstance();

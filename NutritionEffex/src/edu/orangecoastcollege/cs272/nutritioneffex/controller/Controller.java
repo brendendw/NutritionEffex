@@ -18,13 +18,14 @@ import javafx.collections.ObservableList;
  * This class represents the Controller for our application.
  * It is responsible for setting up and initializing most of the
  * lists and databases, as well as provided methods to be used elsewhere.
- * @author Sean Dowdle, . . .
+ * @author Sean Dowdle
+ * @author Brenden Williams
+ * @author Sydney Gentile
  *
  */
 public class Controller implements AutoCloseable
 {
 	private static Controller theOne;
-	//private Controller() {}
 
 		/* ------------------- Sean ------------------*/
 		// Constants for the 3 databases
