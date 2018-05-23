@@ -52,7 +52,7 @@ ViewNavigator.loadScene("BMI Calculator", ViewNavigator.BMI_CALCULATOR_SCENE);
 	// Event Listener on Label[#FitnessButton].onMouseClicked
 	@FXML
 	public void loadFitnessOptions(MouseEvent event) {
-		ViewNavigator.loadScene("Fitness Options",ViewNavigator.FITNESS_TRANSITION_SCENE);
+		ViewNavigator.loadScene("Fitness Options",ViewNavigator.CALORIES_BURNED_SCENE);
 	}
 	
 	// Scales a button up when a mouse is hovered over
