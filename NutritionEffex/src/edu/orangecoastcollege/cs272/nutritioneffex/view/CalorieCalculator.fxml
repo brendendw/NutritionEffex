@@ -31,5 +31,11 @@
             <Font size="11.0" />
          </font>
       </TextField>
+      <ImageView fx:id="viewHistoryButton" fitHeight="47.0" fitWidth="47.0" layoutX="308.0" layoutY="318.0" onMouseClicked="#showCaloricHistory" onMouseEntered="#showDescriptionLabel" onMouseExited="#hideDescriptionLabel" onMousePressed="#historyButtonClicked" pickOnBounds="true" preserveRatio="true" rotate="180.0" visible="false">
+         <image>
+            <Image url="@../../../../../back.png" />
+         </image>
+      </ImageView>
+      <Label id="incorrectLoginLabel" fx:id="descriptionLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="320.0" prefHeight="41.0" prefWidth="190.0" style="-fx-background-color: red; -fx-background-radius: 10;" text="view history" textFill="WHITE" />
    </children>
 </Pane>
