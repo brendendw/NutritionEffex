@@ -101,6 +101,7 @@ public class Controller implements AutoCloseable
 		private ObservableList<Integer> mAllAgesList;
 		private ObservableList<User> mAllUsersList;
 		private ObservableList<String> mAllGoalWeightsList;
+		private ObservableList<String> mCaloricHistoryList;
 		
 		private static final String[] GENDER_TYPES = {"male", "female"};
 		private static final String[] GOAL_WEIGHTS = {"lose weight", "gain weight", "maintain"};
@@ -119,6 +120,7 @@ public class Controller implements AutoCloseable
 			if (theOne == null)
 			{
 				theOne = new Controller();
+				theOne.mCaloricHistoryList = FXCollections.observableArrayList();
 				theOne.mAllFoodsList = FXCollections.observableArrayList();
 				theOne.mAllFavoriteFoodsList = FXCollections.observableArrayList();
 				theOne.mAllPreferencesList = FXCollections.observableArrayList();
@@ -698,11 +700,14 @@ public class Controller implements AutoCloseable
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ END OF OLMPIAN Mat PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
-	/* ~~~~~~~~~~~~~~~~~~~~~ [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
+	/* ~~~~~~~~~~~~~~~~~~~~~ CALORIC HISTORY PORTION ~~~~~~~~~~~~~~~~~~~~~ */
+	public ObservableList<String> getCaloricHistoryList()
+	{
+		return mCaloricHistoryList;
+	}
 	
 	
-	
-	/* ~~~~~~~~~~~~~~~~~~~~~ END OF [Insert title] PORTION ~~~~~~~~~~~~~~~~~~~~~ */
+	/* ~~~~~~~~~~~~~~~~~~~~~ END OF CALORIC HISTORY PORTION ~~~~~~~~~~~~~~~~~~~~~ */
 	
 				
 				
@@ -857,6 +862,7 @@ public class Controller implements AutoCloseable
 				theOne.mCaloricTrackerDB = new DBModel(DB_NAME, CALORIC_TABLE_NAME, CALORIC_FIELD_NAMES, CALORIC_FIELD_TYPES);
 			
 			theOne.mCaloricTrackerDB.createRecord(CALORIC_FIELD_NAMES, values);
+			mCaloricHistoryList.add(String.valueOf(recommendedIntake));
 			
 			
 		} catch (SQLException e) {
